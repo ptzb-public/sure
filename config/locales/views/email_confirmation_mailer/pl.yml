@@ -1,0 +1,9 @@
+---
+pl:
+  email_confirmation_mailer:
+    confirmation_email:
+      body: Niedawno poprosiłeś(-aś) o zmianę adresu e-mail. Kliknij poniższy przycisk, aby potwierdzić tę zmianę.
+      cta: Potwierdź zmianę adresu e-mail
+      expiry_notice: Ten link wygaśnie za %{hours} godz.
+      greeting: Witaj!
+      subject: '%{product_name}: Potwierdź zmianę adresu e-mail'

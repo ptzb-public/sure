@@ -1,0 +1,19 @@
+---
+pl:
+  layouts:
+    application:
+      nav:
+        assistant: Asystent
+        budgets: Budżety
+        home: Strona główna
+        reports: Raporty
+        transactions: Transakcje
+    auth:
+      existing_account: Masz już konto?
+      no_account: Nowy użytkownik %{product_name}?
+      sign_in: Zaloguj się
+      sign_up: Utwórz konto
+    shared:
+      footer:
+        privacy_policy: Polityka prywatności
+        terms_of_service: Regulamin

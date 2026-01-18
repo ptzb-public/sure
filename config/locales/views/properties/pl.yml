@@ -1,0 +1,32 @@
+---
+pl:
+  properties:
+    edit:
+      edit: Edytuj %{account}
+    form:
+      address_line1: Ulica i numer
+      address_line1_placeholder: ul. Marszałkowska 10
+      area: Powierzchnia użytkowa
+      area_placeholder: '80'
+      area_unit: Jednostka miary
+      country: Kraj
+      country_placeholder: PL
+      locality: Miasto
+      locality_placeholder: Warszawa
+      none: Brak
+      postal_code: Kod pocztowy
+      postal_code_placeholder: '00-001'
+      region: Województwo
+      region_placeholder: Mazowieckie
+      subtype_prompt: Wybierz typ nieruchomości
+      year_built: Rok budowy
+      year_built_placeholder: '2005'
+    new:
+      title: Wprowadź dane nieruchomości
+    overview:
+      living_area: Powierzchnia użytkowa
+      market_value: Wartość rynkowa
+      purchase_price: Cena zakupu
+      trend: Trend
+      unknown: Nieznane
+      year_built: Rok budowy

@@ -1,0 +1,39 @@
+---
+pl:
+  rules:
+    no_action: Brak akcji
+    actions:
+      value_placeholder: Wprowadź wartość
+    apply_all:
+      button: Zastosuj wszystkie
+      confirm_title: Zastosować wszystkie reguły
+      confirm_message: Za chwilę zostanie zastosowanych %{count} reguł, które wpłyną na %{transactions} unikalnych transakcji. Potwierdź, jeśli chcesz kontynuować.
+      confirm_button: Potwierdź i zastosuj wszystkie
+      success: Wszystkie reguły zostały dodane do kolejki wykonania
+      ai_cost_title: Szacowanie kosztu AI
+      ai_cost_message: Spowoduje to użycie AI do kategoryzacji maksymalnie %{transactions} transakcji.
+      estimated_cost: "Szacowany koszt: ~$%{cost}"
+      cost_unavailable_model: Szacowanie kosztu niedostępne dla modelu „%{model}”.
+      cost_unavailable_no_provider: Szacowanie kosztu niedostępne (brak skonfigurowanego dostawcy LLM).
+      cost_warning: Mogą zostać naliczone koszty — sprawdź aktualne ceny u dostawcy modelu.
+      view_usage: Zobacz historię użycia
+    recent_runs:
+      title: Ostatnie uruchomienia
+      description: Przeglądaj historię wykonania reguł, w tym status powodzenia/niepowodzenia oraz liczbę transakcji.
+      unnamed_rule: Reguła bez nazwy
+      columns:
+        date_time: Data / godzina
+        execution_type: Typ
+        status: Status
+        rule_name: Nazwa reguły
+        transactions_counts:
+          queued: W kolejce
+          processed: Przetworzone
+          modified: Zmodyfikowane
+      execution_types:
+        manual: Ręczne
+        scheduled: Zaplanowane
+      statuses:
+        pending: Oczekujące
+        success: Zakończone powodzeniem
+        failed: Niepowodzenie

@@ -1,0 +1,49 @@
+---
+pl:
+  recurring_transactions:
+    title: Transakcje cykliczne
+    upcoming: Nadchodzące transakcje cykliczne
+    projected: Prognozowane
+    recurring: Cykliczne
+    expected_on: Oczekiwane dnia %{date}
+    day_of_month: Dzień %{day} miesiąca
+    identify_patterns: Wykryj wzorce
+    cleanup_stale: Usuń nieaktualne
+    settings:
+      enable_label: Włącz transakcje cykliczne
+      enable_description: Automatycznie wykrywaj wzorce transakcji cyklicznych i pokazuj nadchodzące prognozowane transakcje.
+    settings_updated: Ustawienia transakcji cyklicznych zostały zaktualizowane
+    info:
+      title: Automatyczne wykrywanie wzorców
+      manual_description: Możesz ręcznie wykrywać wzorce lub usuwać nieaktualne transakcje cykliczne, korzystając z powyższych przycisków.
+      automatic_description: "Automatyczna identyfikacja uruchamia się również po:"
+      triggers:
+        - Zakończeniu importu CSV (transakcje, transakcje handlowe, konta itp.)
+        - Zakończeniu synchronizacji z dowolnym dostawcą (Plaid, SimpleFIN itp.)
+    identified: Wykryto %{count} wzorców transakcji cyklicznych
+    cleaned_up: Usunięto %{count} nieaktualnych transakcji cyklicznych
+    marked_inactive: Transakcja cykliczna została oznaczona jako nieaktywna
+    marked_active: Transakcja cykliczna została oznaczona jako aktywna
+    deleted: Transakcja cykliczna została usunięta
+    confirm_delete: Czy na pewno chcesz usunąć tę transakcję cykliczną?
+    marked_as_recurring: Transakcja została oznaczona jako cykliczna
+    already_exists: Ręczna transakcja cykliczna dla tego wzorca już istnieje
+    creation_failed: Nie udało się utworzyć transakcji cyklicznej. Sprawdź szczegóły transakcji i spróbuj ponownie.
+    unexpected_error: Wystąpił nieoczekiwany błąd podczas tworzenia transakcji cyklicznej
+    amount_range: "Zakres: %{min} – %{max}"
+    empty:
+      title: Nie znaleziono transakcji cyklicznych
+      description: Kliknij „Wykryj wzorce”, aby automatycznie wykryć transakcje cykliczne na podstawie historii transakcji.
+    table:
+      merchant: Nazwa
+      amount: Kwota
+      expected_day: Oczekiwany dzień
+      next_date: Następna data
+      last_occurrence: Ostatnie wystąpienie
+      status: Status
+      actions: Akcje
+    status:
+      active: Aktywna
+      inactive: Nieaktywna
+    badges:
+      manual: Ręczna

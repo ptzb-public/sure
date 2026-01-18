@@ -1,0 +1,126 @@
+---
+pl:
+  investments:
+    edit:
+      edit: Edytuj %{account}
+    form:
+      none: Brak
+      subtype_prompt: Wybierz typ inwestycji
+    new:
+      title: Wprowadź saldo konta
+    show:
+      chart_title: Łączna wartość
+    subtypes:
+      # Stany Zjednoczone
+      brokerage:
+        short: Brokerage
+        long: Konto brokerskie
+      401k:
+        short: 401(k)
+        long: 401(k)
+      roth_401k:
+        short: Roth 401(k)
+        long: Roth 401(k)
+      403b:
+        short: 403(b)
+        long: 403(b)
+      457b:
+        short: 457(b)
+        long: 457(b)
+      tsp:
+        short: TSP
+        long: Thrift Savings Plan
+      ira:
+        short: IRA
+        long: Tradycyjne IRA
+      roth_ira:
+        short: Roth IRA
+        long: Roth IRA
+      sep_ira:
+        short: SEP IRA
+        long: SEP IRA
+      simple_ira:
+        short: SIMPLE IRA
+        long: SIMPLE IRA
+      529_plan:
+        short: Plan 529
+        long: Plan oszczędnościowy na edukację 529
+      hsa:
+        short: HSA
+        long: Health Savings Account
+      ugma:
+        short: UGMA
+        long: Konto powiernicze UGMA
+      utma:
+        short: UTMA
+        long: Konto powiernicze UTMA
+      # Wielka Brytania
+      isa:
+        short: ISA
+        long: Individual Savings Account
+      lisa:
+        short: LISA
+        long: Lifetime ISA
+      sipp:
+        short: SIPP
+        long: Self-Invested Personal Pension
+      workplace_pension_uk:
+        short: Emerytura
+        long: Emerytura pracownicza
+      # Kanada
+      rrsp:
+        short: RRSP
+        long: Registered Retirement Savings Plan
+      tfsa:
+        short: TFSA
+        long: Tax-Free Savings Account
+      resp:
+        short: RESP
+        long: Registered Education Savings Plan
+      lira:
+        short: LIRA
+        long: Locked-In Retirement Account
+      rrif:
+        short: RRIF
+        long: Registered Retirement Income Fund
+      # Australia
+      super:
+        short: Super
+        long: Superannuation
+      smsf:
+        short: SMSF
+        long: Self-Managed Super Fund
+      # Europa
+      pea:
+        short: PEA
+        long: Plan d'Épargne en Actions
+      pillar_3a:
+        short: Filar 3a
+        long: Prywatna emerytura (filar 3a)
+      riester:
+        short: Riester
+        long: Riester-Rente
+      # Ogólne
+      pension:
+        short: Emerytura
+        long: Konto emerytalne
+      retirement:
+        short: Emerytura
+        long: Konto emerytalne
+      mutual_fund:
+        short: Fundusz
+        long: Fundusz inwestycyjny
+      angel:
+        short: Angel
+        long: Inwestycja anielska
+      trust:
+        short: Trust
+        long: Trust
+      other:
+        short: Inne
+        long: Inna inwestycja
+    value_tooltip:
+      cash: Gotówka
+      holdings: Pozycje
+      total: Saldo portfela
+      total_value_tooltip: Łączne saldo portfela to suma gotówki brokerskiej (dostępnej do handlu) oraz bieżącej wartości rynkowej posiadanych pozycji.

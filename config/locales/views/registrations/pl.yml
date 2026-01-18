@@ -1,0 +1,25 @@
+---
+pl:
+  helpers:
+    label:
+      user:
+        invite_code: Kod zaproszenia
+    submit:
+      user:
+        create: Kontynuuj
+  registrations:
+    closed: Rejestracja jest obecnie zamknięta.
+    create:
+      failure: Wystąpił problem podczas rejestracji.
+      invalid_invite_code: Nieprawidłowy kod zaproszenia, spróbuj ponownie.
+      success: Rejestracja zakończona pomyślnie.
+    new:
+      invitation_message: "%{inviter} zaprosił(a) Cię do dołączenia jako %{role}"
+      join_family_title: Dołącz do %{family}
+      role_admin: administrator
+      role_member: członek
+      submit: Utwórz konto
+      title: Utwórz konto
+      welcome_body: Aby rozpocząć, musisz zarejestrować nowe konto. Następnie będziesz mógł/mogła skonfigurować dodatkowe ustawienia w aplikacji.
+      welcome_title: Witamy w samodzielnie hostowanym %{product_name}!
+      password_placeholder: Wprowadź hasło
