@@ -1,0 +1,89 @@
+---
+pl:
+  settings:
+    hostings:
+      invite_code_settings:
+        description: Kontroluj sposób rejestracji nowych użytkowników w Twojej instancji %{product}.
+        email_confirmation_description: Po włączeniu użytkownicy będą musieli potwierdzić adres e-mail przy jego zmianie.
+        email_confirmation_title: Wymagaj potwierdzenia adresu e-mail
+        generate_tokens: Wygeneruj nowy kod
+        generated_tokens: Wygenerowane kody
+        title: Onboarding
+        states:
+          open: Otwarta
+          closed: Zamknięta
+          invite_only: Tylko na zaproszenie
+      show:
+        general: Ustawienia ogólne
+        financial_data_providers: Dostawcy danych finansowych
+        sync_settings: Ustawienia synchronizacji
+        invites: Kody zaproszeń
+        title: Self-hosting
+        danger_zone: Strefa niebezpieczna
+        clear_cache: Wyczyść pamięć podręczną danych
+        clear_cache_warning: Wyczyszczenie pamięci podręcznej danych spowoduje usunięcie wszystkich kursów walut, cen papierów wartościowych, sald kont oraz innych danych. Nie usunie to kont, transakcji, kategorii ani innych danych należących do użytkowników.
+        confirm_clear_cache:
+          title: Wyczyścić pamięć podręczną danych?
+          body: Czy na pewno chcesz wyczyścić pamięć podręczną danych? Spowoduje to usunięcie wszystkich kursów walut, cen papierów wartościowych, sald kont oraz innych danych. Tej operacji nie można cofnąć.
+      provider_selection:
+        title: Wybór dostawcy
+        description: Wybierz usługę do pobierania kursów walut i cen papierów wartościowych. Yahoo Finance jest darmowy i nie wymaga klucza API. Twelve Data wymaga darmowego klucza API, ale może oferować szerszy zakres danych.
+        exchange_rate_provider_label: Dostawca kursów walut
+        securities_provider_label: Dostawca papierów wartościowych (ceny akcji)
+        env_configured_message: Wybór dostawcy jest wyłączony, ponieważ ustawiono zmienne środowiskowe (EXCHANGE_RATE_PROVIDER lub SECURITIES_PROVIDER). Aby włączyć wybór tutaj, usuń te zmienne z konfiguracji.
+        providers:
+          twelve_data: Twelve Data
+          yahoo_finance: Yahoo Finance
+      brand_fetch_settings:
+        description: Wprowadź identyfikator klienta (Client ID) otrzymany od Brand Fetch
+        label: Client ID
+        placeholder: Wprowadź tutaj swój Client ID
+        title: Ustawienia Brand Fetch
+      openai_settings:
+        description: Wprowadź token dostępu i opcjonalnie skonfiguruj niestandardowego dostawcę zgodnego z OpenAI
+        env_configured_message: Pomyślnie skonfigurowano za pomocą zmiennych środowiskowych.
+        access_token_label: Token dostępu
+        access_token_placeholder: Wprowadź tutaj token dostępu
+        uri_base_label: Bazowy URL API (opcjonalnie)
+        uri_base_placeholder: "https://api.openai.com/v1 (domyślnie)"
+        model_label: Model (opcjonalnie)
+        model_placeholder: "gpt-4.1 (domyślnie)"
+        json_mode_label: Tryb JSON
+        json_mode_auto: Auto (zalecane)
+        json_mode_strict: Ścisły (najlepszy dla modeli „thinking”)
+        json_mode_none: Brak (najlepszy dla modeli standardowych)
+        json_mode_json_object: Obiekt JSON
+        json_mode_help: "Tryb ścisły działa najlepiej z modelami typu thinking (qwen-thinking, deepseek-reasoner). Tryb brak działa najlepiej z modelami standardowymi (llama, mistral, gpt-oss)."
+        title: OpenAI
+      yahoo_finance_settings:
+        title: Yahoo Finance
+        description: Yahoo Finance zapewnia darmowy dostęp do cen akcji, kursów walut oraz danych finansowych bez konieczności używania klucza API.
+        status_active: Yahoo Finance jest aktywny i działa poprawnie
+        status_inactive: Połączenie z Yahoo Finance nie powiodło się
+        connection_failed: Nie udało się połączyć z Yahoo Finance
+        troubleshooting: Sprawdź połączenie internetowe i ustawienia zapory sieciowej. Yahoo Finance może być chwilowo niedostępny.
+      twelve_data_settings:
+        api_calls_used: "%{used} / %{limit} dziennych wywołań API wykorzystanych (%{percentage})"
+        description: Wprowadź klucz API otrzymany od Twelve Data
+        env_configured_message: Pomyślnie skonfigurowano za pomocą zmiennej środowiskowej TWELVE_DATA_API_KEY.
+        label: Klucz API
+        placeholder: Wprowadź tutaj swój klucz API
+        plan: "Plan %{plan}"
+        title: Twelve Data
+      update:
+        failure: Nieprawidłowa wartość ustawienia
+        success: Ustawienia zostały zaktualizowane
+        invalid_onboarding_state: Nieprawidłowy stan onboardingu
+        invalid_sync_time: Nieprawidłowy format czasu synchronizacji. Użyj formatu HH:MM (np. 02:30).
+        scheduler_sync_failed: Ustawienia zapisane, ale nie udało się zaktualizować harmonogramu synchronizacji. Spróbuj ponownie lub sprawdź logi serwera.
+      clear_cache:
+        cache_cleared: Pamięć podręczna danych została wyczyszczona. Operacja może potrwać kilka chwil.
+      not_authorized: Nie masz uprawnień do wykonania tej akcji
+      sync_settings:
+        auto_sync_label: Włącz automatyczną synchronizację
+        auto_sync_description: Po włączeniu wszystkie konta będą automatycznie synchronizowane codziennie o określonej godzinie.
+        auto_sync_time_label: Godzina synchronizacji (HH:MM)
+        auto_sync_time_description: Określ porę dnia, o której ma być wykonywana automatyczna synchronizacja.
+        include_pending_label: Uwzględniaj transakcje oczekujące
+        include_pending_description: Po włączeniu transakcje oczekujące (niezaksięgowane) będą importowane i automatycznie uzgadniane po ich zaksięgowaniu. Wyłącz, jeśli Twój bank dostarcza niewiarygodne dane o transakcjach oczekujących.
+        env_configured_message: To ustawienie jest wyłączone, ponieważ ustawiono zmienną środowiskową dostawcy (SIMPLEFIN_INCLUDE_PENDING lub PLAID_INCLUDE_PENDING). Usuń ją, aby włączyć to ustawienie.

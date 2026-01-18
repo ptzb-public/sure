@@ -1,0 +1,21 @@
+---
+pl:
+  activerecord:
+    attributes:
+      account:
+        balance: Saldo
+        currency: Waluta
+        family: Wspólna przestrzeń
+        family_id: Wspólna przestrzeń
+        name: Nazwa
+        subtype: Podtyp
+    models:
+      account: Konto
+      account/credit: Karta kredytowa
+      account/depository: Konto bankowe
+      account/investment: Inwestycja
+      account/loan: Pożyczka
+      account/other_asset: Inny składnik majątku
+      account/other_liability: Inne zobowiązanie
+      account/property: Nieruchomość
+      account/vehicle: Pojazd

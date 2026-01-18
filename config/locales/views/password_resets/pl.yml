@@ -1,0 +1,15 @@
+---
+pl:
+  password_resets:
+    disabled: Reset hasła przez Sure jest wyłączony. Zresetuj hasło za pośrednictwem swojego dostawcy tożsamości.
+    sso_only_user: Twoje konto korzysta z logowania SSO. Skontaktuj się z administratorem, aby zarządzać danymi uwierzytelniającymi.
+    edit:
+      title: Reset hasła
+    new:
+      requested: Sprawdź swoją skrzynkę e-mail — wysłaliśmy link do resetu hasła.
+      submit: Resetuj hasło
+      title: Reset hasła
+      back: Wstecz
+    update:
+      invalid_token: Nieprawidłowy token.
+      success: Twoje hasło zostało zresetowane.

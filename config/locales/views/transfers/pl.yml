@@ -1,0 +1,30 @@
+---
+pl:
+  transfers:
+    create:
+      success: Transfer utworzony
+    destroy:
+      success: Transfer usunięty
+    form:
+      amount: Kwota
+      date: Data
+      expense: Wydatek
+      from: Z
+      income: Przychód
+      select_account: Wybierz konto
+      submit: Utwórz transfer
+      to: Do
+      transfer: Transfer
+    new:
+      title: Nowy transfer
+    show:
+      delete: Usuń transfer
+      delete_subtitle: Usunięcie transferu nie spowoduje usunięcia powiązanych transakcji.
+      delete_title: Usunąć transfer?
+      details: Szczegóły
+      note_label: Notatki
+      note_placeholder: Dodaj notatkę do tego transferu
+      overview: Przegląd
+      settings: Ustawienia
+    update:
+      success: Transfer zaktualizowany

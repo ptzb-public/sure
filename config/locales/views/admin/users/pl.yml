@@ -1,0 +1,22 @@
+---
+pl:
+  admin:
+    users:
+      index:
+        title: "Zarządzanie użytkownikami"
+        description: "Zarządzaj rolami użytkowników w tej instancji. Superadministratorzy mają dostęp do ustawień dostawców SSO oraz zarządzania użytkownikami."
+        section_title: "Użytkownicy"
+        you: "(Ty)"
+        no_users: "Nie znaleziono użytkowników."
+        role_descriptions_title: "Opisy ról"
+        roles:
+          member: "Członek"
+          admin: "Administrator"
+          super_admin: "Superadministrator"
+        role_descriptions:
+          member: "Podstawowy dostęp użytkownika. Może zarządzać własnymi kontami, transakcjami oraz ustawieniami."
+          admin: "Administrator wspólnej przestrzeni. Ma dostęp do zaawansowanych ustawień, takich jak klucze API, importy oraz prompty AI."
+          super_admin: "Administrator instancji. Może zarządzać dostawcami SSO, rolami użytkowników oraz podszywać się pod użytkowników w celach wsparcia."
+      update:
+        success: "Rola użytkownika została pomyślnie zaktualizowana."
+        failure: "Nie udało się zaktualizować roli użytkownika."

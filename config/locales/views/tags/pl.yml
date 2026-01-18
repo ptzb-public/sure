@@ -1,0 +1,23 @@
+---
+pl:
+  tags:
+    create:
+      created: Etykieta utworzona
+      error: "Błąd podczas tworzenia etykiety: %{error}"
+    destroy:
+      deleted: Etykieta usunięta
+    edit:
+      edit: Edytuj etykietę
+    form:
+      placeholder: Nazwa etykiety
+    index:
+      empty: Brak etykiet
+      new: Nowa etykieta
+      tags: Etykiety
+    new:
+      new: Nowa etykieta
+    tag:
+      delete: Usuń
+      edit: Edytuj
+    update:
+      updated: Etykieta zaktualizowana

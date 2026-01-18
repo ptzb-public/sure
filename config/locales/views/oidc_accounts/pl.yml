@@ -1,0 +1,16 @@
+---
+pl:
+  oidc_accounts:
+    link:
+      account_creation_disabled: Tworzenie nowych kont przez logowanie jednokrotne (SSO) jest wyłączone. Skontaktuj się z administratorem, aby utworzyć konto.
+    new_user:
+      title: Dokończ tworzenie konta
+      heading: Utwórz konto
+      description: Potwierdź swoje dane, aby dokończyć tworzenie konta przy użyciu tożsamości %{provider}.
+      email_label: E-mail (od dostawcy SSO)
+      first_name_label: Imię
+      first_name_placeholder: Wprowadź imię
+      last_name_label: Nazwisko
+      last_name_placeholder: Wprowadź nazwisko
+      submit: Utwórz konto
+      cancel: Anuluj

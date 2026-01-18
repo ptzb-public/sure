@@ -1,0 +1,138 @@
+---
+pl:
+  settings:
+    ai_prompts:
+      show:
+        page_title: Prompty AI
+        openai_label: OpenAI
+        disable_ai: Wyłącz asystenta AI
+        prompt_instructions: Instrukcje promptów
+        main_system_prompt:
+          title: Główny prompt systemowy
+          subtitle: Podstawowe instrukcje określające zachowanie asystenta AI we wszystkich rozmowach
+        transaction_categorizer:
+          title: Kategoryzacja transakcji
+          subtitle: AI automatycznie kategoryzuje transakcje na podstawie zdefiniowanych kategorii
+        merchant_detector:
+          title: Wykrywanie sprzedawców
+          subtitle: AI identyfikuje i wzbogaca dane transakcji o informacje o sprzedawcach
+    billings:
+      show:
+        page_title: Rozliczenia
+        subscription_subtitle: Aktualizuj subskrypcję i dane rozliczeniowe
+        subscription_title: Zarządzaj subskrypcją
+    preferences:
+      show:
+        country: Kraj
+        currency: Waluta
+        date_format: Format daty
+        general_subtitle: Skonfiguruj swoje preferencje
+        general_title: Ogólne
+        default_period: Domyślny okres
+        default_account_order: Domyślna kolejność kont
+        language: Język
+        page_title: Preferencje
+        theme_dark: Ciemny
+        theme_light: Jasny
+        theme_subtitle: Wybierz preferowany motyw aplikacji
+        theme_system: Systemowy
+        theme_title: Motyw
+        timezone: Strefa czasowa
+    profiles:
+      destroy:
+        cannot_remove_self: Nie możesz usunąć samego siebie z konta.
+        member_removal_failed: Wystąpił problem podczas usuwania członka.
+        member_removed: Członek został pomyślnie usunięty.
+        not_authorized: Nie masz uprawnień do usuwania członków.
+      show:
+        confirm_delete:
+          body: Czy na pewno chcesz trwale usunąć swoje konto? Tej operacji nie można cofnąć.
+          title: Usunąć konto?
+        confirm_reset:
+          body: Czy na pewno chcesz zresetować konto? Spowoduje to usunięcie wszystkich kont, kategorii, sprzedawców, tagów i innych danych. Tej operacji nie można cofnąć.
+          title: Zresetować konto?
+        confirm_reset_with_sample_data:
+          body: Czy na pewno chcesz zresetować konto i wczytać dane przykładowe? Twoje obecne dane zostaną usunięte i zastąpione danymi demonstracyjnymi, abyś mógł bezpiecznie poznać Sure.
+          title: Zresetować konto i wczytać dane przykładowe?
+        confirm_remove_invitation:
+          body: Czy na pewno chcesz usunąć zaproszenie dla %{email}?
+          title: Usuń zaproszenie
+        confirm_remove_member:
+          body: Czy na pewno chcesz usunąć %{name} ze swojego konta?
+          title: Usuń członka
+        danger_zone_title: Strefa niebezpieczna
+        delete_account: Usuń konto
+        delete_account_warning: Usunięcie konta spowoduje trwałe usunięcie wszystkich danych i nie może zostać cofnięte.
+        reset_account: Zresetuj konto
+        reset_account_warning: Reset konta usunie wszystkie konta, kategorie, sprzedawców, tagi i inne dane, ale zachowa Twoje konto użytkownika.
+        reset_account_with_sample_data: Resetuj i wczytaj dane
+        reset_account_with_sample_data_warning: Usuń wszystkie obecne dane i wczytaj świeże dane przykładowe, aby móc eksplorować aplikację w przygotowanym środowisku.
+        email: E-mail
+        first_name: Imię
+        household_form_input_placeholder: Wprowadź nazwę wspólnej przestrzeni
+        household_form_label: Nazwa wspólnej przestrzeni
+        household_subtitle: Zaproś członków rodziny, partnerów i inne osoby. Zaproszeni użytkownicy będą mogli zalogować się do wspólnej przestrzeni i uzyskać dostęp do współdzielonych kont.
+        household_title: Wspólna przestrzeń
+        invitation_link: Link zaproszenia
+        invite_member: Dodaj członka
+        last_name: Nazwisko
+        page_title: Informacje o profilu
+        pending: Oczekujące
+        profile_subtitle: Dostosuj sposób wyświetlania Twojego profilu w %{product_name}
+        profile_title: Dane osobowe
+        remove_invitation: Usuń zaproszenie
+        remove_member: Usuń członka
+        save: Zapisz
+    securities:
+      show:
+        page_title: Bezpieczeństwo
+        mfa_title: Uwierzytelnianie dwuskładnikowe
+        mfa_description: Dodaj dodatkową warstwę zabezpieczeń, wymagając kodu z aplikacji uwierzytelniającej podczas logowania
+        enable_mfa: Włącz 2FA
+        disable_mfa: Wyłącz 2FA
+        disable_mfa_confirm: Czy na pewno chcesz wyłączyć uwierzytelnianie dwuskładnikowe?
+        sso_title: Połączone konta
+        sso_subtitle: Zarządzaj połączeniami logowania jednokrotnego (SSO)
+        sso_disconnect: Odłącz
+        sso_last_used: Ostatnie użycie
+        sso_never: Nigdy
+        sso_no_email: Brak adresu e-mail
+        sso_no_identities: Brak połączonych kont SSO
+        sso_connect_hint: Wyloguj się i zaloguj ponownie przy użyciu dostawcy SSO, aby połączyć konto.
+        sso_confirm_title: Odłączyć konto?
+        sso_confirm_body: Czy na pewno chcesz odłączyć konto %{provider}? Możesz połączyć je ponownie, logując się ponownie przez tego dostawcę.
+        sso_confirm_button: Odłącz
+        sso_warning_message: To jest Twoja jedyna metoda logowania. Przed odłączeniem ustaw hasło w ustawieniach bezpieczeństwa, w przeciwnym razie możesz utracić dostęp do konta.
+    settings_nav:
+      accounts_label: Konta
+      advanced_section_title: Zaawansowane
+      ai_prompts_label: Prompty AI
+      api_key_label: Klucz API
+      billing_label: Rozliczenia
+      categories_label: Kategorie
+      feedback_label: Opinie
+      general_section_title: Ogólne
+      imports_label: Import / Eksport
+      logout: Wyloguj się
+      merchants_label: Sprzedawcy
+      guides_label: Przewodniki
+      other_section_title: Więcej
+      preferences_label: Preferencje
+      profile_label: Informacje o profilu
+      recurring_transactions_label: Cykliczne
+      rules_label: Reguły
+      security_label: Bezpieczeństwo
+      self_hosting_label: Self-hosting
+      tags_label: Tagi
+      transactions_section_title: Transakcje
+      whats_new_label: Co nowego
+      api_keys_label: Klucz API
+      bank_sync_label: Synchronizacja banków
+    settings_nav_link_large:
+      next: Dalej
+      previous: Wstecz
+    user_avatar_field:
+      accepted_formats: JPG lub PNG. Maks. 5 MB.
+      choose: Prześlij zdjęcie
+      choose_label: (opcjonalnie)
+      change: Zmień zdjęcie

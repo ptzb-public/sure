@@ -1,0 +1,61 @@
+---
+pl:
+  family_merchants:
+    create:
+      error: "Błąd podczas tworzenia sprzedawcy: %{error}"
+      success: Nowy sprzedawca został pomyślnie utworzony
+    destroy:
+      success: Sprzedawca został pomyślnie usunięty
+      unlinked_success: Sprzedawca został usunięty z Twoich transakcji
+    edit:
+      title: Edytuj sprzedawcę
+    form:
+      name_placeholder: Nazwa sprzedawcy
+      website_placeholder: Strona internetowa (np. starbucks.com)
+      website_hint: Podaj stronę internetową sprzedawcy, aby automatycznie wyświetlić jego logo
+    index:
+      empty: Brak sprzedawców
+      new: Nowy sprzedawca
+      merge: Scal sprzedawców
+      title: Sprzedawcy
+      family_title: Sprzedawcy wspólnej przestrzeni
+      family_empty: Brak sprzedawców wspólnej przestrzeni
+      provider_title: Sprzedawcy dostawców
+      provider_empty: Brak sprzedawców dostawców powiązanych z tą wspólną przestrzenią
+      provider_read_only: Sprzedawcy dostawców są synchronizowani z połączonych instytucji. Nie można ich tutaj edytować.
+      provider_info: Ci sprzedawcy zostali automatycznie wykryci przez połączenia bankowe lub AI. Możesz ich edytować, aby utworzyć własną kopię, albo usunąć, aby odłączyć ich od transakcji.
+      unlinked_title: Ostatnio odłączone
+      unlinked_info: Ci sprzedawcy zostali niedawno usunięci z Twoich transakcji. Znikną z tej listy po 30 dniach, jeśli nie zostaną ponownie przypisani do transakcji.
+      table:
+        merchant: Sprzedawca
+        actions: Akcje
+        source: Źródło
+    merchant:
+      confirm_accept: Usuń sprzedawcę
+      confirm_body: Czy na pewno chcesz usunąć tego sprzedawcę? Usunięcie spowoduje odłączenie wszystkich powiązanych transakcji i może wpłynąć na raporty.
+      confirm_title: Usunąć sprzedawcę?
+      delete: Usuń sprzedawcę
+      edit: Edytuj sprzedawcę
+    merge:
+      title: Scal sprzedawców
+      description: Wybierz sprzedawcę docelowego oraz sprzedawców, którzy zostaną z nim scaleni. Wszystkie transakcje scalonych sprzedawców zostaną przypisane do sprzedawcy docelowego.
+      target_label: Scal do (docelowy)
+      select_target: Wybierz sprzedawcę docelowego...
+      sources_label: Sprzedawcy do scalenia
+      sources_hint: Wybrani sprzedawcy zostaną scaleni z docelowym. Sprzedawcy wspólnej przestrzeni zostaną usunięci, a sprzedawcy dostawców — odłączeni.
+      submit: Scal wybrane
+    new:
+      title: Nowy sprzedawca
+    perform_merge:
+      success: Pomyślnie scalono %{count} sprzedawców
+      no_merchants_selected: Nie wybrano sprzedawców do scalenia
+      target_not_found: Nie znaleziono sprzedawcy docelowego
+      invalid_merchants: Wybrano nieprawidłowych sprzedawców
+    provider_merchant:
+      edit: Edytuj
+      remove: Usuń
+      remove_confirm_title: Usunąć sprzedawcę?
+      remove_confirm_body: Czy na pewno chcesz usunąć %{name}? Spowoduje to odłączenie wszystkich powiązanych transakcji od tego sprzedawcy, ale nie usunie samego sprzedawcy.
+    update:
+      success: Sprzedawca został pomyślnie zaktualizowany
+      converted_success: Sprzedawca został pomyślnie przekonwertowany i zaktualizowany

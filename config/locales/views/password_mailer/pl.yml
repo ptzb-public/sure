@@ -1,0 +1,8 @@
+---
+pl:
+  password_mailer:
+    password_reset:
+      cta: Zresetuj hasło
+      ignore_if_not_requested: Jeśli nie wysyłałeś(-aś) tej prośby, możesz zignorować tę wiadomość.
+      request_made: Otrzymaliśmy prośbę o zresetowanie hasła do Twojego konta %{product_name}. Kliknij link, aby je zresetować.
+      subject: '%{product_name}: Reset hasła'

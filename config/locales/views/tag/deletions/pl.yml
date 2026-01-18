@@ -1,0 +1,13 @@
+---
+pl:
+  tag:
+    deletions:
+      create:
+        deleted: Etykieta została usunięta
+      new:
+        delete_and_leave_uncategorized: Usuń „%{tag_name}”
+        delete_and_recategorize: Usuń „%{tag_name}” i przypisz nową etykietę
+        delete_tag: Usunąć etykietę?
+        explanation: "Etykieta „%{tag_name}” zostanie usunięta z transakcji i innych elementów, do których jest przypisana. Zamiast pozostawiać je bez etykiety, możesz poniżej przypisać nową etykietę."
+        replacement_tag_prompt: Wybierz etykietę
+        tag: Etykieta

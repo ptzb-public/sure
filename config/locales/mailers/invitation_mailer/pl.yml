@@ -1,0 +1,5 @@
+---
+pl:
+  invitation_mailer:
+    invite_email:
+      subject: "%{inviter} zaprosił(a) Cię do wspólnej przestrzeni w %{product_name}!"

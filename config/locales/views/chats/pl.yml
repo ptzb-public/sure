@@ -1,0 +1,5 @@
+---
+pl:
+  chats:
+    demo_banner_title: "Tryb demonstracyjny aktywny"
+    demo_banner_message: "Korzystasz z otwartowagowego modelu LLM Qwen3 z kredytami zapewnionymi przez Cloudflare Workers AI. Wyniki mogą się różnić, ponieważ baza kodu była w większości testowana na `gpt-4.1`, jednak Twoje tokeny nie są nigdzie przekazywane ani wykorzystywane do trenowania."
