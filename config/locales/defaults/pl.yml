@@ -6,19 +6,19 @@ pl:
   activerecord:
     errors:
       messages:
-        record_invalid: "Walidacja nie powiodła się: %{errors}"
+        record_invalid: "Znaleziono błędy: %{errors}"
         restrict_dependent_destroy:
-          has_many: "Nie można usunąć rekordu, ponieważ istnieją powiązane %{record}"
-          has_one: "Nie można usunąć rekordu, ponieważ istnieje powiązany %{record}"
+          has_many: "Nie można usunąć, gdyż istnieją zależne od niego %{record}"
+          has_one: "Nie można usunąć, gdyż istnieje zależny od niego %{record}"
 
   date:
     abbr_day_names:
-      - niedz
+      - nie
       - pon
-      - wt
-      - śr
+      - wto
+      - śro
       - czw
-      - pt
+      - pią
       - sob
     abbr_month_names:
       -
@@ -43,23 +43,23 @@ pl:
       - piątek
       - sobota
     formats:
-      default: "%Y-%m-%d"
-      long: "%d %B %Y"
-      short: "%d %b"
+      default: "%d-%m-%Y"
+      long: "%-d %B %Y"
+      short: "%-d %b"
     month_names:
       -
-      - styczeń
-      - luty
-      - marzec
-      - kwiecień
-      - maj
-      - czerwiec
-      - lipiec
-      - sierpień
-      - wrzesień
-      - październik
-      - listopad
-      - grudzień
+      - stycznia
+      - lutego
+      - marca
+      - kwietnia
+      - maja
+      - czerwca
+      - lipca
+      - sierpnia
+      - września
+      - października
+      - listopada
+      - grudnia
     order:
       - :day
       - :month
@@ -68,68 +68,91 @@ pl:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: "około %{count} godziny"
+        few: "około %{count} godziny"
+        many: "około %{count} godzin"
+        one: "około godziny"
         other: "około %{count} godzin"
       about_x_months:
-        one: "około %{count} miesiąca"
+        few: "około %{count} miesiące"
+        many: "około %{count} miesięcy"
+        one: "około miesiąca"
         other: "około %{count} miesięcy"
       about_x_years:
-        one: "około %{count} roku"
+        few: "około %{count} lata"
+        many: "około %{count} lat"
+        one: "około rok"
         other: "około %{count} lat"
       almost_x_years:
-        one: "prawie %{count} rok"
-        other: "prawie %{count} lata"
+        few: "prawie %{count} lata"
+        many: "prawie %{count} lat"
+        one: "prawie rok"
+        other: "prawie %{count} lat"
       half_a_minute: "pół minuty"
       less_than_x_minutes:
+        few: "mniej niż %{count} minuty"
+        many: "mniej niż %{count} minut"
         one: "mniej niż minutę"
         other: "mniej niż %{count} minut"
       less_than_x_seconds:
-        one: "mniej niż %{count} sekundę"
+        few: "mniej niż %{count} sekundy"
+        many: "mniej niż %{count} sekund"
+        one: "mniej niż sekundę"
         other: "mniej niż %{count} sekund"
       over_x_years:
-        one: "ponad %{count} rok"
+        few: "ponad %{count} lata"
+        many: "ponad %{count} lat"
+        one: "ponad rok"
         other: "ponad %{count} lat"
       x_days:
+        few: "%{count} dni"
+        many: "%{count} dni"
         one: "%{count} dzień"
         other: "%{count} dni"
       x_minutes:
+        few: "%{count} minuty"
+        many: "%{count} minut"
         one: "%{count} minuta"
         other: "%{count} minut"
       x_months:
+        few: "%{count} miesiące"
+        many: "%{count} miesięcy"
         one: "%{count} miesiąc"
         other: "%{count} miesięcy"
       x_seconds:
+        few: "%{count} sekundy"
+        many: "%{count} sekund"
         one: "%{count} sekunda"
         other: "%{count} sekund"
       x_years:
+        few: "%{count} lata"
+        many: "%{count} lat"
         one: "%{count} rok"
         other: "%{count} lat"
     prompts:
-      day: Dzień
-      hour: Godzina
-      minute: Minuta
-      month: Miesiąc
-      second: Sekunda
-      year: Rok
+      day: "Dzień"
+      hour: "Godzina"
+      minute: "Minuta"
+      month: "Miesiąc"
+      second: "Sekunda"
+      year: "Rok"
 
   errors:
     format: "%{attribute} %{message}"
     messages:
       accepted: "musi zostać zaakceptowane"
       blank: "nie może być puste"
-      confirmation: "nie zgadza się z %{attribute}"
+      confirmation: "musi być taki sam jak w %{attribute}"
       empty: "nie może być puste"
       equal_to: "musi być równe %{count}"
       even: "musi być parzyste"
       exclusion: "jest zarezerwowane"
-      greater_than: "musi być większe niż %{count}"
+      greater_than: "musi być większe od %{count}"
       greater_than_or_equal_to: "musi być większe lub równe %{count}"
-      in: "musi być w %{count}"
-      inclusion: "nie znajduje się na liście"
+      inclusion: "nie znajduje się na liście dopuszczalnych wartości"
       invalid: "jest nieprawidłowe"
-      less_than: "musi być mniejsze niż %{count}"
+      less_than: "musi być mniejsze od %{count}"
       less_than_or_equal_to: "musi być mniejsze lub równe %{count}"
-      model_invalid: "Walidacja nie powiodła się: %{errors}"
+      model_invalid: "Znaleziono błędy: %{errors}"
       not_a_number: "nie jest liczbą"
       not_an_integer: "musi być liczbą całkowitą"
       odd: "musi być nieparzyste"
@@ -138,37 +161,49 @@ pl:
       required: "musi istnieć"
       taken: "zostało już zajęte"
       too_long:
-        one: "jest za długie (maksymalnie %{count} znak)"
+        few: "jest za długie (maksymalnie %{count} znaki)"
+        many: "jest za długie (maksymalnie %{count} znaków)"
+        one: "jest za długie (maksymalnie jeden znak)"
         other: "jest za długie (maksymalnie %{count} znaków)"
       too_short:
-        one: "jest za krótkie (minimum %{count} znak)"
-        other: "jest za krótkie (minimum %{count} znaków)"
+        few: "jest za krótkie (przynajmniej %{count} znaki)"
+        many: "jest za krótkie (przynajmniej %{count} znaków)"
+        one: "jest za krótkie (przynajmniej jeden znak)"
+        other: "jest za krótkie (przynajmniej %{count} znaków)"
       wrong_length:
-        one: "ma nieprawidłową długość (powinien być %{count} znak)"
-        other: "ma nieprawidłową długość (powinno być %{count} znaków)"
+        few: "ma nieprawidłową długość (powinna wynosić %{count} znaki)"
+        many: "ma nieprawidłową długość (powinna wynosić %{count} znaków)"
+        one: "ma nieprawidłową długość (powinna wynosić jeden znak)"
+        other: "ma nieprawidłową długość (powinna wynosić %{count} znaków)"
     template:
-      body: "Wystąpiły problemy z następującymi polami:"
+      body: "Błędy dotyczą następujących pól:"
       header:
-        one: "%{count} błąd uniemożliwił zapis %{model}"
-        other: "%{count} błędy uniemożliwiły zapis %{model}"
+        few: "%{model} nie został zachowany z powodu %{count} błędów"
+        many: "%{model} nie został zachowany z powodu %{count} błędów"
+        one: "%{model} nie został zachowany z powodu jednego błędu"
+        other: "%{model} nie został zachowany z powodu %{count} błędów"
 
   helpers:
     select:
-      prompt: "Wybierz"
+      prompt: "Proszę wybrać"
     submit:
       create: "Utwórz %{model}"
-      submit: "Zapisz %{model}"
-      update: "Zaktualizuj %{model}"
+      submit: "Wyślij %{model}"
+      update: "Aktualizuj %{model}"
 
   number:
     currency:
       format:
+        delimiter: " "
+        format: "%n %u"
+        precision: 2
+        separator: ","
         significant: false
-        strip_insignificant_zeros: false
+        strip_insignificant_zeros: true
+        unit: "zł"
     format:
       delimiter: " "
       precision: 3
-      round_mode: default
       separator: ","
       significant: false
       strip_insignificant_zeros: false
@@ -176,15 +211,11 @@ pl:
       decimal_units:
         format: "%n %u"
         units:
-          billion: "mld"
-          million:
-            one: "mln"
-            other: "mln"
-          quadrillion: "kwadrylion"
-          thousand: "tys."
-          trillion:
-            one: "bln"
-            other: "bln"
+          billion: "Miliard"
+          million: "Milion"
+          quadrillion: "Biliard"
+          thousand: "Tysiąc"
+          trillion: "Bilion"
           unit: ""
       format:
         delimiter: ""
@@ -195,14 +226,14 @@ pl:
         format: "%n %u"
         units:
           byte:
-            one: "Bajt"
-            other: "Bajty"
+            few: "bajty"
+            many: "bajtów"
+            one: "bajt"
+            other: "bajty"
           kb: "KB"
           mb: "MB"
           gb: "GB"
           tb: "TB"
-          pb: "PB"
-          eb: "EB"
     percentage:
       format:
         delimiter: ""
@@ -213,14 +244,14 @@ pl:
 
   support:
     array:
-      last_word_connector: " i "
+      last_word_connector: " oraz "
       two_words_connector: " i "
       words_connector: ", "
 
   time:
-    am: "AM"
-    pm: "PM"
+    am: "przed południem"
+    pm: "po południu"
     formats:
-      default: "%a, %d %b %Y %H:%M:%S %z"
-      long: "%d %B %Y %H:%M"
-      short: "%d %b %H:%M"
+      default: "%a, %-d %b %Y %H:%M:%S %z"
+      long: "%-d %B %Y %H:%M"
+      short: "%-d %b %H:%M"
