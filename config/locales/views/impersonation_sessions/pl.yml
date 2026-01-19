@@ -1,0 +1,15 @@
+---
+pl:
+  impersonation_sessions:
+    approve:
+      success: Żądanie zatwierdzone
+    complete:
+      success: Sesja zakończona
+    create:
+      success: Żądanie wysłane do użytkownika. Oczekiwanie na zatwierdzenie.
+    join:
+      success: Dołączono do sesji
+    leave:
+      success: Opuszczono sesję
+    reject:
+      success: Żądanie odrzucone

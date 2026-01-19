@@ -1,0 +1,61 @@
+---
+pl:
+  provider_sync_summary:
+    title: Podsumowanie synchronizacji
+    last_sync: "Ostatnia synchronizacja: %{time_ago} temu"
+    accounts:
+      title: Konta
+      total: "Łącznie: %{count}"
+      linked: "Połączone: %{count}"
+      unlinked: "Niepołączone: %{count}"
+      institutions: "Instytucje: %{count}"
+    transactions:
+      title: Transakcje
+      seen: "Wykryte: %{count}"
+      imported: "Zaimportowane: %{count}"
+      updated: "Zaktualizowane: %{count}"
+      skipped: "Pominięte: %{count}"
+      protected:
+        one: "%{count} wpis chroniony (nie nadpisany)"
+        other: "%{count} wpisów chronionych (nie nadpisanych)"
+      view_protected: Zobacz chronione wpisy
+    skip_reasons:
+      excluded: Wykluczone
+      user_modified: Zmodyfikowane przez użytkownika
+      import_locked: Import CSV
+      protected: Chronione
+    holdings:
+      title: Aktywa
+      found: "Znalezione: %{count}"
+      processed: "Przetworzone: %{count}"
+    health:
+      title: Stan
+      view_error_details: Zobacz szczegóły błędów
+      rate_limited: "Ograniczenie zapytań %{time_ago}"
+      recently: niedawno
+      errors: "Błędy: %{count}"
+      pending_reconciled:
+        one: "%{count} zduplikowana transakcja oczekująca została uzgodniona"
+        other: "%{count} zduplikowanych transakcji oczekujących zostało uzgodnionych"
+      view_reconciled: Zobacz uzgodnione transakcje
+      duplicate_suggestions:
+        one: "%{count} możliwy duplikat wymaga sprawdzenia"
+        other: "%{count} możliwe duplikaty wymagają sprawdzenia"
+      view_duplicate_suggestions: Zobacz sugerowane duplikaty
+      stale_pending:
+        one: "%{count} przestarzała transakcja oczekująca (wykluczona z budżetów)"
+        other: "%{count} przestarzałych transakcji oczekujących (wykluczonych z budżetów)"
+      view_stale_pending: Zobacz dotknięte konta
+      stale_pending_count:
+        one: "%{count} transakcja"
+        other: "%{count} transakcji"
+      stale_unmatched:
+        one: "%{count} transakcja oczekująca wymaga ręcznego sprawdzenia"
+        other: "%{count} transakcji oczekujących wymaga ręcznego sprawdzenia"
+      view_stale_unmatched: Zobacz transakcje wymagające sprawdzenia
+      stale_unmatched_count:
+        one: "%{count} transakcja"
+        other: "%{count} transakcji"
+      data_warnings: "Ostrzeżenia dotyczące danych: %{count}"
+      notices: "Powiadomienia: %{count}"
+      view_data_quality: Zobacz szczegóły jakości danych

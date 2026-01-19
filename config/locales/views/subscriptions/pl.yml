@@ -1,0 +1,3 @@
+pl:
+  subscriptions:
+    self_hosted_alert: "%{product_name} nie jest dostępny w trybie self-hosted."

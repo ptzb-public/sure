@@ -1,0 +1,19 @@
+---
+pl:
+  invitations:
+    create:
+      failure: Nie udało się wysłać zaproszenia
+      success: Zaproszenie zostało pomyślnie wysłane
+    destroy:
+      failure: Wystąpił problem z usunięciem zaproszenia.
+      not_authorized: Nie masz uprawnień do zarządzania zaproszeniami.
+      success: Zaproszenie zostało pomyślnie usunięte.
+    new:
+      email_label: Adres e-mail
+      email_placeholder: Wprowadź adres e-mail
+      role_admin: Administrator
+      role_label: Rola
+      role_member: Członek
+      submit: Wyślij zaproszenie
+      subtitle: Wyślij zaproszenie do dołączenia do wspólnej przestrzeni w %{product_name}
+      title: Zaproś osobę

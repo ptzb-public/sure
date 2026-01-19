@@ -1,0 +1,14 @@
+---
+pl:
+  entries:
+    create:
+      success: Wpis został utworzony
+    destroy:
+      success: Wpis został usunięty
+    empty:
+      description: Spróbuj dodać wpis, zmienić filtry lub zawęzić wyszukiwanie
+      title: Nie znaleziono wpisów
+    loading:
+      loading: Ładowanie wpisów...
+    update:
+      success: Wpis został zaktualizowany

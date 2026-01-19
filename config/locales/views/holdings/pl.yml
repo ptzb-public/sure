@@ -1,0 +1,61 @@
+---
+pl:
+  holdings:
+    cash:
+      brokerage_cash: Środki pieniężne u brokera
+    destroy:
+      success: Pozycja została usunięta
+    update:
+      success: Podstawa kosztowa została zapisana.
+      error: Nieprawidłowa wartość podstawy kosztowej.
+    unlock_cost_basis:
+      success: Podstawa kosztowa została odblokowana. Może zostać zaktualizowana przy następnej synchronizacji.
+    cost_basis_sources:
+      manual: Ustawiona przez użytkownika
+      calculated: Obliczona na podstawie transakcji
+      provider: Od dostawcy
+    cost_basis_cell:
+      unknown: "--"
+      set_cost_basis_header: "Ustaw podstawę kosztową dla %{ticker} (%{qty} akcji)"
+      total_cost_basis_label: Łączna podstawa kosztowa
+      or_per_share_label: "Lub wprowadź na akcję:"
+      per_share: na akcję
+      cancel: Anuluj
+      save: Zapisz
+      overwrite_confirm_title: Nadpisać podstawę kosztową?
+      overwrite_confirm_body: "Spowoduje to zastąpienie obecnej podstawy kosztowej: %{current}."
+    holding:
+      per_share: na akcję
+      shares: "%{qty} akcji"
+      unknown: "--"
+      no_cost_basis: Brak podstawy kosztowej
+    index:
+      average_cost: Średni koszt
+      holdings: Pozycje
+      name: Nazwa
+      new_holding: Nowa transakcja
+      no_holdings: Brak pozycji do wyświetlenia.
+      return: Łączny zwrot
+      weight: Udział
+    missing_price_tooltip:
+      description: Ta inwestycja ma brakujące dane i nie mogliśmy obliczyć jej zwrotu ani wartości.
+      missing_data: Brak danych
+    show:
+      avg_cost_label: Średni koszt
+      current_market_price_label: Aktualna cena rynkowa
+      delete: Usuń
+      delete_subtitle: To działanie usunie pozycję oraz wszystkie powiązane z nią transakcje na tym koncie. Tej operacji nie można cofnąć.
+      delete_title: Usunąć pozycję
+      history: Historia
+      overview: Przegląd
+      portfolio_weight_label: Udział w portfelu
+      settings: Ustawienia
+      ticker_label: Ticker
+      trade_history_entry: "%{qty} akcji %{security} po %{price}"
+      total_return_label: Łączny zwrot
+      unknown: Nieznane
+      cost_basis_locked_label: Podstawa kosztowa jest zablokowana
+      cost_basis_locked_description: Ręcznie ustawiona podstawa kosztowa nie będzie zmieniana podczas synchronizacji.
+      unlock_cost_basis: Odblokuj
+      unlock_confirm_title: Odblokować podstawę kosztową?
+      unlock_confirm_body: Pozwoli to na aktualizację podstawy kosztowej przez synchronizacje z dostawcą lub obliczenia transakcji.

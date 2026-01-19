@@ -1,0 +1,20 @@
+---
+pl:
+  activerecord:
+    attributes:
+      user:
+        email: Adres e-mail
+        family: Wspólna przestrzeń
+        family_id: Wspólna przestrzeń
+        first_name: Imię
+        last_name: Nazwisko
+        password: Hasło
+        password_confirmation: Potwierdzenie hasła
+    errors:
+      models:
+        user:
+          attributes:
+            base:
+              cannot_deactivate_admin_with_other_users: "administrator nie może usunąć konta, gdy istnieją inni użytkownicy. Najpierw usuń wszystkich członków."
+            profile_image:
+              invalid_file_size: "rozmiar pliku musi być mniejszy niż %{max_megabytes} MB"

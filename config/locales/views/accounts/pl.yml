@@ -1,0 +1,142 @@
+---
+pl:
+  accounts:
+    account:
+      link_lunchflow: Połącz z Lunch Flow
+      link_provider: Połącz z dostawcą
+      unlink_provider: Odłącz od dostawcy
+      troubleshoot: Rozwiąż problem
+    chart:
+      data_not_available: Dane niedostępne dla wybranego okresu
+    create:
+      success: "Utworzono konto typu %{type}"
+    destroy:
+      success: "Konto typu %{type} zaplanowane do usunięcia"
+      cannot_delete_linked: "Nie można usunąć połączonego konta. Najpierw je odłącz."
+    empty:
+      empty_message: Dodaj konto poprzez połączenie, import lub ręczne wprowadzenie.
+      new_account: Nowe konto
+      no_accounts: Brak kont
+    form:
+      balance: Aktualne saldo
+      name_label: Nazwa konta
+      name_placeholder: Przykładowa nazwa konta
+      additional_details: Dodatkowe informacje
+      institution_name_label: Nazwa instytucji
+      institution_name_placeholder: np. Chase Bank
+      institution_domain_label: Domena instytucji
+      institution_domain_placeholder: np. chase.com
+      notes_label: Notatki
+      notes_placeholder: Zapisz dodatkowe informacje, takie jak numery kont, kody sortujące, IBAN, numery rozliczeniowe itp.
+    index:
+      accounts: Konta
+      manual_accounts:
+        other_accounts: Inne konta
+      new_account: Nowe konto
+      sync: Synchronizuj wszystkie
+    sync_all:
+      syncing: "Synchronizowanie kont..."
+    new:
+      import_accounts: Importuj konta
+      method_selector:
+        connected_entry: Połącz konto
+        connected_entry_eu: Połącz konto UE
+        link_with_provider: "Połącz z %{provider}"
+        lunchflow_entry: Połącz konto Lunch Flow
+        manual_entry: Wprowadź saldo ręcznie
+        title: Jak chcesz je dodać?
+      title: Co chcesz dodać?
+    show:
+      activity:
+        amount: Kwota
+        balance: Saldo
+        confirmed: Potwierdzone
+        date: Data
+        entries: wpisy
+        entry: wpis
+        filter: Filtruj
+        new: Nowy
+        new_activity: Nowa aktywność
+        new_balance: Nowe saldo
+        new_transaction: Nowa transakcja
+        no_entries: Nie znaleziono wpisów
+        pending: Oczekujące
+        search:
+          placeholder: Szukaj wpisów po nazwie
+        status: Status
+        title: Aktywność
+      chart:
+        balance: Saldo
+        owed: Kwota do spłaty
+      menu:
+        confirm_accept: Usuń „%{name}”
+        confirm_body_html: "<p>Usunięcie tego konta spowoduje skasowanie historii jego wartości, co wpłynie na różne aspekty Twojego ogólnego stanu kont. Działanie to będzie miało bezpośredni wpływ na obliczenia Twojego majątku netto oraz wykresy kont.</p><br /><p>Po usunięciu nie będzie możliwości przywrócenia informacji o koncie — aby je odzyskać, konieczne będzie dodanie go jako nowego konta.</p>"
+        confirm_title: Usunąć konto?
+        edit: Edytuj
+        import: Importuj transakcje
+        manage: Zarządzaj kontami
+    update:
+      success: "Zaktualizowano konto typu %{type}"
+    sidebar:
+      missing_data: Brak danych historycznych
+      missing_data_description: "%{product} korzysta z zewnętrznych dostawców do pobierania historycznych kursów walut, cen papierów wartościowych i innych danych. Dane te są wymagane do obliczania dokładnych historycznych sald kont."
+      configure_providers: Skonfiguruj dostawców tutaj.
+      tabs:
+        all: Wszystkie
+        assets: Aktywa
+        debts: Zobowiązania
+      new_asset: Nowe aktywo
+      new_debt: Nowe zobowiązanie
+      new_account: Nowe konto
+      new_account_group: "Nowa grupa: %{account_group}"
+    types:
+      depository: Gotówka
+      investment: Inwestycja
+      crypto: Kryptowaluty
+      property: Nieruchomość
+      vehicle: Pojazd
+      other_asset: Inne aktywo
+      credit_card: Karta kredytowa
+      loan: Pożyczka
+      other_liability: Inne zobowiązanie
+    tax_treatments:
+      taxable: Opodatkowane
+      tax_deferred: Odroczone podatkowo
+      tax_exempt: Zwolnione z podatku
+      tax_advantaged: Uprzywilejowane podatkowo
+    tax_treatment_descriptions:
+      taxable: Zyski opodatkowane w momencie realizacji
+      tax_deferred: Składki odliczane, opodatkowanie przy wypłacie
+      tax_exempt: Składki po opodatkowaniu, zyski nieopodatkowane
+      tax_advantaged: Specjalne korzyści podatkowe na określonych warunkach
+    subtype_regions:
+      us: Stany Zjednoczone
+      uk: Wielka Brytania
+      ca: Kanada
+      au: Australia
+      eu: Europa
+      generic: Ogólne
+    confirm_unlink:
+      title: Odłączyć konto od dostawcy?
+      description_html: "Za chwilę odłączysz <strong>%{account_name}</strong> od <strong>%{provider_name}</strong>. Konto zostanie przekształcone w konto ręczne."
+      warning_title: Co to oznacza
+      warning_no_sync: Konto nie będzie już automatycznie synchronizowane z dostawcą
+      warning_manual_updates: Konieczne będzie ręczne dodawanie transakcji i aktualizacja sald
+      warning_transactions_kept: Wszystkie istniejące transakcje i salda zostaną zachowane
+      warning_can_delete: Po odłączeniu będzie można usunąć konto, jeśli zajdzie taka potrzeba
+      confirm_button: Potwierdź i odłącz
+    unlink:
+      success: "Konto zostało pomyślnie odłączone. Jest teraz kontem ręcznym."
+      not_linked: "Konto nie jest połączone z żadnym dostawcą"
+      error: "Nie udało się odłączyć konta: %{error}"
+      generic_error: "Wystąpił nieoczekiwany błąd. Spróbuj ponownie."
+    select_provider:
+      title: Wybierz dostawcę do połączenia
+      description: "Wybierz dostawcę, którego chcesz użyć do połączenia konta %{account_name}"
+      already_linked: "Konto jest już połączone z dostawcą"
+      no_providers: "Brak skonfigurowanych dostawców"
+
+  email_confirmations:
+    new:
+      invalid_token: Nieprawidłowy lub wygasły link potwierdzający.
+      success_login: Twój adres e-mail został potwierdzony. Zaloguj się, używając nowego adresu e-mail.

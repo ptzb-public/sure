@@ -1,0 +1,27 @@
+---
+pl:
+  onboardings:
+    header:
+      sign_out: Wyloguj się
+    preferences:
+      currency: Waluta
+      date_format: Format daty
+      example: Przykładowe konto
+      locale: Język
+      preview: Podgląd wyświetlania danych na podstawie wybranych preferencji.
+      submit: Zakończ
+      subtitle: Skonfigurujmy Twoje preferencje.
+      title: Konfiguracja preferencji
+    profile:
+      country: Kraj
+      first_name: Imię
+      household_name: Nazwa wspólnej przestrzeni
+      last_name: Nazwisko
+      profile_image: Zdjęcie profilowe
+      submit: Kontynuuj
+      subtitle: Uzupełnijmy Twój profil.
+      title: Skonfiguruj podstawy
+    show:
+      message: Cieszymy się, że jesteś z nami. W kolejnym kroku zadamy kilka pytań, aby uzupełnić Twój profil i w pełni skonfigurować konto.
+      setup: Skonfiguruj konto
+      title: Poznaj %{product_name}

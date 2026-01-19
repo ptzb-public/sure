@@ -1,0 +1,151 @@
+pl:
+  activerecord:
+    attributes:
+      doorkeeper/application:
+        name: "Nazwa"
+        redirect_uri: "URI przekierowania"
+    errors:
+      models:
+        doorkeeper/application:
+          attributes:
+            redirect_uri:
+              fragment_present: "nie może zawierać fragmentu."
+              invalid_uri: "musi być poprawnym URI."
+              unspecified_scheme: "musi zawierać schemat."
+              relative_uri: "musi być bezwzględnym URI."
+              secured_uri: "musi być URI HTTPS/SSL."
+              forbidden_uri: "jest zabroniony przez serwer."
+            scopes:
+              not_match_configured: "nie jest zgodny z konfiguracją na serwerze."
+
+  doorkeeper:
+    applications:
+      confirmations:
+        destroy: "Czy na pewno?"
+      buttons:
+        edit: "Edytuj"
+        destroy: "Usuń"
+        submit: "Zapisz"
+        cancel: "Anuluj"
+        authorize: "Autoryzuj"
+      form:
+        error: "Ups! Sprawdź formularz — być może zawiera błędy"
+      help:
+        confidential: "Aplikacja będzie używana w środowisku, w którym sekret klienta może pozostać poufny. Natywne aplikacje mobilne oraz aplikacje typu Single Page App są uznawane za niepoufne."
+        redirect_uri: "Użyj jednej linii na każdy URI"
+        blank_redirect_uri: "Pozostaw puste, jeśli skonfigurowałeś(-aś) dostawcę do użycia Client Credentials, Resource Owner Password Credentials lub innego typu grantu niewymagającego URI przekierowania."
+        scopes: "Oddziel zakresy (scopes) spacjami. Pozostaw puste, aby użyć domyślnych zakresów."
+      edit:
+        title: "Edytuj aplikację"
+      index:
+        title: "Twoje aplikacje"
+        new: "Nowa aplikacja"
+        name: "Nazwa"
+        callback_url: "URL zwrotny"
+        confidential: "Poufna?"
+        actions: "Akcje"
+        confidentiality:
+          "yes": "Tak"
+          "no": "Nie"
+      new:
+        title: "Nowa aplikacja"
+      show:
+        title: "Aplikacja: %{name}"
+        application_id: "UID"
+        secret: "Sekret"
+        secret_hashed: "Zahaszowany sekret"
+        scopes: "Zakresy"
+        confidential: "Poufna"
+        callback_urls: "URL-e zwrotne"
+        actions: "Akcje"
+        not_defined: "Nie zdefiniowano"
+
+    authorizations:
+      buttons:
+        authorize: "Autoryzuj"
+        deny: "Odmów"
+      error:
+        title: "Wystąpił błąd"
+      new:
+        title: "Wymagana autoryzacja"
+        prompt: "Czy autoryzować %{client_name}, aby używał(a) Twojego konta?"
+        able_to: "Ta aplikacja będzie mogła:"
+      show:
+        title: "Kod autoryzacyjny"
+      form_post:
+        title: "Wyślij ten formularz"
+
+    authorized_applications:
+      confirmations:
+        revoke: "Czy na pewno?"
+      buttons:
+        revoke: "Unieważnij"
+      index:
+        title: "Twoje autoryzowane aplikacje"
+        application: "Aplikacja"
+        created_at: "Utworzono"
+        date_format: "%Y-%m-%d %H:%M:%S"
+
+    pre_authorization:
+      status: "Wstępna autoryzacja"
+
+    errors:
+      messages:
+        invalid_request:
+          unknown: "Żądanie nie zawiera wymaganego parametru, zawiera nieobsługiwaną wartość parametru lub jest w inny sposób nieprawidłowe."
+          missing_param: "Brak wymaganego parametru: %{value}."
+          request_not_authorized: "Żądanie musi zostać autoryzowane. Brakuje parametru wymaganego do autoryzacji lub jest on nieprawidłowy."
+          invalid_code_challenge: "Wymagany jest code challenge."
+        invalid_redirect_uri: "Żądany adres URI przekierowania jest nieprawidłowy lub nie pasuje do URI przekierowania klienta."
+        unauthorized_client: "Klient nie ma uprawnień do wykonania tego żądania tą metodą."
+        access_denied: "Właściciel zasobu lub serwer autoryzacji odrzucił żądanie."
+        invalid_scope: "Żądany zakres (scope) jest nieprawidłowy, nieznany lub błędnie sformułowany."
+        invalid_code_challenge_method:
+          zero: "Serwer autoryzacji nie obsługuje PKCE, ponieważ nie ma zaakceptowanych wartości code_challenge_method."
+          one: "code_challenge_method musi mieć wartość %{challenge_methods}."
+          other: "code_challenge_method musi mieć jedną z wartości: %{challenge_methods}."
+        server_error: "Serwer autoryzacji napotkał nieoczekiwany problem, który uniemożliwił obsługę żądania."
+        temporarily_unavailable: "Serwer autoryzacji tymczasowo nie może obsłużyć żądania z powodu przeciążenia lub prac serwisowych."
+
+        credential_flow_not_configured: "Przepływ Resource Owner Password Credentials nie powiódł się, ponieważ Doorkeeper.configure.resource_owner_from_credentials nie jest skonfigurowany."
+        resource_owner_authenticator_not_configured: "Nie udało się odnaleźć właściciela zasobu, ponieważ Doorkeeper.configure.resource_owner_authenticator nie jest skonfigurowany."
+        admin_authenticator_not_configured: "Dostęp do panelu administratora jest zabroniony, ponieważ Doorkeeper.configure.admin_authenticator nie jest skonfigurowany."
+
+        unsupported_response_type: "Serwer autoryzacji nie obsługuje tego typu odpowiedzi."
+        unsupported_response_mode: "Serwer autoryzacji nie obsługuje tego trybu odpowiedzi."
+
+        invalid_client: "Uwierzytelnienie klienta nie powiodło się z powodu nieznanego klienta, braku uwierzytelnienia klienta lub nieobsługiwanej metody uwierzytelnienia."
+        invalid_grant: "Podany grant autoryzacyjny jest nieprawidłowy, wygasł, został unieważniony, nie pasuje do URI przekierowania użytego w żądaniu autoryzacji lub został wydany innemu klientowi."
+        unsupported_grant_type: "Typ grantu nie jest obsługiwany przez serwer autoryzacji."
+
+        invalid_token:
+          revoked: "Token dostępu został unieważniony"
+          expired: "Token dostępu wygasł"
+          unknown: "Token dostępu jest nieprawidłowy"
+        revoke:
+          unauthorized: "Nie masz uprawnień do unieważnienia tego tokenu"
+
+        forbidden_token:
+          missing_scope: "Dostęp do tego zasobu wymaga zakresu \"%{oauth_scopes}\"."
+
+    flash:
+      applications:
+        create:
+          notice: "Aplikacja utworzona."
+        destroy:
+          notice: "Aplikacja usunięta."
+        update:
+          notice: "Aplikacja zaktualizowana."
+      authorized_applications:
+        destroy:
+          notice: "Aplikacja unieważniona."
+
+    layouts:
+      admin:
+        title: "Doorkeeper"
+        nav:
+          oauth2_provider: "Dostawca OAuth2"
+          applications: "Aplikacje"
+          home: "Strona główna"
+      application:
+        title: "Wymagana autoryzacja OAuth"

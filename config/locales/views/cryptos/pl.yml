@@ -1,0 +1,7 @@
+---
+pl:
+  cryptos:
+    edit:
+      edit: Edytuj %{account}
+    new:
+      title: Wprowadź saldo konta
