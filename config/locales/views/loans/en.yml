@@ -21,3 +21,10 @@ en:
       term: Term
       type: Type
       unknown: Unknown
+      edit_loan_details: Edit loan details
+      months:
+        one: "%{count} month"
+        other: "%{count} months"
+      years:
+        one: "%{count} year"
+        other: "%{count} years"

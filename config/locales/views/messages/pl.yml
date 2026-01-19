@@ -1,0 +1,7 @@
+---
+pl:
+  messages:
+    chat_form:
+      placeholder: "Zapytaj o cokolwiek..."
+      coming_soon: "Wkrótce dostępne"
+      disclaimer: "Odpowiedzi AI mają charakter wyłącznie informacyjny i nie stanowią porady finansowej."

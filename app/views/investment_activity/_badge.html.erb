@@ -22,6 +22,7 @@
   else
     "rgb(107 114 128)" # gray for "Other"
   end
+  display_label = t("transactions.activity_labels.#{label.parameterize(separator: '_')}", default: label)
 %>
 
 <span class="inline-flex items-center gap-1 text-xs font-medium rounded px-1.5 py-0.5 border"
@@ -29,5 +30,5 @@
         background-color: color-mix(in oklab, <%= color %> 10%, transparent);
         border-color: color-mix(in oklab, <%= color %> 20%, transparent);
         color: <%= color %>;">
-  <%= label %>
+  <%= display_label %>
 </span>

@@ -1,4 +1,4 @@
----
+﻿---
 pl:
   password_resets:
     disabled: Reset hasła przez Sure jest wyłączony. Zresetuj hasło za pośrednictwem swojego dostawcy tożsamości.
@@ -10,6 +10,7 @@ pl:
       submit: Resetuj hasło
       title: Reset hasła
       back: Wstecz
+      email_placeholder: twoj@email.pl
     update:
       invalid_token: Nieprawidłowy token.
       success: Twoje hasło zostało zresetowane.

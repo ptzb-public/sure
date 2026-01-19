@@ -35,10 +35,32 @@ en:
         invalid_enable_banking_account: Invalid Enable Banking account selected
     new:
       link_enable_banking_title: Link Enable Banking
+      connected_bank: Connected Bank
+      session_expires: Session expires
+      unknown: Unknown
+      connection: Connection
+      session_expired: Session expired - re-authorization required
+      configured: Configured
+      ready_to_connect: Ready to connect a bank
+      sync: Sync
+      reconnect: Reconnect
+      connect_bank: Connect Bank
+      remove_confirm: Are you sure you want to remove this connection?
+      remove: Remove
+      add_connection: Add Connection
+      not_configured_title: Enable Banking connection not configured
+      not_configured_body: Before you can link Enable Banking accounts, you need to configure your Enable Banking connection.
+      setup_steps: "Setup Steps:"
+      step_settings: Go to Settings ? Providers
+      step_find_section: Find the Enable Banking section
+      step_enter_credentials: Enter your Enable Banking credentials
+      step_return: Return here to link your accounts
+      go_to_provider_settings: Go to Provider Settings
     reauthorize:
       invalid_redirect: The authorization URL received is invalid. Please try again.
       reauthorization_failed: Reauthorization failed
     select_bank:
+      bic_label: BIC
       cancel: Cancel
       check_country: Please check your country code settings.
       credentials_required: Please configure your Enable Banking credentials first.
@@ -47,3 +69,39 @@ en:
       title: Select Your Bank
     update:
       success: Enable Banking configuration updated.
+    enable_banking_item:
+      deletion_in_progress: Deletion in progress
+      provider_name: Enable Banking
+      syncing: Syncing...
+      reconnect: Reconnect
+      last_synced: "Last synced %{time_ago} ago"
+      never_synced: Never synced
+      update: Update
+      delete: Delete
+      setup_needed: Setup needed
+      needs_setup:
+        one: "%{count} account imported from Enable Banking needs to be set up"
+        other: "%{count} accounts imported from Enable Banking need to be set up"
+      set_up_accounts: Set up accounts
+      no_accounts_found: No accounts found
+      no_accounts_found_description: No accounts were found from Enable Banking. Try syncing again.
+    setup_accounts:
+      title: Set Up Your Enable Banking Accounts
+      subtitle: Choose the correct account types for your imported accounts
+      creating_accounts: Creating Accounts...
+      account_type_instructions: "Choose the correct account type for each Enable Banking account:"
+      historical_range_title: "Historical Data Range:"
+      sync_start_label: "Start syncing transactions from:"
+      sync_start_help: Select how far back you want to sync transaction history. Maximum 1 year of history available.
+      balance_label: Balance
+      account_type_label: "Account Type:"
+      create_accounts: Create Accounts
+      cancel: Cancel
+    select_existing_account:
+      title: Link Enable Banking account
+      empty_title: All Enable Banking accounts appear to be linked already.
+      empty_hint_1: If you just connected or synced, try again after the sync completes.
+      empty_hint_2: To link a different account, first unlink it from the account?s actions menu.
+      balance_label: Balance
+      link: Link
+      cancel: Cancel

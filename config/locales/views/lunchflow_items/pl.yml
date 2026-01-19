@@ -1,10 +1,9 @@
----
 pl:
   lunchflow_items:
     create:
-      success: Połączenie z Lunch Flow zostało pomyślnie utworzone
+      success: Połączenie Lunch Flow zostało utworzone pomyślnie
     destroy:
-      success: Połączenie z Lunch Flow zostało usunięte
+      success: Połączenie Lunch Flow zostało usunięte
     index:
       title: Połączenia Lunch Flow
     loading:
@@ -20,17 +19,17 @@ pl:
         other: "Nie można połączyć %{count} kont bez nazw"
       link_failed: Nie udało się połączyć kont
       no_accounts_selected: Wybierz co najmniej jedno konto
-      partial_invalid: "Pomyślnie połączono %{created_count} kont, %{already_linked_count} było już połączonych, %{invalid_count} kont miało nieprawidłowe nazwy"
-      partial_success: "Pomyślnie połączono %{created_count} kont. %{already_linked_count} kont było już połączonych: %{already_linked_names}"
+      partial_invalid: "Połączono %{created_count} kont, %{already_linked_count} było już połączonych, %{invalid_count} miało nieprawidłowe nazwy"
+      partial_success: "Połączono %{created_count} kont. %{already_linked_count} było już połączonych: %{already_linked_names}"
       success:
         one: "Pomyślnie połączono %{count} konto"
         other: "Pomyślnie połączono %{count} kont"
     lunchflow_item:
       accounts_need_setup: Konta wymagają konfiguracji
       delete: Usuń połączenie
-      deletion_in_progress: trwa usuwanie...
+      deletion_in_progress: usuwanie w toku...
       error: Błąd
-      no_accounts_description: To połączenie nie ma jeszcze żadnych powiązanych kont.
+      no_accounts_description: To połączenie nie ma jeszcze przypisanych kont.
       no_accounts_title: Brak kont
       setup_action: Skonfiguruj nowe konta
       setup_description: "%{linked} z %{total} kont połączonych. Wybierz typy kont dla nowo zaimportowanych kont Lunch Flow."
@@ -39,14 +38,14 @@ pl:
       status_never: Nigdy nie synchronizowano
       status_with_summary: "Ostatnia synchronizacja %{timestamp} temu • %{summary}"
       syncing: Synchronizacja...
-      total: Łącznie
+      total: Razem
       unlinked: Niepołączone
     select_accounts:
-      accounts_selected: wybrane konta
+      accounts_selected: wybranych kont
       api_error: "Błąd API: %{message}"
       cancel: Anuluj
-      configure_name_in_lunchflow: Nie można zaimportować — skonfiguruj nazwę konta w Lunch Flow
-      description: Wybierz konta, które chcesz połączyć ze swoim kontem %{product_name}.
+      configure_name_in_lunchflow: "Nie można zaimportować – skonfiguruj nazwę konta w Lunch Flow"
+      description: Wybierz konta, które chcesz połączyć z kontem %{product_name}.
       link_accounts: Połącz wybrane konta
       no_accounts_found: Nie znaleziono kont. Sprawdź konfigurację klucza API.
       no_api_key: Klucz API Lunch Flow nie jest skonfigurowany. Skonfiguruj go w Ustawieniach.
@@ -57,8 +56,8 @@ pl:
       all_accounts_already_linked: Wszystkie konta Lunch Flow są już połączone
       api_error: "Błąd API: %{message}"
       cancel: Anuluj
-      configure_name_in_lunchflow: Nie można zaimportować — skonfiguruj nazwę konta w Lunch Flow
-      description: Wybierz konto Lunch Flow, aby połączyć je z tym kontem. Transakcje będą synchronizowane i automatycznie deduplikowane.
+      configure_name_in_lunchflow: "Nie można zaimportować – skonfiguruj nazwę konta w Lunch Flow"
+      description: Wybierz konto Lunch Flow do połączenia z tym kontem. Transakcje będą synchronizowane i automatycznie deduplikowane.
       link_account: Połącz konto
       no_account_specified: Nie wskazano konta
       no_accounts_found: Nie znaleziono kont Lunch Flow. Sprawdź konfigurację klucza API.
@@ -82,46 +81,46 @@ pl:
       no_api_key: "Klucz API Lunch Flow nie jest skonfigurowany. Sprawdź ustawienia połączenia."
       account_types:
         skip: Pomiń to konto
-        depository: Konto bieżące lub oszczędnościowe
+        depository: Konto osobiste lub oszczędnościowe
         credit_card: Karta kredytowa
         investment: Konto inwestycyjne
-        loan: Pożyczka lub kredyt hipoteczny
-        other_asset: Inne aktywo
+        loan: Kredyt lub hipoteka
+        other_asset: Inny aktyw
       subtype_labels:
         depository: "Podtyp konta:"
         credit_card: ""
         investment: "Typ inwestycji:"
-        loan: "Typ pożyczki:"
+        loan: "Typ kredytu:"
         other_asset: ""
       subtype_messages:
         credit_card: "Karty kredytowe zostaną automatycznie skonfigurowane jako konta kart kredytowych."
         other_asset: "Dla innych aktywów nie są wymagane dodatkowe opcje."
       subtypes:
         depository:
-          checking: Rachunek bieżący
-          savings: Rachunek oszczędnościowy
-          hsa: Health Savings Account
+          checking: Konto bieżące
+          savings: Konto oszczędnościowe
+          hsa: Konto oszczędnościowe na cele zdrowotne (HSA)
           cd: Lokata terminowa
-          money_market: Rynek pieniężny
+          money_market: Konto rynku pieniężnego
         investment:
-          brokerage: Konto brokerskie
-          pension: Emerytura
-          retirement: Konto emerytalne
+          brokerage: Maklerskie
+          pension: Emerytalne
+          retirement: Emerytalne
           "401k": "401(k)"
           roth_401k: "Roth 401(k)"
           "403b": "403(b)"
-          tsp: Thrift Savings Plan
+          tsp: Plan oszczędnościowy TSP
           "529_plan": "Plan 529"
-          hsa: Health Savings Account
+          hsa: Konto HSA
           mutual_fund: Fundusz inwestycyjny
           ira: Tradycyjne IRA
           roth_ira: Roth IRA
-          angel: Angel
+          angel: Angel investment
         loan:
-          mortgage: Kredyt hipoteczny
+          mortgage: Hipoteka
           student: Kredyt studencki
           auto: Kredyt samochodowy
-          other: Inna pożyczka
+          other: Inny kredyt
       balance: Saldo
       cancel: Anuluj
       choose_account_type: "Wybierz właściwy typ konta dla każdego konta Lunch Flow:"
@@ -129,15 +128,38 @@ pl:
       creating_accounts: Tworzenie kont...
       historical_data_range: "Zakres danych historycznych:"
       subtitle: Wybierz właściwe typy kont dla zaimportowanych kont
-      sync_start_date_help: Wybierz, jak daleko wstecz chcesz synchronizować historię transakcji. Maksymalnie dostępne są 3 lata historii.
+      sync_start_date_help: Wybierz, jak daleko wstecz synchronizować historię transakcji. Maksymalnie 3 lata danych.
       sync_start_date_label: "Rozpocznij synchronizację transakcji od:"
-      title: Skonfiguruj swoje konta Lunch Flow
+      title: Skonfiguruj konta Lunch Flow
     complete_account_setup:
       all_skipped: "Wszystkie konta zostały pominięte. Nie utworzono żadnych kont."
       creation_failed: "Nie udało się utworzyć kont: %{error}"
-      no_accounts: "Brak kont do skonfigurowania."
-      success: "Pomyślnie utworzono %{count} kont."
+      no_accounts: "Brak kont do konfiguracji."
+      success:
+        one: "Pomyślnie utworzono %{count} konto."
+        other: "Pomyślnie utworzono %{count} kont."
     sync:
       success: Synchronizacja rozpoczęta
     update:
       success: Połączenie Lunch Flow zostało zaktualizowane
+    api_error:
+      title: Błąd połączenia Lunch Flow
+      unable_to_connect: Nie można połączyć się z Lunch Flow
+      common_issues_title: "Najczęstsze problemy:"
+      issues:
+        invalid_api_key_html: "<strong>Nieprawidłowy klucz API:</strong> Sprawdź klucz API w Ustawieniach dostawców"
+        expired_credentials_html: "<strong>Wygasłe dane uwierzytelniające:</strong> Wygeneruj nowy klucz API w Lunch Flow"
+        network_issue_html: "<strong>Problem sieciowy:</strong> Sprawdź połączenie internetowe"
+        service_down_html: "<strong>Niedostępna usługa:</strong> API Lunch Flow może być chwilowo niedostępne"
+      check_provider_settings: Sprawdź ustawienia dostawców
+    setup_required:
+      title: Wymagana konfiguracja Lunch Flow
+      api_key_not_configured: Klucz API nie jest skonfigurowany
+      before_linking: Zanim połączysz konta Lunch Flow, musisz skonfigurować klucz API.
+      setup_steps_title: "Kroki konfiguracji:"
+      steps:
+        settings_providers_html: "Przejdź do <strong>Ustawienia → Dostawcy</strong>"
+        find_lunchflow_html: "Znajdź sekcję <strong>Lunch Flow</strong>"
+        enter_api_key: Wprowadź klucz API Lunch Flow
+        return_here: Wróć tutaj, aby połączyć konta
+      go_to_provider_settings: Przejdź do ustawień dostawców

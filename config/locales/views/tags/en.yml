@@ -14,6 +14,8 @@ en:
       empty: No tags yet
       new: New tag
       tags: Tags
+      delete_all: Delete all
+      all_tags_resource: all tags
     new:
       new: New tag
     tag:

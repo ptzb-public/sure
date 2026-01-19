@@ -1,14 +1,25 @@
----
+﻿---
 en:
   properties:
     edit:
       edit: Edit %{account}
+      manual_title: Enter property manually
+      save: Save
+      next: Next
     form:
       address_line1: Street address
       address_line1_placeholder: 123 Main St
       area: Living area
       area_placeholder: '2000'
       area_unit: Unit of measurement
+      area_unit_label: Area Unit
+      area_unit_sqft: Square Feet
+      area_unit_sqm: Square Meters
+      area_optional: Area (optional)
+      name_label: Name
+      name_placeholder: Vacation home
+      subtype_label: Property type
+      year_built_optional: Year built (optional)
       country: Country
       country_placeholder: US
       locality: City
@@ -22,7 +33,19 @@ en:
       year_built: Year built
       year_built_placeholder: '2000'
     new:
+      manual_title: Enter property manually
+      next: Next
       title: Enter property details
+    address:
+      title: Enter property manually
+      save: Save
+    balances:
+      title: Enter property value
+      market_value_label: Estimated market value
+      market_value_tooltip: The estimated market value of your property. This number can often be found on sites like Zillow or Redfin, and is never an exact number.
+      market_value_placeholder: '0'
+      save: Save
+      next: Next
     overview:
       living_area: Living Area
       market_value: Market Value
@@ -30,3 +53,8 @@ en:
       trend: Trend
       unknown: Unknown
       year_built: Year Built
+      edit_account_details: Edit account details
+    form_tabs:
+      overview: Overview
+      value: Value
+      address: Address

@@ -1,4 +1,4 @@
----
+﻿---
 pl:
   settings:
     hostings:
@@ -36,6 +36,11 @@ pl:
           yahoo_finance: Yahoo Finance
       brand_fetch_settings:
         description: Wprowadź identyfikator klienta (Client ID) otrzymany od Brand Fetch
+        env_configured_message: Pomyślnie skonfigurowano Client ID Brand Fetch przez zmienną BRAND_FETCH_CLIENT_ID.
+        show_details: (pokaż szczegóły)
+        details_step_1_html: Wejdź na %{link} i utwórz darmowe konto deweloperskie Brand Fetch.
+        details_step_2_html: Przejdź do strony %{link}.
+        details_step_3_html: Kliknij ikonę oka w sekcji "Your Client ID", aby ujawnić <strong>Client ID</strong> i wklej je poniżej.
         label: Client ID
         placeholder: Wprowadź tutaj swój Client ID
         title: Ustawienia Brand Fetch
@@ -63,6 +68,10 @@ pl:
         connection_failed: Nie udało się połączyć z Yahoo Finance
         troubleshooting: Sprawdź połączenie internetowe i ustawienia zapory sieciowej. Yahoo Finance może być chwilowo niedostępny.
       twelve_data_settings:
+        show_details: (pokaż szczegóły)
+        details_step_1_html: Wejdź na %{link} i utwórz darmowe konto deweloperskie Twelve Data.
+        details_step_2_html: Przejdź do strony %{link}.
+        details_step_3_html: Ujawnij swój <strong>Secret Key</strong> i wklej go poniżej.
         api_calls_used: "%{used} / %{limit} dziennych wywołań API wykorzystanych (%{percentage})"
         description: Wprowadź klucz API otrzymany od Twelve Data
         env_configured_message: Pomyślnie skonfigurowano za pomocą zmiennej środowiskowej TWELVE_DATA_API_KEY.
@@ -87,3 +96,5 @@ pl:
         include_pending_label: Uwzględniaj transakcje oczekujące
         include_pending_description: Po włączeniu transakcje oczekujące (niezaksięgowane) będą importowane i automatycznie uzgadniane po ich zaksięgowaniu. Wyłącz, jeśli Twój bank dostarcza niewiarygodne dane o transakcjach oczekujących.
         env_configured_message: To ustawienie jest wyłączone, ponieważ ustawiono zmienną środowiskową dostawcy (SIMPLEFIN_INCLUDE_PENDING lub PLAID_INCLUDE_PENDING). Usuń ją, aby włączyć to ustawienie.
+
+

@@ -1,4 +1,4 @@
----
+﻿---
 en:
   password_resets:
     disabled: Password reset via Sure is disabled. Please reset your password through your identity provider.
@@ -10,6 +10,8 @@ en:
       submit: Reset password
       title: Reset password
       back: Back
+      email_placeholder: you@example.com
     update:
       invalid_token: Invalid token.
       success: Your password has been reset.
+

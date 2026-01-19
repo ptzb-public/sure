@@ -2,6 +2,23 @@
 pl:
   family_exports:
     list:
-      in_progress: W toku
-      complete: Zakończone
-      failed: Niepowodzenie
+      in_progress: "W toku"
+      complete: "Zakończony"
+      failed: "Nieudany"
+      export_from: "Eksport z %{datetime}"
+      exporting: "Eksportowanie..."
+      delete_confirm: "Czy na pewno chcesz usunąć ten eksport? Tej operacji nie można cofnąć."
+      delete_failed_confirm: "Czy na pewno chcesz usunąć ten nieudany eksport?"
+      no_exports: "Brak eksportów."
+    new:
+      title: "Eksportuj swoje dane"
+      subtitle: "Pobierz wszystkie swoje dane finansowe"
+      included_title: "Co zostanie uwzględnione:"
+      included_accounts: "Wszystkie konta i salda"
+      included_transactions: "Historia transakcji"
+      included_trades: "Transakcje inwestycyjne"
+      included_categories: "Kategorie, tagi i reguły"
+      note_title: "Uwaga:"
+      note_body: "Eksport obejmuje wszystkie Twoje dane, jednak tylko część z nich można ponownie zaimportować za pomocą funkcji importu CSV. Obsługiwane są importy kont, transakcji (z kategoriami i tagami) oraz transakcji inwestycyjnych. Pozostałe dane kont służą wyłącznie do celów archiwalnych."
+      cancel: "Anuluj"
+      export_data: "Eksportuj dane"

@@ -8,12 +8,23 @@ en:
         home: Home
         reports: Reports
         transactions: Transactions
+      free_trial: Free trial
+      days_remaining:
+        one: "%{count} day remaining"
+        other: "%{count} days remaining"
+      upgrade: Upgrade
     auth:
       existing_account: Already have an account?
       no_account: New to %{product_name}?
       sign_in: Sign in
       sign_up: Create account
     shared:
+      confirm_dialog:
+        title: Are you sure?
+        subtitle: This action cannot be undone.
+        confirm: Confirm
       footer:
         privacy_policy: Privacy Policy
         terms_of_service: Terms of Service
+    lookbooks:
+      title: Component Preview

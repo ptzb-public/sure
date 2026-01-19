@@ -1,3 +1,22 @@
 pl:
   subscriptions:
     self_hosted_alert: "%{product_name} nie jest dostępny w trybie self-hosted."
+    plan_choice:
+      per_year: "/rok"
+      per_month: "/miesiąc"
+      or_per_week: "lub %{amount}/tydzień"
+      billed_annually: "Rozliczane rocznie, 2 miesiące gratis"
+      billed_monthly: "Rozliczane miesięcznie"
+    upgrade:
+      title: "Ulepsz plan"
+      account_settings: "Ustawienia konta"
+      sign_out: "Wyloguj się"
+      trial_days_left:
+        one: "Do końca okresu próbnego pozostał %{count} dzień"
+        other: "Do końca okresu próbnego pozostały %{count} dni"
+      trial_over: "Okres próbny zakończył się"
+      unlock_prefix: "Odblokuj"
+      unlock_suffix: "już dziś"
+      pick_plan: "Aby dalej korzystać z Sure, wybierz jeden z poniższych planów."
+      subscribe: "Subskrybuj i odblokuj Sure"
+      stripe_redirect: "W następnym kroku zostaniesz przekierowany do Stripe, który obsługuje płatności."

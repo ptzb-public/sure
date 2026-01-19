@@ -1,15 +1,23 @@
 ---
 pl:
   impersonation_sessions:
-    approve:
-      success: Żądanie zatwierdzone
-    complete:
-      success: Sesja zakończona
-    create:
-      success: Żądanie wysłane do użytkownika. Oczekiwanie na zatwierdzenie.
-    join:
-      success: Dołączono do sesji
-    leave:
-      success: Opuszczono sesję
-    reject:
-      success: Żądanie odrzucone
+    super_admin_bar:
+      super_admin: "Super Administrator"
+      jobs: "Zadania"
+      impersonating: "Podszywanie się: %{email}"
+      leave: "Opuść"
+      terminate: "Zakończ"
+      join_session_prompt: "Dołącz do sesji"
+      join: "Dołącz"
+      uuid_placeholder: "UUID"
+      request_impersonation: "Poproś o podszywanie się"
+    approval_bar:
+      access: "Dostęp %{kind}"
+      session: "Sesja"
+      request: "Żądanie"
+      pending_message: "Zespół wsparcia Sure poprosił o dostęp do Twojego konta (najprawdopodobniej w celu pomocy przy zgłoszeniu). Jeśli zatwierdzisz żądanie, wszystkie wykonane działania będą rejestrowane do celów bezpieczeństwa i audytu."
+      approve: "Zatwierdź"
+      reject: "Odrzuć"
+      in_progress_message: "Ktoś z zespołu Sure Finances aktualnie przegląda Twoje dane. Możesz zakończyć sesję w dowolnym momencie."
+      end_session: "Zakończ sesję"
+      error_message: "Coś poszło nie tak. Skontaktuj się z nami."

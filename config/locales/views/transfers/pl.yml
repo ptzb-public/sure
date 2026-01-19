@@ -1,30 +1,37 @@
----
-pl:
+﻿pl:
   transfers:
     create:
-      success: Transfer utworzony
+      success: Przelew utworzony
     destroy:
-      success: Transfer usunięty
+      success: Przelew usunięty
     form:
       amount: Kwota
+      amount_placeholder: '100'
       date: Data
       expense: Wydatek
       from: Z
       income: Przychód
       select_account: Wybierz konto
-      submit: Utwórz transfer
+      submit: Utwórz przelew
       to: Do
-      transfer: Transfer
+      transfer: Przelew
     new:
-      title: Nowy transfer
+      title: Nowy przelew
     show:
-      delete: Usuń transfer
-      delete_subtitle: Usunięcie transferu nie spowoduje usunięcia powiązanych transakcji.
-      delete_title: Usunąć transfer?
+      amount: Kwota
+      amount_placeholder: '100'
+      category: Kategoria
+      date: Data
+      delete: Usuń przelew
+      delete_subtitle: To usunie przelew, ale nie usunie powiązanych transakcji.
+      delete_title: Usunąć przelew?
       details: Szczegóły
+      from: Z
       note_label: Notatki
-      note_placeholder: Dodaj notatkę do tego transferu
+      note_placeholder: Dodaj notatkę do tego przelewu
       overview: Przegląd
       settings: Ustawienia
+      to: Do
+      uncategorized: Bez kategorii
     update:
-      success: Transfer zaktualizowany
+      success: Przelew zaktualizowany

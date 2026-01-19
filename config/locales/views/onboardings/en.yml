@@ -7,10 +7,15 @@ en:
       currency: Currency
       date_format: Date format
       example: Example account
+      as_of: as of
       locale: Language
       preview: Preview how data displays based on preferences.
       submit: Complete
       subtitle: Let's configure your preferences.
+      theme_label: Color theme
+      theme_system: System
+      theme_light: Light
+      theme_dark: Dark
       title: Configure your preferences
     profile:
       country: Country
@@ -26,3 +31,43 @@ en:
         few questions to complete your profile and then get you all set up.
       setup: Set up account
       title: Meet %{product_name}
+
+    trial:
+      headline: Try Sure for 14 days.
+      no_card_required: No credit card required
+      trial_description: Starting the trial activates your account for Sure. You won't need to enter payment details.
+      cta_start_trial: Try Sure for 14 days
+      cta_continue_trial: Continue trial
+      cta_upgrade: Upgrade
+      how_it_works_title: How your trial will work
+      today_title: Today
+      today_description: You'll get free access to Sure for 14 days
+      day_13_title: "In 13 days (%{date})"
+      day_13_description: We'll notify you to remind you when your trial will end.
+      day_14_title: "In 14 days (%{date})"
+      day_14_description: Your trial ends - subscribe to continue using Sure
+      included_title: Here's what's included
+      included_items:
+        institutions: More than 10,000 institutions to connect to
+        unlimited_accounts: Connect unlimited accounts and account types
+        performance: Performance and investment returns across portfolio
+        transactions: Comprehensive transaction tracking experience
+        ai_access: Unlimited access and chats with Sure AI
+        manual_tracking: Manual account tracking that works well
+        currencies: Multiple currencies and near global coverage
+        early_access: Early access to newly released features
+        priority_support: Priority human support from team
+
+    goals:
+      title: What brings you here?
+      subtitle: Select one or more goals that you have with using %{product_name} as your personal finance tool.
+      next: Next
+      goals:
+        unified_accounts: See all my accounts in one place
+        cashflow: Understand cashflow and expenses
+        budgeting: Manage financial plans and budgeting
+        partner: Manage finances with a partner
+        investments: Track investments
+        ai_insights: Let AI help me understand my finances
+        optimization: Analyze and optimize accounts
+        reduce_stress: Reduce financial stress or anxiety

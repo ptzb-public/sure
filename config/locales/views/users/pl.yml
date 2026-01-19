@@ -15,3 +15,11 @@ pl:
       unauthorized: Nie masz uprawnień do wykonania tej akcji.
     reset_with_sample_data:
       success: Twoje konto zostało zresetowane, a dane przykładowe są przygotowywane. Wkrótce zobaczysz dane demonstracyjne.
+
+    user_menu:
+      version: Wersja
+      settings: Ustawienia
+      changelog: Zmiany
+      feedback: Opinie
+      contact: Kontakt
+      log_out: Wyloguj

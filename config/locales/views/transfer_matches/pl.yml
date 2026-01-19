@@ -1,0 +1,20 @@
+---
+pl:
+  transfer_matches:
+    matching_fields:
+      select_method: Wybierz metodę dopasowania transakcji.
+      match_existing: Dopasuj istniejącą transakcję (zalecane)
+      create_new: Utwórz nową transakcję
+      method_label: Metoda dopasowania
+      matching_transaction_label: Transakcja do dopasowania
+      target_account_label: Konto docelowe
+      no_matches_notice: Nie znaleźliśmy transakcji do dopasowania z innych kont. Wybierz konto, a utworzymy dla Ciebie nową transakcję wpływu.
+    new:
+      title: Dopasuj przelew lub płatność
+      from_account: Z konta
+      from_account_with_name: "Z konta: %{account_name}"
+      to_account: Na konto
+      to_account_with_name: "Na konto: %{account_name}"
+      outflow_transaction_label: Transakcja wypływu
+      inflow_transaction_label: Transakcja wpływu
+      submit: Utwórz dopasowanie przelewu

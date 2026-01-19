@@ -17,6 +17,7 @@ en:
       title: New balance
     show:
       amount: Amount
+      account_value_on_date: Account value on date
       date_label: Date
       delete: Delete
       delete_subtitle: This action cannot be undone
@@ -28,3 +29,26 @@ en:
       note_placeholder: Add any additional details about this entry
       overview: Overview
       settings: Settings
+      update_value: Update value
+      value_update_resource: value update
+    confirmation_contents:
+      investment_intro_prefix: "This will %{action} the account value on"
+      investment_intro_suffix: "to:"
+      total_account_value: Total account value
+      holdings_value: Holdings value
+      brokerage_cash: Brokerage cash
+      non_investment_intro_prefix: "%{action} %{balance_type} on"
+      non_investment_intro_middle: "to"
+      balance_types:
+        account_balance: account balance
+        credit_card_balance: credit card balance
+        loan_balance: loan balance
+        property_value: property value
+        vehicle_value: vehicle value
+        crypto_balance: crypto balance
+        asset_value: asset value
+        liability_balance: liability balance
+        balance: balance
+      recalculated_notice: "All future transactions and balances will be recalculated based on this %{change_type}."
+      change: change
+      update: update

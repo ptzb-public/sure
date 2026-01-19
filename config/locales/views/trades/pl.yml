@@ -1,4 +1,4 @@
----
+﻿---
 pl:
   trades:
     form:
@@ -11,6 +11,12 @@ pl:
       submit: Dodaj transakcję
       ticker_placeholder: AAPL
       type: Typ
+      type_buy: Kupno
+      type_sell: Sprzedaż
+      type_deposit: Wpłata
+      type_withdrawal: Wypłata
+      type_interest: Odsetki
+      qty_placeholder: '10'
     header:
       buy: Kupno
       current_market_price_label: Aktualna cena rynkowa
@@ -37,4 +43,5 @@ pl:
       note_label: Notatka
       note_placeholder: Dodaj tutaj dodatkowe notatki...
       quantity_label: Ilość
+      type: Type
       settings: Ustawienia

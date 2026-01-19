@@ -1,0 +1,14 @@
+---
+en:
+  doorkeeper:
+    authorizations:
+      error:
+        title: Authorization error
+        back: Go back
+      form_post:
+        title: "Authorization"
+        redirecting: "Redirecting you back to the application..."
+      show:
+        title: "Authorization complete"
+        authorization_code: "Authorization Code:"
+        copy_instruction: "Copy this code and paste it into the application."

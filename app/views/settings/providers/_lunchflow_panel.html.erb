@@ -1,16 +1,16 @@
 <div class="space-y-4">
   <div class="prose prose-sm text-secondary">
-    <p class="text-primary font-medium">Setup instructions:</p>
+    <p class="text-primary font-medium"><%= t(".setup_instructions") %></p>
     <ol>
-      <li>Visit <a href="https://www.lunchflow.app" target="_blank" rel="noopener noreferrer" class="link">Lunch Flow</a> to get your API key</li>
-      <li>Paste your API key below and click the Save button</li>
-      <li>After a successful connection, go to the Accounts tab to set up new accounts and link them to your existing ones</li>
+      <li><%= t(".setup_step_1_html", link: link_to(t(".lunchflow_link_text"), "https://www.lunchflow.app", target: "_blank", rel: "noopener noreferrer", class: "link")) %></li>
+      <li><%= t(".setup_step_2") %></li>
+      <li><%= t(".setup_step_3_html", link: link_to(t(".accounts_link_text"), accounts_path, class: "link")) %></li>
     </ol>
 
-    <p class="text-primary font-medium">Field descriptions:</p>
+    <p class="text-primary font-medium"><%= t(".field_descriptions") %></p>
     <ul>
-      <li><strong>API Key:</strong> Your Lunch Flow API key for authentication (required)</li>
-      <li><strong>Base URL:</strong> Base URL for Lunch Flow API (optional, defaults to https://lunchflow.app/api/v1)</li>
+      <li><strong><%= t(".api_key_label") %>:</strong> <%= t(".api_key_description") %></li>
+      <li><strong><%= t(".base_url_label") %>:</strong> <%= t(".base_url_description") %></li>
     </ul>
   </div>
 
@@ -23,7 +23,7 @@
 
   <%
     # Get or initialize a lunchflow_item for this family
-    lunchflow_item = Current.family.lunchflow_items.first_or_initialize(name: "Lunch Flow Connection")
+    lunchflow_item = Current.family.lunchflow_items.first_or_initialize(name: t(".connection_name"))
     is_new_record = lunchflow_item.new_record?
   %>
 
@@ -34,17 +34,17 @@
                        data: { turbo: true },
                        class: "space-y-3" do |form| %>
     <%= form.text_field :api_key,
-                        label: "API Key",
-                        placeholder: is_new_record ? "Paste API key here" : "Enter new API key to update",
+                        label: t(".api_key_label"),
+                        placeholder: is_new_record ? t(".api_key_placeholder_new") : t(".api_key_placeholder_update"),
                         type: :password %>
 
     <%= form.text_field :base_url,
-                        label: "Base URL (Optional)",
-                        placeholder: "https://lunchflow.app/api/v1 (default)",
+                        label: t(".base_url_label_optional"),
+                        placeholder: t(".base_url_placeholder"),
                         value: lunchflow_item.base_url %>
 
     <div class="flex justify-end">
-      <%= form.submit is_new_record ? "Save Configuration" : "Update Configuration",
+      <%= form.submit is_new_record ? t(".save_configuration") : t(".update_configuration"),
                       class: "inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-medium text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 transition-colors" %>
     </div>
   <% end %>
@@ -53,10 +53,10 @@
   <div class="flex items-center gap-2">
     <% if items&.any? %>
       <div class="w-2 h-2 bg-success rounded-full"></div>
-      <p class="text-sm text-secondary">Configured and ready to use. Visit the <a href="<%= accounts_path %>" class="link">Accounts</a> tab to manage and set up accounts.</p>
+      <p class="text-sm text-secondary"><%= t(".configured_ready_html", link: link_to(t(".accounts_link_text"), accounts_path, class: "link")) %></p>
     <% else %>
       <div class="w-2 h-2 bg-gray-400 rounded-full"></div>
-      <p class="text-sm text-secondary">Not configured</p>
+      <p class="text-sm text-secondary"><%= t(".not_configured") %></p>
     <% end %>
   </div>
 </div>

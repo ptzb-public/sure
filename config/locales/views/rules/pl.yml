@@ -1,25 +1,36 @@
----
-pl:
+﻿pl:
   rules:
     no_action: Brak akcji
+
     actions:
       value_placeholder: Wprowadź wartość
+      to: do
+
+    conditions:
+      and: oraz
+      match: spełnia
+      of_the_following: z następujących warunków
+      all: wszystkie
+      any: dowolny
+      number_placeholder: '10'
+
     apply_all:
       button: Zastosuj wszystkie
-      confirm_title: Zastosować wszystkie reguły
-      confirm_message: Za chwilę zostanie zastosowanych %{count} reguł, które wpłyną na %{transactions} unikalnych transakcji. Potwierdź, jeśli chcesz kontynuować.
+      confirm_title: Zastosuj wszystkie reguły
+      confirm_message: Zamierzasz zastosować %{count} reguł, które wpłyną na %{transactions} unikalnych transakcji. Potwierdź, czy chcesz kontynuować.
       confirm_button: Potwierdź i zastosuj wszystkie
       success: Wszystkie reguły zostały dodane do kolejki wykonania
       ai_cost_title: Szacowanie kosztu AI
-      ai_cost_message: Spowoduje to użycie AI do kategoryzacji maksymalnie %{transactions} transakcji.
+      ai_cost_message: Ta operacja użyje AI do kategoryzacji maksymalnie %{transactions} transakcji.
       estimated_cost: "Szacowany koszt: ~$%{cost}"
-      cost_unavailable_model: Szacowanie kosztu niedostępne dla modelu „%{model}”.
-      cost_unavailable_no_provider: Szacowanie kosztu niedostępne (brak skonfigurowanego dostawcy LLM).
-      cost_warning: Mogą zostać naliczone koszty — sprawdź aktualne ceny u dostawcy modelu.
+      cost_unavailable_model: Brak możliwości oszacowania kosztu dla modelu „%{model}”.
+      cost_unavailable_no_provider: Brak możliwości oszacowania kosztu (nie skonfigurowano dostawcy LLM).
+      cost_warning: Operacja może generować koszty — sprawdź aktualny cennik u dostawcy modelu.
       view_usage: Zobacz historię użycia
+
     recent_runs:
       title: Ostatnie uruchomienia
-      description: Przeglądaj historię wykonania reguł, w tym status powodzenia/niepowodzenia oraz liczbę transakcji.
+      description: Przeglądaj historię wykonywania reguł wraz ze statusem powodzenia/błędu i liczbą transakcji.
       unnamed_rule: Reguła bez nazwy
       columns:
         date_time: Data / godzina
@@ -34,6 +45,45 @@ pl:
         manual: Ręczne
         scheduled: Zaplanowane
       statuses:
-        pending: Oczekujące
-        success: Zakończone powodzeniem
+        pending: Oczekuje
+        success: Zakończone
         failed: Niepowodzenie
+
+    form:
+      name_title: Nazwa reguły (opcjonalnie)
+      name_placeholder: Wprowadź nazwę tej reguły
+      if: JEŻELI
+      add_condition: Dodaj warunek
+      add_condition_group: Dodaj grupę warunków
+      then: WTEDY
+      add_action: Dodaj akcję
+      for: DLA
+      all_past_and_future: "Wszystkie przeszłe i przyszłe %{resource}"
+      starting_from: Począwszy od
+
+    confirm:
+      confirm_changes_named: "Potwierdź zmiany dla „%{name}”"
+      confirm_changes: Potwierdź zmiany
+      apply_to_html: >
+        Zamierzasz zastosować tę regułę do
+        <span class="text-primary font-medium">%{count} %{resource}</span>,
+        które spełniają określone kryteria. Potwierdź, czy chcesz kontynuować.
+      ai_cost_title: Szacowanie kosztu AI
+      ai_cost_estimated: >
+        Ta operacja użyje AI do kategoryzacji %{count} transakcji.
+        Szacowany koszt:
+        <span class="font-semibold">~$%{cost}</span>
+      ai_cost_unavailable: >
+        Ta operacja użyje AI do kategoryzacji %{count} transakcji.
+      cost_unavailable_model: "Brak możliwości oszacowania kosztu dla modelu „%{model}”."
+      cost_unavailable_no_provider: "Brak możliwości oszacowania kosztu (nie skonfigurowano dostawcy LLM)."
+      cost_warning: "Operacja może generować koszty — sprawdź aktualny cennik u dostawcy modelu."
+      view_usage: Zobacz historię użycia
+      confirm_button: Potwierdź zmiany
+
+    category_rule_cta:
+      message: "Zaktualizowano do %{category_name}"
+      description: Możesz utworzyć regułę, aby automatycznie kategoryzować podobne transakcje
+      dont_show_again: Nie pokazuj ponownie
+      dismiss: Zamknij
+      create_rule: Utwórz regułę

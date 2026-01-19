@@ -7,7 +7,8 @@ pl:
       new:
         delete_and_leave_uncategorized: Usuń „%{tag_name}”
         delete_and_recategorize: Usuń „%{tag_name}” i przypisz nową etykietę
+        delete_and_reassign: Usuń i przypisz ponownie
         delete_tag: Usunąć etykietę?
-        explanation: "Etykieta „%{tag_name}” zostanie usunięta z transakcji i innych elementów, do których jest przypisana. Zamiast pozostawiać je bez etykiety, możesz poniżej przypisać nową etykietę."
+        explanation: "%{tag_name} zostanie usunięta z transakcji oraz innych obiektów oznaczonych tą etykietą. Zamiast pozostawiać je bez etykiety, możesz poniżej przypisać nową etykietę."
         replacement_tag_prompt: Wybierz etykietę
         tag: Etykieta

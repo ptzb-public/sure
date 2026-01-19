@@ -37,6 +37,11 @@ en:
           yahoo_finance: Yahoo Finance
       brand_fetch_settings:
         description: Enter the Client ID provided by Brand Fetch
+        env_configured_message: You have successfully configured your Brand Fetch Client ID through the BRAND_FETCH_CLIENT_ID environment variable.
+        show_details: (show details)
+        details_step_1_html: Visit %{link} and create a free Brand Fetch Developer account.
+        details_step_2_html: Go to the %{link} page.
+        details_step_3_html: Tap the eye icon under the "Your Client ID" section to reveal your <strong>Client ID</strong> and paste it below.
         label: Client ID
         placeholder: Enter your Client ID here
         title: Brand Fetch Settings
@@ -64,6 +69,10 @@ en:
         connection_failed: Unable to connect to Yahoo Finance
         troubleshooting: Check your internet connection and firewall settings. Yahoo Finance may be temporarily unavailable.
       twelve_data_settings:
+        show_details: (show details)
+        details_step_1_html: Visit %{link} and create a free Twelve Data Developer account.
+        details_step_2_html: Go to the %{link} page.
+        details_step_3_html: Reveal your <strong>Secret Key</strong> and paste it below.
         api_calls_used: "%{used} / %{limit} API daily calls used (%{percentage})"
         description: Enter the API key provided by Twelve Data
         env_configured_message: Successfully configured through the TWELVE_DATA_API_KEY environment variable.

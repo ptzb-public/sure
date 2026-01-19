@@ -1,47 +1,62 @@
----
+﻿---
 pl:
   settings:
     ai_prompts:
       show:
-        page_title: Prompty AI
+        page_title: Monity AI
         openai_label: OpenAI
         disable_ai: Wyłącz asystenta AI
-        prompt_instructions: Instrukcje promptów
+        prompt_instructions: Instrukcje promptu
         main_system_prompt:
           title: Główny prompt systemowy
-          subtitle: Podstawowe instrukcje określające zachowanie asystenta AI we wszystkich rozmowach
+          subtitle: Kluczowe instrukcje definiujące zachowanie asystenta AI we wszystkich rozmowach
         transaction_categorizer:
-          title: Kategoryzacja transakcji
+          title: Kategoryzator transakcji
           subtitle: AI automatycznie kategoryzuje transakcje na podstawie zdefiniowanych kategorii
         merchant_detector:
           title: Wykrywanie sprzedawców
-          subtitle: AI identyfikuje i wzbogaca dane transakcji o informacje o sprzedawcach
+          subtitle: AI identyfikuje sprzedawców i wzbogaca dane transakcji o informacje o nich
+
     billings:
       show:
-        page_title: Rozliczenia
-        subscription_subtitle: Aktualizuj subskrypcję i dane rozliczeniowe
+        page_title: Płatności
+        subscription_subtitle: Zaktualizuj subskrypcję oraz dane rozliczeniowe
         subscription_title: Zarządzaj subskrypcją
+        subscribed_to_html: "Obecnie masz aktywną subskrypcję planu %{plan}."
+        renews_on_html: "Twój plan odnawia się %{date}."
+        trialing_html: "Obecnie testujesz %{product_name}"
+        days_remaining:
+          one: "Pozostał %{count} dzień"
+          other: "Pozostało %{count} dni"
+        not_subscribed_html: "Obecnie <span class=\"font-medium\">nie masz aktywnej subskrypcji</span>"
+        billing_settings_hint: "Po wykupieniu %{product_name} ustawienia rozliczeń pojawią się tutaj."
+        manage: Zarządzaj
+        choose_plan: Wybierz plan
+        billing_via_stripe: "Rozliczenia przez Stripe"
+
     preferences:
       show:
         country: Kraj
         currency: Waluta
         date_format: Format daty
-        general_subtitle: Skonfiguruj swoje preferencje
+        general_subtitle: Skonfiguruj preferencje
         general_title: Ogólne
         default_period: Domyślny okres
         default_account_order: Domyślna kolejność kont
         language: Język
         page_title: Preferencje
+        translations_note: "Uwaga: wciąż pracujemy nad tłumaczeniami dla różnych języków."
         theme_dark: Ciemny
         theme_light: Jasny
         theme_subtitle: Wybierz preferowany motyw aplikacji
         theme_system: Systemowy
         theme_title: Motyw
         timezone: Strefa czasowa
+
     profiles:
       destroy:
-        cannot_remove_self: Nie możesz usunąć samego siebie z konta.
-        member_removal_failed: Wystąpił problem podczas usuwania członka.
+        cannot_remove_self: Nie możesz usunąć siebie z konta.
+        member_removal_failed: Wystąpił problem z usunięciem członka.
         member_removed: Członek został pomyślnie usunięty.
         not_authorized: Nie masz uprawnień do usuwania członków.
       show:
@@ -52,70 +67,83 @@ pl:
           body: Czy na pewno chcesz zresetować konto? Spowoduje to usunięcie wszystkich kont, kategorii, sprzedawców, tagów i innych danych. Tej operacji nie można cofnąć.
           title: Zresetować konto?
         confirm_reset_with_sample_data:
-          body: Czy na pewno chcesz zresetować konto i wczytać dane przykładowe? Twoje obecne dane zostaną usunięte i zastąpione danymi demonstracyjnymi, abyś mógł bezpiecznie poznać Sure.
+          body: Czy na pewno chcesz zresetować konto i wczytać dane przykładowe? Twoje obecne dane zostaną usunięte i zastąpione danymi demo, aby móc bezpiecznie przetestować %{product_name}.
           title: Zresetować konto i wczytać dane przykładowe?
         confirm_remove_invitation:
           body: Czy na pewno chcesz usunąć zaproszenie dla %{email}?
           title: Usuń zaproszenie
         confirm_remove_member:
-          body: Czy na pewno chcesz usunąć %{name} ze swojego konta?
+          body: Czy na pewno chcesz usunąć %{name} z konta?
           title: Usuń członka
         danger_zone_title: Strefa niebezpieczna
         delete_account: Usuń konto
-        delete_account_warning: Usunięcie konta spowoduje trwałe usunięcie wszystkich danych i nie może zostać cofnięte.
+        delete_account_warning: Usunięcie konta trwale usunie wszystkie Twoje dane i nie można tego cofnąć.
         reset_account: Zresetuj konto
-        reset_account_warning: Reset konta usunie wszystkie konta, kategorie, sprzedawców, tagi i inne dane, ale zachowa Twoje konto użytkownika.
-        reset_account_with_sample_data: Resetuj i wczytaj dane
-        reset_account_with_sample_data_warning: Usuń wszystkie obecne dane i wczytaj świeże dane przykładowe, aby móc eksplorować aplikację w przygotowanym środowisku.
+        reset_account_warning: Reset konta usunie wszystkie konta, kategorie, sprzedawców, tagi i inne dane, ale pozostawi Twoje konto użytkownika.
+        reset_account_with_sample_data: Resetuj i wczytaj demo
+        reset_account_with_sample_data_warning: Usuń wszystkie obecne dane i wczytaj świeże dane przykładowe, aby móc testować środowisko z gotowymi danymi.
         email: E-mail
+        email_change_notice_html: "Zgłosiłeś zmianę adresu e-mail na %{email}. Przejdź do skrzynki i potwierdź zmianę, aby zaczęła obowiązywać. Jeśli nie widzisz wiadomości, sprawdź spam lub %{link}."
+        request_confirmation: "poproś o ponowne wysłanie e-maila potwierdzającego"
+        your_account: Twoje konto
         first_name: Imię
-        household_form_input_placeholder: Wprowadź nazwę wspólnej przestrzeni
-        household_form_label: Nazwa wspólnej przestrzeni
-        household_subtitle: Zaproś członków rodziny, partnerów i inne osoby. Zaproszeni użytkownicy będą mogli zalogować się do wspólnej przestrzeni i uzyskać dostęp do współdzielonych kont.
-        household_title: Wspólna przestrzeń
+        household_form_input_placeholder: Wpisz nazwę gospodarstwa domowego
+        household_form_label: Nazwa gospodarstwa domowego
+        household_subtitle: Zaproś członków rodziny, partnerów i inne osoby. Zaproszeni mogą logować się do Twojego gospodarstwa domowego i mieć dostęp do współdzielonych kont.
+        household_title: Gospodarstwo domowe
         invitation_link: Link zaproszenia
         invite_member: Dodaj członka
         last_name: Nazwisko
         page_title: Informacje o profilu
-        pending: Oczekujące
-        profile_subtitle: Dostosuj sposób wyświetlania Twojego profilu w %{product_name}
-        profile_title: Dane osobowe
+        pending: Oczekuje
+        profile_subtitle: Dostosuj swój profil w %{product_name}
+        profile_title: Osobiste
         remove_invitation: Usuń zaproszenie
         remove_member: Usuń członka
         save: Zapisz
+
     securities:
       show:
         page_title: Bezpieczeństwo
         mfa_title: Uwierzytelnianie dwuskładnikowe
-        mfa_description: Dodaj dodatkową warstwę zabezpieczeń, wymagając kodu z aplikacji uwierzytelniającej podczas logowania
+        mfa_description: Dodaj dodatkową warstwę ochrony, wymagając kodu z aplikacji uwierzytelniającej podczas logowania
         enable_mfa: Włącz 2FA
         disable_mfa: Wyłącz 2FA
         disable_mfa_confirm: Czy na pewno chcesz wyłączyć uwierzytelnianie dwuskładnikowe?
         sso_title: Połączone konta
-        sso_subtitle: Zarządzaj połączeniami logowania jednokrotnego (SSO)
-        sso_disconnect: Odłącz
-        sso_last_used: Ostatnie użycie
+        sso_subtitle: Zarządzaj połączeniami kont logowania jednokrotnego
+        sso_disconnect: Rozłącz
+        sso_last_used: Ostatnio użyte
         sso_never: Nigdy
-        sso_no_email: Brak adresu e-mail
+        sso_no_email: Brak e-maila
         sso_no_identities: Brak połączonych kont SSO
-        sso_connect_hint: Wyloguj się i zaloguj ponownie przy użyciu dostawcy SSO, aby połączyć konto.
-        sso_confirm_title: Odłączyć konto?
-        sso_confirm_body: Czy na pewno chcesz odłączyć konto %{provider}? Możesz połączyć je ponownie, logując się ponownie przez tego dostawcę.
-        sso_confirm_button: Odłącz
-        sso_warning_message: To jest Twoja jedyna metoda logowania. Przed odłączeniem ustaw hasło w ustawieniach bezpieczeństwa, w przeciwnym razie możesz utracić dostęp do konta.
+        sso_connect_hint: Wyloguj się i zaloguj przez dostawcę SSO, aby połączyć konto.
+        sso_confirm_title: Rozłączyć konto?
+        sso_confirm_body: Czy na pewno chcesz rozłączyć konto %{provider}? Możesz połączyć je ponownie, logując się przez tego dostawcę.
+        sso_confirm_button: Rozłącz
+        sso_warning_message: To jest Twoja jedyna metoda logowania. Zanim rozłączysz, ustaw hasło w ustawieniach bezpieczeństwa — w przeciwnym razie możesz utracić dostęp do konta.
+        mfa_enabled_html: "Uwierzytelnianie dwuskładnikowe jest <span class=\"font-medium text-green-600\">włączone</span>"
+        mfa_enabled_description: Twoje konto jest chronione dodatkową warstwą bezpieczeństwa.
+        mfa_disabled_html: "Uwierzytelnianie dwuskładnikowe jest <span class=\"font-medium text-red-600\">wyłączone</span>"
+        mfa_disabled_description: Włącz 2FA, aby dodać dodatkową warstwę ochrony konta.
+
     settings_nav:
+      llm_usage_label: Użycie LLM
+      providers_label: Dostawcy
+      sso_providers_label: Dostawcy SSO
+      users_label: Użytkownicy
       accounts_label: Konta
       advanced_section_title: Zaawansowane
-      ai_prompts_label: Prompty AI
+      ai_prompts_label: Monity AI
       api_key_label: Klucz API
-      billing_label: Rozliczenia
+      billing_label: Płatności
       categories_label: Kategorie
       feedback_label: Opinie
       general_section_title: Ogólne
-      imports_label: Import / Eksport
-      logout: Wyloguj się
+      imports_label: Import/Eksport
+      logout: Wyloguj
       merchants_label: Sprzedawcy
-      guides_label: Przewodniki
+      guides_label: Poradniki
       other_section_title: Więcej
       preferences_label: Preferencje
       profile_label: Informacje o profilu
@@ -128,11 +156,164 @@ pl:
       whats_new_label: Co nowego
       api_keys_label: Klucz API
       bank_sync_label: Synchronizacja banków
+
     settings_nav_link_large:
       next: Dalej
       previous: Wstecz
+
     user_avatar_field:
-      accepted_formats: JPG lub PNG. Maks. 5 MB.
+      accepted_formats: JPG lub PNG. Maks. 5MB.
       choose: Prześlij zdjęcie
       choose_label: (opcjonalnie)
       change: Zmień zdjęcie
+
+    providers:
+      enable_banking_panel:
+        setup_instructions: "Instrukcja konfiguracji:"
+        setup_step_1_html: Odwiedź swoje konto deweloperskie %{link}, aby pobrać dane uwierzytelniające.
+        enable_banking_link_text: Enable Banking
+        setup_step_2: Wybierz poniżej kod kraju.
+        setup_step_3: Wprowadź identyfikator aplikacji oraz wklej certyfikat klienta (wraz z kluczem prywatnym).
+        setup_step_4_html: Kliknij %{save_action}, a następnie użyj „%{action}”, aby połączyć bank.
+        field_descriptions: "Opis pól:"
+        country_code_label: Kod kraju
+        country_code_description: Kod kraju ISO 3166-1 alpha-2 (np. GB, DE, FR) — określa dostępne banki.
+        application_id_label: Identyfikator aplikacji
+        application_id_description: ID wygenerowane w Twoim koncie deweloperskim Enable Banking.
+        client_certificate_label: Certyfikat klienta
+        client_certificate_label_with_key: Certyfikat klienta (z kluczem prywatnym)
+        client_certificate_description: Certyfikat wygenerowany podczas tworzenia aplikacji (musi zawierać klucz prywatny).
+        connection_name: Połączenie Enable Banking
+        config_locked_title: Konfiguracja zablokowana
+        config_locked_body: Nie można zmienić danych uwierzytelniających, gdy istnieją aktywne połączenia bankowe. Najpierw usuń wszystkie połączenia.
+        select_country: Wybierz kraj...
+        country_label: Kraj
+        application_id_placeholder_new: Wprowadź identyfikator aplikacji
+        application_id_placeholder_update: Wprowadź nowe ID, aby zaktualizować
+        client_certificate_placeholder: |-
+          -----BEGIN PRIVATE KEY-----
+          ...
+          -----END PRIVATE KEY-----
+          -----BEGIN CERTIFICATE-----
+          ...
+          -----END CERTIFICATE-----
+        save_configuration: Zapisz konfigurację
+        update_configuration: Zaktualizuj konfigurację
+        connected_bank: Połączony bank
+        session_expires: "Sesja wygasa: %{date}"
+        unknown: Nieznane
+        connection: Połączenie
+        session_expired: Sesja wygasła — połącz ponownie
+        configured: Skonfigurowano
+        ready_to_link: Gotowe do łączenia kont
+        sync: Synchronizuj
+        reconnect: Połącz ponownie
+        connect_bank: Połącz bank
+        remove: Usuń
+        remove_confirm: Czy na pewno chcesz usunąć to połączenie?
+        add_connection: Dodaj połączenie
+        countries:
+          at: Austria
+          be: Belgia
+          bg: Bułgaria
+          hr: Chorwacja
+          cy: Cypr
+          cz: Czechy
+          dk: Dania
+          ee: Estonia
+          fi: Finlandia
+          fr: Francja
+          de: Niemcy
+          gr: Grecja
+          hu: Węgry
+          is: Islandia
+          ie: Irlandia
+          it: Włochy
+          lv: Łotwa
+          li: Liechtenstein
+          lt: Litwa
+          lu: Luksemburg
+          mt: Malta
+          nl: Holandia
+          no: Norwegia
+          pl: Polska
+          pt: Portugalia
+          ro: Rumunia
+          sk: Słowacja
+          si: Słowenia
+          es: Hiszpania
+          se: Szwecja
+          gb: Wielka Brytania
+
+      lunchflow_panel:
+        setup_instructions: "Instrukcja konfiguracji:"
+        setup_step_1_html: Odwiedź %{link}, aby pobrać klucz API.
+        lunchflow_link_text: Lunch Flow
+        setup_step_2: Wklej poniżej klucz API i kliknij przycisk Zapisz.
+        setup_step_3_html: Po udanym połączeniu przejdź do zakładki %{link}, aby skonfigurować nowe konta i powiązać je z istniejącymi.
+        field_descriptions: "Opis pól:"
+        api_key_label: Klucz API
+        api_key_description: Klucz API Lunch Flow do uwierzytelniania (wymagany).
+        base_url_label: Bazowy URL
+        base_url_label_optional: Bazowy URL (opcjonalnie)
+        base_url_description: Bazowy adres URL API Lunch Flow (opcjonalnie, domyślnie https://lunchflow.app/api/v1).
+        connection_name: Połączenie Lunch Flow
+        api_key_placeholder_new: Wklej klucz API tutaj
+        api_key_placeholder_update: Wprowadź nowy klucz API, aby zaktualizować
+        base_url_placeholder: https://lunchflow.app/api/v1 (domyślnie)
+        save_configuration: Zapisz konfigurację
+        update_configuration: Zaktualizuj konfigurację
+        configured_ready_html: Skonfigurowano i gotowe do użycia. Przejdź do zakładki %{link}, aby zarządzać kontami i je konfigurować.
+        not_configured: Nie skonfigurowano
+        accounts_link_text: Konta
+
+      simplefin_panel:
+        setup_instructions: "Instrukcja konfiguracji:"
+        setup_step_1_html: Odwiedź %{link}, aby uzyskać jednorazowy token konfiguracji.
+        simplefin_bridge_link_text: SimpleFIN Bridge
+        setup_step_2: Wklej poniżej token i kliknij przycisk Zapisz, aby włączyć synchronizację danych bankowych SimpleFIN.
+        setup_step_3_html: Po udanym połączeniu przejdź do zakładki %{link}, aby skonfigurować nowe konta i powiązać je z istniejącymi.
+        field_descriptions: "Opis pól:"
+        setup_token_label: Token konfiguracji
+        setup_token_description: Jednorazowy token konfiguracji SimpleFIN z SimpleFIN Bridge (zużywany przy pierwszym użyciu).
+        setup_token_placeholder: Wklej token konfiguracji SimpleFIN
+        save_configuration: Zapisz konfigurację
+        configured_ready_html: Skonfigurowano i gotowe do użycia. Przejdź do zakładki %{link}, aby zarządzać kontami i je konfigurować.
+        not_configured: Nie skonfigurowano
+        accounts_link_text: Konta
+
+      form:
+        env_configured_notice: Konfigurację można ustawić przez zmienne środowiskowe lub nadpisać poniżej.
+        field_descriptions: Opis pól
+        optional: Opcjonalne
+        save: Zapisz konfigurację
+        configured: Skonfigurowano i gotowe do użycia
+        not_configured: Nie skonfigurowano
+        masked_secret: "********"
+
+    llm_usages:
+      show:
+        title: "Użycie LLM i koszty"
+        subtitle: "Śledź użycie AI oraz szacowane koszty"
+        start_date: Data początkowa
+        end_date: Data końcowa
+        filter: Filtruj
+        total_requests: Łącznie żądań
+        total_tokens: Łącznie tokenów
+        prompt_completion: "%{prompt} prompt / %{completion} completion"
+        total_cost: Łączny koszt
+        avg_cost_per_request: Śr. koszt/żądanie
+        cost_based_on: "Na podstawie %{counted} z %{total} żądań z danymi kosztowymi"
+        cost_by_operation: Koszt wg operacji
+        cost_by_model: Koszt wg modelu
+        recent_usage: Ostatnie użycie
+        date: Data
+        operation: Operacja
+        model: Model
+        tokens: Tokeny
+        cost: Koszt
+        failed: Niepowodzenie
+        http_status: "Status HTTP: %{status}"
+        no_usage_data: Brak danych użycia dla wybranego okresu
+        cost_estimates_title: "Informacje o szacunkach kosztów"
+        cost_estimates_body: "Koszty są szacowane na podstawie cennika OpenAI z 2025 roku. Rzeczywiste koszty mogą się różnić. Cennik jest liczony za 1 milion tokenów i zależy od modelu. Modele niestandardowe lub self-hosted będą miały wartość „N/A” i nie są uwzględniane w sumach kosztów."

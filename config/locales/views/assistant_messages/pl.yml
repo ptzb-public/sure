@@ -1,0 +1,9 @@
+---
+pl:
+  assistant_messages:
+    assistant_message:
+      assistant_reasoning: "Rozumowanie asystenta"
+    tool_calls:
+      tool_calls: "Wywołania narzędzi"
+      function: "Funkcja:"
+      arguments: "Argumenty:"

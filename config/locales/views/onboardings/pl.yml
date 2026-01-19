@@ -3,25 +3,76 @@ pl:
   onboardings:
     header:
       sign_out: Wyloguj się
+
     preferences:
       currency: Waluta
       date_format: Format daty
       example: Przykładowe konto
+      as_of: na dzień
       locale: Język
-      preview: Podgląd wyświetlania danych na podstawie wybranych preferencji.
+      preview: Podgląd sposobu wyświetlania danych zgodnie z preferencjami.
       submit: Zakończ
-      subtitle: Skonfigurujmy Twoje preferencje.
+      subtitle: Skonfiguruj swoje preferencje.
+      theme_label: Motyw kolorystyczny
+      theme_system: Systemowy
+      theme_light: Jasny
+      theme_dark: Ciemny
       title: Konfiguracja preferencji
+
     profile:
       country: Kraj
       first_name: Imię
-      household_name: Nazwa wspólnej przestrzeni
+      household_name: Nazwa gospodarstwa domowego
       last_name: Nazwisko
       profile_image: Zdjęcie profilowe
       submit: Kontynuuj
-      subtitle: Uzupełnijmy Twój profil.
-      title: Skonfiguruj podstawy
+      subtitle: Uzupełnij swój profil.
+      title: Podstawowe informacje
+
     show:
-      message: Cieszymy się, że jesteś z nami. W kolejnym kroku zadamy kilka pytań, aby uzupełnić Twój profil i w pełni skonfigurować konto.
+      message: Cieszymy się, że jesteś z nami. W kolejnym kroku zadamy kilka pytań,
+        aby uzupełnić Twój profil i przygotować wszystko do działania.
       setup: Skonfiguruj konto
       title: Poznaj %{product_name}
+
+    trial:
+      headline: Wypróbuj Sure przez 14 dni.
+      no_card_required: Karta płatnicza nie jest wymagana
+      trial_description: Rozpoczęcie okresu próbnego aktywuje Twoje konto w Sure.
+        Nie musisz podawać danych płatniczych.
+      cta_start_trial: Wypróbuj Sure przez 14 dni
+      cta_continue_trial: Kontynuuj okres próbny
+      cta_upgrade: Ulepsz plan
+      how_it_works_title: Jak działa okres próbny
+      today_title: Dzisiaj
+      today_description: Otrzymujesz bezpłatny dostęp do Sure na 14 dni
+      day_13_title: "Za 13 dni (%{date})"
+      day_13_description: Otrzymasz przypomnienie o zbliżającym się końcu okresu próbnego.
+      day_14_title: "Za 14 dni (%{date})"
+      day_14_description: Okres próbny kończy się – aby korzystać dalej z Sure, wykup subskrypcję
+      included_title: Co obejmuje okres próbny
+      included_items:
+        institutions: Połączenie z ponad 10 000 instytucji finansowych
+        unlimited_accounts: Nielimitowana liczba kont i typów kont
+        performance: Analiza wyników i zwrotów z inwestycji w całym portfelu
+        transactions: Zaawansowane śledzenie transakcji
+        ai_access: Nielimitowany dostęp do czatów z Sure AI
+        manual_tracking: Ręczne śledzenie kont
+        currencies: Obsługa wielu walut i niemal globalny zasięg
+        early_access: Wczesny dostęp do nowych funkcji
+        priority_support: Priorytetowe wsparcie zespołu
+
+    goals:
+      title: Co Cię do nas sprowadza?
+      subtitle: Wybierz jeden lub więcej celów, które chcesz osiągnąć,
+        korzystając z %{product_name} jako narzędzia do zarządzania finansami.
+      next: Dalej
+      goals:
+        unified_accounts: Widok wszystkich kont w jednym miejscu
+        cashflow: Lepsze zrozumienie przepływów pieniężnych i wydatków
+        budgeting: Planowanie finansów i budżetowanie
+        partner: Zarządzanie finansami z partnerem
+        investments: Śledzenie inwestycji
+        ai_insights: Analiza finansów z pomocą AI
+        optimization: Analiza i optymalizacja kont
+        reduce_stress: Zmniejszenie stresu lub niepokoju związanego z finansami

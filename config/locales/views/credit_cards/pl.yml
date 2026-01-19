@@ -2,24 +2,25 @@
 pl:
   credit_cards:
     edit:
-      edit: Edytuj %{account}
+      edit: "Edytuj %{account}"
     form:
-      annual_fee: Opłata roczna
-      annual_fee_placeholder: '99'
-      apr: APR
-      apr_placeholder: '15.99'
-      available_credit: Dostępny limit
-      available_credit_placeholder: '10000'
-      expiration_date: Data ważności
-      minimum_payment: Minimalna kwota do spłaty
-      minimum_payment_placeholder: '100'
+      annual_fee: "Opłata roczna"
+      annual_fee_placeholder: "99"
+      apr: "APR"
+      apr_placeholder: "15.99"
+      available_credit: "Dostępny limit"
+      available_credit_placeholder: "10000"
+      expiration_date: "Data ważności"
+      minimum_payment: "Minimalna płatność"
+      minimum_payment_placeholder: "100"
     new:
-      title: Wprowadź dane karty kredytowej
+      title: "Wprowadź dane karty kredytowej"
     overview:
-      amount_owed: Kwota do spłaty
-      annual_fee: Opłata roczna
-      apr: APR
-      available_credit: Dostępny limit
-      expiration_date: Data ważności
-      minimum_payment: Minimalna kwota do spłaty
-      unknown: Nieznane
+      amount_owed: "Kwota do spłaty"
+      annual_fee: "Opłata roczna"
+      apr: "APR"
+      available_credit: "Dostępny limit"
+      expiration_date: "Data ważności"
+      minimum_payment: "Minimalna płatność"
+      unknown: "Nieznane"
+      edit_account_details: "Edytuj dane konta"

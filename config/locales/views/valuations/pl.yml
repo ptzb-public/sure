@@ -17,14 +17,38 @@ pl:
       title: Nowe saldo
     show:
       amount: Kwota
+      account_value_on_date: Wartość konta na dzień
       date_label: Data
       delete: Usuń
       delete_subtitle: Tej operacji nie można cofnąć
-      delete_title: Usuń wpis
+      delete_title: Usunąć wpis?
       details: Szczegóły
       name_label: Nazwa
-      name_placeholder: Wprowadź nazwę tego wpisu
+      name_placeholder: Wpisz nazwę dla tego wpisu
       note_label: Notatki
       note_placeholder: Dodaj dodatkowe informacje do tego wpisu
       overview: Przegląd
       settings: Ustawienia
+      update_value: Zaktualizuj wartość
+      value_update_resource: aktualizacja wartości
+    confirmation_contents:
+      investment_intro_prefix: "Spowoduje to %{action} wartość konta w dniu"
+      investment_intro_suffix: "na:"
+      total_account_value: Całkowita wartość konta
+      holdings_value: Wartość aktywów
+      brokerage_cash: Gotówka maklerska
+      non_investment_intro_prefix: "%{action} %{balance_type} w dniu"
+      non_investment_intro_middle: "na"
+      balance_types:
+        account_balance: saldo konta
+        credit_card_balance: saldo karty kredytowej
+        loan_balance: saldo kredytu
+        property_value: wartość nieruchomości
+        vehicle_value: wartość pojazdu
+        crypto_balance: saldo kryptowalut
+        asset_value: wartość aktywa
+        liability_balance: saldo zobowiązania
+        balance: saldo
+      recalculated_notice: "Wszystkie przyszłe transakcje i salda zostaną przeliczone na podstawie tej %{change_type}."
+      change: zmiany
+      update: aktualizacji

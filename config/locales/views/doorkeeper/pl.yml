@@ -1,0 +1,14 @@
+---
+pl:
+  doorkeeper:
+    authorizations:
+      error:
+        title: "Błąd autoryzacji"
+        back: "Wróć"
+      form_post:
+        title: "Autoryzacja"
+        redirecting: "Trwa przekierowywanie z powrotem do aplikacji..."
+      show:
+        title: "Autoryzacja zakończona"
+        authorization_code: "Kod autoryzacyjny:"
+        copy_instruction: "Skopiuj ten kod i wklej go do aplikacji."

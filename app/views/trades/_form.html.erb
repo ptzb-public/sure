@@ -1,4 +1,4 @@
-<%# locals: (model:, account:) %>
+﻿<%# locals: (model:, account:) %>
 
 <% type = params[:type] || "buy" %>
 
@@ -10,11 +10,11 @@
 
     <div class="space-y-2">
       <%= form.select :type, [
-          ["Buy", "buy"],
-          ["Sell", "sell"],
-          ["Deposit", "deposit"],
-          ["Withdrawal", "withdrawal"],
-          ["Interest", "interest"]
+          [t(".type_buy"), "buy"],
+          [t(".type_sell"), "sell"],
+          [t(".type_deposit"), "deposit"],
+          [t(".type_withdrawal"), "withdrawal"],
+          [t(".type_interest"), "interest"]
       ],
       { label: t(".type"), selected: type },
       { data: {
@@ -34,7 +34,7 @@
                             required: true %>
           </div>
         <% else %>
-          <%= form.text_field :manual_ticker, label: "Ticker symbol", placeholder: "AAPL", required: true %>
+          <%= form.text_field :manual_ticker, label: t(".holding"), placeholder: t(".ticker_placeholder"), required: true %>
         <% end %>
       <% end %>
 
@@ -49,7 +49,7 @@
       <% end %>
 
       <% if %w[buy sell].include?(type) %>
-        <%= form.number_field :qty, label: t(".qty"), placeholder: "10", min: 0.000000000000000001, step: "any", required: true %>
+        <%= form.number_field :qty, label: t(".qty"), placeholder: t(".qty_placeholder"), min: 0.000000000000000001, step: "any", required: true %>
         <%= form.money_field :price, label: t(".price"), step: "any", precision: 10, required: true %>
       <% end %>
     </div>
@@ -57,3 +57,4 @@
     <%= form.submit t(".submit") %>
   </div>
 <% end %>
+

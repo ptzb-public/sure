@@ -7,6 +7,7 @@ pl:
     submit:
       user:
         create: Kontynuuj
+
   registrations:
     closed: Rejestracja jest obecnie zamknięta.
     create:
@@ -19,7 +20,13 @@ pl:
       role_admin: administrator
       role_member: członek
       submit: Utwórz konto
-      title: Utwórz konto
-      welcome_body: Aby rozpocząć, musisz zarejestrować nowe konto. Następnie będziesz mógł/mogła skonfigurować dodatkowe ustawienia w aplikacji.
+      title: Utwórz swoje konto
+      welcome_body: Aby rozpocząć, musisz założyć nowe konto. Następnie będziesz mógł/mogła skonfigurować dodatkowe ustawienia w aplikacji.
       welcome_title: Witamy w samodzielnie hostowanym %{product_name}!
       password_placeholder: Wprowadź hasło
+      email_placeholder: "you@example.com"
+      password_requirements:
+        length: "Minimum 8 znaków"
+        case: "Małe i wielkie litery"
+        number: "Cyfra (0–9)"
+        special: "Znak specjalny (!, @, #, $, %, itp.)"

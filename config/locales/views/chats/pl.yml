@@ -1,5 +1,37 @@
 ---
 pl:
   chats:
-    demo_banner_title: "Tryb demonstracyjny aktywny"
-    demo_banner_message: "Korzystasz z otwartowagowego modelu LLM Qwen3 z kredytami zapewnionymi przez Cloudflare Workers AI. Wyniki mogą się różnić, ponieważ baza kodu była w większości testowana na `gpt-4.1`, jednak Twoje tokeny nie są nigdzie przekazywane ani wykorzystywane do trenowania."
+    demo_banner_title: "Tryb demonstracyjny włączony"
+    demo_banner_message: "Korzystasz z otwartowagowego modelu językowego Qwen3 z kredytami zapewnionymi przez Cloudflare Workers AI. Wyniki mogą się różnić, ponieważ kod był głównie testowany na `gpt-4.1`, jednak Twoje tokeny nigdy nie są wysyłane ani wykorzystywane do trenowania."
+    ai_greeting:
+      greeting: "Cześć %{name}! Jestem asystentem AI (dużym modelem językowym), który może pomóc Ci w zarządzaniu finansami. Mam dostęp do internetu oraz danych Twojego konta."
+      there: "tam"
+      command_hint_prefix: "Możesz użyć"
+      command_hint_suffix: "aby uzyskać dostęp do poleceń"
+      questions_title: "Oto kilka przykładowych pytań, które możesz zadać:"
+      question_portfolio: "Oceń portfel inwestycyjny"
+      question_spending: "Pokaż analizę wydatków"
+      question_patterns: "Znajdź nietypowe wzorce"
+    ai_consent:
+      title: "Włącz czaty AI"
+      available_prompt: "Czat AI może odpowiadać na pytania finansowe i dostarczać analizy na podstawie Twoich danych. Aby korzystać z tej funkcji, musisz ją jawnie włączyć."
+      setup_prompt_prefix: "Aby korzystać z asystenta AI, musisz ustawić zmienną środowiskową"
+      setup_prompt_suffix: "lub skonfigurować ją w ustawieniach Self-Hosting swojej instancji."
+      enable_button: "Włącz czaty AI"
+      disable_notice: "Możesz wyłączyć w dowolnym momencie. Wszystkie dane wysyłane do dostawców LLM są anonimizowane."
+    error:
+      failure: "Nie udało się wygenerować odpowiedzi. Spróbuj ponownie."
+      retry: "Ponów"
+    index:
+      title: "Czaty"
+      new_chat: "Nowy czat"
+    chat:
+      ago: "temu"
+      edit_title: "Edytuj tytuł czatu"
+      delete_chat: "Usuń czat"
+    chat_nav:
+      all_chats: "Wszystkie czaty"
+      start_new_chat: "Rozpocznij nowy czat"
+      edit_title: "Edytuj tytuł czatu"
+      delete_chat: "Usuń czat"
+      chat_resource: "czat"

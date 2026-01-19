@@ -1,4 +1,4 @@
-<%# locals: (form:, amount_method:, currency_method:, **options) %>
+﻿<%# locals: (form:, amount_method:, currency_method:, **options) %>
 
 <% currency_value = if options[:currency_value_override].present?
                      options[:currency_value_override]
@@ -46,7 +46,7 @@
         <%= form.number_field amount_method,
           class: "form-field__input",
           inline: true,
-          placeholder: "100",
+          placeholder: t(".amount_placeholder"),
           value: if options[:value]
             sprintf("%.#{options[:precision].presence || currency.default_precision}f", options[:value])
           elsif form.object && form.object.respond_to?(amount_method)
@@ -83,3 +83,4 @@
     </div>
   </div>
 </div>
+

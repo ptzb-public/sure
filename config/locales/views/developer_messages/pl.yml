@@ -1,0 +1,6 @@
+---
+pl:
+  developer_messages:
+    developer_message:
+      debug_label: "Komunikat debugowania (tylko wewnętrzny)"
+      system_instruction_label: "Instrukcja systemowa (wysyłana do AI)"

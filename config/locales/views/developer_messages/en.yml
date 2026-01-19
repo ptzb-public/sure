@@ -1,0 +1,6 @@
+---
+en:
+  developer_messages:
+    developer_message:
+      debug_label: "Debug message (internal only)"
+      system_instruction_label: "System instruction (sent to AI)"
