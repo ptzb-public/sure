@@ -17,13 +17,13 @@
             <%= render DS::FilledIcon.new(
               variant: :text,
               hex_color: budget_category.category.color,
-              text: budget_category.category.name,
+              text: budget_category.category.localized_name,
               size: "md",
               rounded: true
             ) %>
           <% end %>
         </div>
-        <h3 class="flex-1 min-w-0 font-medium text-primary truncate"><%= budget_category.category.name %></h3>
+        <h3 class="flex-1 min-w-0 font-medium text-primary truncate"><%= budget_category.category.localized_name %></h3>
         <div class="flex items-center gap-3 flex-shrink-0 ml-auto">
           <% if budget_category.over_budget? %>
             <span class="inline-flex items-center gap-1 px-2 py-1 bg-red-500/10 text-red-500 text-xs font-medium rounded-full whitespace-nowrap">
@@ -104,7 +104,7 @@
             <%= render DS::FilledIcon.new(
               variant: :text,
               hex_color: budget_category.category.color,
-              text: budget_category.category.name,
+              text: budget_category.category.localized_name,
               size: "sm",
               rounded: true
             ) %>
@@ -112,9 +112,9 @@
         </div>
 
         <div class="min-w-0 flex-1">
-          <p class="text-sm font-medium text-primary truncate"><%= budget_category.category.name %></p>
+          <p class="text-sm font-medium text-primary truncate"><%= budget_category.category.localized_name %></p>
           <p class="text-sm text-secondary font-medium">
-            <%= budget_category.median_monthly_expense_money.format %> avg
+            <%= t("budget_categories.avg", amount: budget_category.median_monthly_expense_money.format) %>
           </p>
         </div>
 

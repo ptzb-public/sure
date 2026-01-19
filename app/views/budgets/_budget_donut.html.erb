@@ -5,7 +5,7 @@
     <div data-donut-chart-target="defaultContent" class="flex flex-col items-center">
       <% if budget.initialized? %>
         <div class="text-gray-600 text-sm mb-2">
-          <span>Spent</span>
+          <span><%= t("budgets.donut.spent") %></span>
         </div>
 
         <div class="mb-2 text-3xl font-medium <%= budget.available_to_spend.negative? ? "text-red-500" : "text-primary" %>">
@@ -13,7 +13,7 @@
         </div>
 
         <%= render DS::Link.new(
-          text: "of #{budget.budgeted_spending_money.format}",
+          text: t("budgets.donut.of", amount: budget.budgeted_spending_money.format),
           variant: "secondary",
           icon: "pencil",
           icon_position: "right",
@@ -26,7 +26,7 @@
         </div>
 
         <%= render DS::Link.new(
-          text: "New budget",
+          text: t("budgets.donut.new_budget"),
           size: "sm",
           icon: "plus",
           href: edit_budget_path(budget)
@@ -39,7 +39,7 @@
         <div class="flex flex-col gap-2 items-center">
           <div class="flex items-center gap-3">
             <div class="w-1 h-3 rounded-xl" style="background-color: <%= bc.category.color %>"></div>
-            <p class="text-sm text-secondary"><%= bc.category.name %></p>
+            <p class="text-sm text-secondary"><%= bc.category.localized_name %></p>
           </div>
 
           <p class="text-3xl font-medium <%= bc.available_to_spend.negative? ? "text-red-500" : "text-primary" %>">
@@ -47,7 +47,7 @@
           </p>
 
           <%= render DS::Link.new(
-            text: "of #{bc.budgeted_spending_money.format(precision: 0)}",
+            text: t("budgets.donut.of", amount: bc.budgeted_spending_money.format(precision: 0)),
             variant: "secondary",
             icon: "pencil",
             icon_position: "right",
@@ -59,7 +59,7 @@
     <% end %>
 
     <div id="segment_unused" class="hidden">
-      <p class="text-sm text-secondary text-center mb-2">Unused</p>
+      <p class="text-sm text-secondary text-center mb-2"><%= t("budgets.donut.unused") %></p>
 
       <p class="text-3xl font-medium text-primary">
         <%= format_money(budget.available_to_spend_money) %>

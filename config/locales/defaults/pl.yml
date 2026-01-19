@@ -1,4 +1,4 @@
-pl:
+﻿pl:
   defaults:
     brand_name: "%{brand_name}"
     product_name: "%{product_name}"
@@ -45,6 +45,8 @@ pl:
     formats:
       default: "%d-%m-%Y"
       long: "%-d %B %Y"
+      month_day: "%-d %b"
+      month_year: "%B %Y"
       short: "%-d %b"
     month_names:
       -
@@ -60,6 +62,20 @@ pl:
       - października
       - listopada
       - grudnia
+    standalone_month_names:
+      -
+      - styczeń
+      - luty
+      - marzec
+      - kwiecień
+      - maj
+      - czerwiec
+      - lipiec
+      - sierpień
+      - wrzesień
+      - październik
+      - listopad
+      - grudzień
     order:
       - :day
       - :month
@@ -255,3 +271,4 @@ pl:
       default: "%a, %-d %b %Y %H:%M:%S %z"
       long: "%-d %B %Y %H:%M"
       short: "%-d %b %H:%M"
+

@@ -1,0 +1,45 @@
+en:
+  budgets:
+    actuals_summary:
+      expenses: "Expenses"
+      income: "Income"
+    budgeted_summary:
+      budgeted: "Budgeted"
+      earned: "%{amount} earned"
+      expected_income: "Expected income"
+      left: "%{amount} left"
+      over: "%{amount} over"
+      spent: "%{amount} spent"
+    categories:
+      table:
+        amount: "Amount"
+        categories: "Categories"
+    donut:
+      new_budget: "New budget"
+      of: "of %{amount}"
+      spent: "Spent"
+      unused: "Unused"
+    edit:
+      autosuggest:
+        description: "This will be based on transaction history. AI can make mistakes, verify before continuing."
+        title: "Autosuggest income & spending budget"
+      budgeted_spending_label: "Budgeted spending"
+      expected_income_label: "Expected income"
+      submit: "Continue"
+      subtitle: "Enter your monthly earnings and planned spending below to setup your budget."
+      title: "Setup your budget"
+    header:
+      today: "Today"
+    nav:
+      categories: "Categories"
+      setup: "Setup"
+    over_allocation_warning:
+      fix_allocations: "Fix allocations"
+      message: "You have over-allocated your budget. Please fix your allocations."
+    show:
+      categories:
+        edit: "Edit"
+        title: "Categories"
+      tabs:
+        actual: "Actuals"
+        budgeted: "Budgeted"

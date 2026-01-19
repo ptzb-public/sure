@@ -2,5 +2,28 @@
 pl:
   models:
     category:
+      defaults:
+        entertainment: "Rozrywka"
+        fees: "Opłaty"
+        food_and_drink: "Jedzenie i napoje"
+        gifts_and_donations: "Prezenty i darowizny"
+        groceries: "Zakupy spożywcze"
+        healthcare: "Opieka zdrowotna"
+        home_improvement: "Ulepszenia domu"
+        income: "Przychody"
+        insurance: "Ubezpieczenia"
+        investment_contributions: "Wpłaty inwestycyjne"
+        loan_payments: "Spłaty kredytów"
+        mortgage_rent: "Hipoteka / czynsz"
+        personal_care: "Pielęgnacja osobista"
+        savings_and_investments: "Oszczędności i inwestycje"
+        services: "Usługi"
+        shopping: "Zakupy"
+        sports_and_fitness: "Sport i fitness"
+        subscriptions: "Subskrypcje"
+        taxes: "Podatki"
+        transportation: "Transport"
+        travel: "Podróże"
+        utilities: "Media"
       uncategorized: Bez kategorii
       other_investments: Inne inwestycje

@@ -1,0 +1,32 @@
+pl:
+  budget_categories:
+    allocation_progress:
+      exceeded_by: "Budżet przekroczony o"
+      left_to_allocate: "do przydzielenia"
+      overallocated: "> 100% ustawione"
+      set: "%{percent} ustawione"
+    avg: "%{amount} śr."
+    avg_per_month: "%{amount}/mies. śr."
+    confirm_button:
+      confirm: "Potwierdź"
+    index:
+      subtitle: "Dostosuj budżety kategorii, aby ustawić limity wydatków. Nieprzydzielone środki zostaną automatycznie przypisane jako bez kategorii."
+      title: "Edytuj budżety kategorii"
+    no_categories:
+      description: "Nie utworzyłeś ani nie przypisałeś jeszcze żadnych kategorii wydatków do transakcji."
+      new_category: "Nowa kategoria"
+      title: "Ups!"
+      use_defaults: "Użyj domyślnych (zalecane)"
+    show:
+      budgeted: "Zaplanowane"
+      category_label: "Kategoria"
+      left: "pozostało"
+      monthly_average_spending: "Średnie miesięczne wydatki"
+      monthly_median_spending: "Mediana miesięcznych wydatków"
+      no_transactions: "Brak transakcji w tym okresie budżetu."
+      overview: "Podsumowanie"
+      overspent: "przekroczono"
+      recent_transactions: "Ostatnie transakcje"
+      spending_for_period: "Wydatki w okresie %{period}"
+      status: "Status"
+      view_all_transactions: "Zobacz wszystkie transakcje kategorii"

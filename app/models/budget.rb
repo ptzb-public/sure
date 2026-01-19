@@ -95,7 +95,8 @@ class Budget < ApplicationRecord
   end
 
   def name
-    start_date.strftime("%B %Y")
+    month_names = I18n.t("date.standalone_month_names", default: I18n.t("date.month_names"))
+    "#{month_names[start_date.month].to_s.capitalize} #{start_date.year}"
   end
 
   def initialized?

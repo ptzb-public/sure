@@ -167,6 +167,13 @@ class Category < ApplicationRecord
     subcategory? ? "#{parent.name} > #{name}" : name
   end
 
+  def localized_name
+    key = default_name_key
+    return name if key.blank?
+
+    I18n.t(key, default: name)
+  end
+
   # Predicate: is this the synthetic "Uncategorized" category?
   def uncategorized?
     !persisted? && name == I18n.t(UNCATEGORIZED_NAME_KEY)
@@ -183,6 +190,17 @@ class Category < ApplicationRecord
   end
 
   private
+    def default_name_key
+      return if name.blank?
+
+      normalized = I18n.transliterate(name).downcase
+      normalized = normalized.gsub("&", "and").gsub("/", " ")
+      normalized = normalized.gsub(/[^a-z0-9]+/, "_").gsub(/\A_|_\z/, "")
+      return if normalized.blank?
+
+      "models.category.defaults.#{normalized}"
+    end
+
     def category_level_limit
       if (subcategory? && parent.subcategory?) || (parent? && subcategory?)
         errors.add(:parent, "can't have more than 2 levels of subcategories")
