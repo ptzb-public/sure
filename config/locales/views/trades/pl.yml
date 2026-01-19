@@ -21,7 +21,7 @@ pl:
       symbol_label: Symbol
       total_return_label: Niezrealizowany zysk/strata
     new:
-      title: Nowa transakcja
+      title: Nowa pozycja
     show:
       additional: Dodatkowe
       category_label: Kategoria

@@ -79,7 +79,7 @@ pl:
         new: Nowy
         new_activity: Nowa aktywność
         new_balance: Nowe saldo
-        new_transaction: Nowa transakcja
+        new_transaction: Nowy przelew
         no_entries: Nie znaleziono wpisów
         pending: Oczekujące
         search:

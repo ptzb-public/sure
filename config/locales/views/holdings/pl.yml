@@ -33,7 +33,7 @@ pl:
       average_cost: Średni koszt
       holdings: Pozycje
       name: Nazwa
-      new_holding: Nowa transakcja
+      new_holding: Nowa pozycja
       no_holdings: Brak pozycji do wyświetlenia.
       return: Łączny zwrot
       weight: Udział

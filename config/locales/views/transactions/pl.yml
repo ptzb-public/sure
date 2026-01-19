@@ -21,7 +21,7 @@ pl:
       tags_label: Etykiety
       transfer: Przelew
     new:
-      new_transaction: Nowa transakcja
+      new_transaction: Nowy przelew
     show:
       account_label: Konto
       amount: Kwota
