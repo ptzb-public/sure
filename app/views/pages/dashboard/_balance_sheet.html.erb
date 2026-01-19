@@ -37,13 +37,13 @@
 
         <div class="bg-container-inset rounded-xl p-1 space-y-1 overflow-x-auto">
           <div class="px-4 py-2 flex items-center uppercase text-xs font-medium text-secondary">
-            <div class="w-40">Name</div>
+            <div class="w-40"><%= t("pages.dashboard.balance_sheet.table.name") %></div>
             <div class="ml-auto text-right flex items-center gap-6">
               <div class="w-24">
-                <p>Weight</p>
+                <p><%= t("pages.dashboard.balance_sheet.table.weight") %></p>
               </div>
               <div class="w-40">
-                <p>Value</p>
+                <p><%= t("pages.dashboard.balance_sheet.table.value") %></p>
               </div>
             </div>
           </div>
@@ -118,10 +118,16 @@
           ) %>
 
           <p class="text-primary text-sm font-medium mb-1 mt-4">
-            <%= t("pages.dashboard.balance_sheet.no_items", name: classification_group.name) %>
+            <%= t(
+              "pages.dashboard.balance_sheet.no_items",
+              name: t("balance_sheet.classifications.#{classification_group.classification}.genitive", default: classification_group.name)
+            ) %>
           </p>
           <p class="text-secondary text-sm text-center">
-            <%= t("pages.dashboard.balance_sheet.add_accounts", name: classification_group.name) %>
+            <%= t(
+              "pages.dashboard.balance_sheet.add_accounts",
+              name: t("balance_sheet.classifications.#{classification_group.classification}.genitive", default: classification_group.name)
+            ) %>
           </p>
         </div>
       <% end %>

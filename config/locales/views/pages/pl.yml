@@ -20,6 +20,10 @@ pl:
         title: "Bilans"
         no_items: "Brak %{name}"
         add_accounts: "Dodaj konta typu %{name}, aby zobaczyć pełne zestawienie"
+        table:
+          name: Nazwa
+          weight: Udział
+          value: Wartość
       cashflow_sankey:
         title: "Przepływy pieniężne"
         no_data_title: "Brak danych o przepływach pieniężnych w tym okresie"

@@ -1,0 +1,9 @@
+pl:
+  balance_sheet:
+    classifications:
+      asset:
+        label: Aktywa
+        genitive: aktywów
+      liability:
+        label: Zobowiązania
+        genitive: zobowiązań

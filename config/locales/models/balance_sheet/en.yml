@@ -1,0 +1,9 @@
+en:
+  balance_sheet:
+    classifications:
+      asset:
+        label: Assets
+        genitive: assets
+      liability:
+        label: Liabilities
+        genitive: liabilities
