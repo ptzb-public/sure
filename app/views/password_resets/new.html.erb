@@ -1,10 +1,10 @@
-<% header_title t(".title") %>
+﻿<% header_title t(".title") %>
 
 <% if params[:step] == "pending" %>
   <p class="text-sm text-secondary text-center py-8"><%= t(".requested") %></p>
 <% else %>
   <%= styled_form_with url: password_reset_path, class: "space-y-4" do |form| %>
-    <%= form.email_field :email, label: true, autofocus: false, autocomplete: "email", required: "required", placeholder: "you@example.com" %>
+    <%= form.email_field :email, label: true, autofocus: false, autocomplete: "email", required: "required", placeholder: t(".email_placeholder") %>
 
     <%= form.submit t(".submit") %>
   <% end %>
@@ -19,3 +19,4 @@
     class: "bg-white hover:bg-gray-100"
   ) %>
 </div>
+

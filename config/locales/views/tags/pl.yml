@@ -2,10 +2,10 @@
 pl:
   tags:
     create:
-      created: Etykieta utworzona
+      created: Etykieta została utworzona
       error: "Błąd podczas tworzenia etykiety: %{error}"
     destroy:
-      deleted: Etykieta usunięta
+      deleted: Etykieta została usunięta
     edit:
       edit: Edytuj etykietę
     form:
@@ -14,10 +14,12 @@ pl:
       empty: Brak etykiet
       new: Nowa etykieta
       tags: Etykiety
+      delete_all: Usuń wszystkie
+      all_tags_resource: wszystkie etykiety
     new:
       new: Nowa etykieta
     tag:
       delete: Usuń
       edit: Edytuj
     update:
-      updated: Etykieta zaktualizowana
+      updated: Etykieta została zaktualizowana

@@ -1,4 +1,4 @@
----
+﻿---
 en:
   transactions:
     unknown_name: Unknown transaction
@@ -24,22 +24,33 @@ en:
     show:
       account_label: Account
       amount: Amount
+      additional_details: Additional details
       category_label: Category
       date_label: Date
       delete: Delete
       delete_subtitle: This permanently deletes the transaction, affects your historical
         balances, and cannot be undone.
       delete_title: Delete transaction
+      payee: Payee
+      description: Description
+      memo: Memo
+      provider_extras: Provider extras
       details: Details
       exclude: Exclude
       exclude_description: Excluded transactions will be removed from budgeting calculations and reports.
       activity_type: Activity Type
+      activity_type_none: None
       activity_type_description: Type of investment activity (Buy, Sell, Dividend, etc.). Auto-detected or set manually.
       one_time_title: One-time %{type}
       one_time_description: One-time transactions will be excluded from certain budgeting calculations and reports to help you see what's really important.
+      transfer_or_payment_title: Transfer or Debt Payment?
+      transfer_or_payment_description: Transfers and payments are special types of transactions that indicate money movement between 2 accounts.
+      open_matcher: Open matcher
       convert_to_trade_title: Convert to Security Trade
       convert_to_trade_description: Convert this transaction into a Buy or Sell trade with security details for portfolio tracking.
       convert_to_trade_button: Convert to Trade
+      convert: Convert
+      transaction_resource: transaction
     activity_labels:
       buy: Buy
       sell: Sell
@@ -149,6 +160,17 @@ en:
         unexpected_error: "Unexpected error during conversion: %{error}"
     searches:
       filters:
+        account_filter:
+          placeholder: Filter accounts
+        category_filter:
+          placeholder: Filter category
+        tag_filter:
+          placeholder: Filter tags
+        merchant_filter:
+          placeholder: Filter merchants
+        date_filter:
+          start_date_placeholder: Start date
+          end_date_placeholder: End date
         amount_filter:
           equal_to: Equal to
           greater_than: Greater than
@@ -186,4 +208,37 @@ en:
         greater_than: greater than
         less_than: less than
       form:
-        toggle_selection_checkboxes: Toggle all checkboxes
+        search_placeholder: Search transactions ...
+        filter_button: Filter
+        toggle_selection_checkboxes: Toggle all checkboxes    bulk_updates:
+      new:
+        title: Edit transactions
+        overview: Overview
+        date: Date
+        transactions: Transactions
+        category_prompt: Select a category
+        category: Category
+        merchant_prompt: Select a merchant
+        merchant: Merchant
+        tags: Tags
+        none: None
+        notes: Notes
+        notes_placeholder: Enter a note that will be applied to selected transactions
+        cancel: Cancel
+        save: Save
+    summary:
+      total_transactions: Total transactions
+      income: Income
+      expenses: Expenses
+    transfer_match:
+      payment: Payment
+      transfer: Transfer
+      confirmed_title: "%{type} is confirmed"
+      auto_matched: Auto-matched
+      auto_matched_short: A/M
+      confirm_match: Confirm match
+      reject_match: Reject match
+
+
+
+

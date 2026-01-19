@@ -8,12 +8,23 @@ pl:
         home: Strona główna
         reports: Raporty
         transactions: Transakcje
+      free_trial: Okres próbny
+      days_remaining:
+        one: "Pozostał %{count} dzień"
+        other: "Pozostało %{count} dni"
+      upgrade: Ulepsz plan
     auth:
       existing_account: Masz już konto?
-      no_account: Nowy użytkownik %{product_name}?
+      no_account: Nowy w %{product_name}?
       sign_in: Zaloguj się
       sign_up: Utwórz konto
     shared:
+      confirm_dialog:
+        title: Czy na pewno?
+        subtitle: Tej operacji nie można cofnąć.
+        confirm: Potwierdź
       footer:
         privacy_policy: Polityka prywatności
         terms_of_service: Regulamin
+    lookbooks:
+      title: Podgląd komponentów

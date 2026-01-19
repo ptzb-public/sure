@@ -5,3 +5,20 @@ en:
       in_progress: In progress
       complete: Complete
       failed: Failed
+      export_from: "Export from %{datetime}"
+      exporting: "Exporting..."
+      delete_confirm: "Are you sure you want to delete this export? This action cannot be undone."
+      delete_failed_confirm: "Are you sure you want to delete this failed export?"
+      no_exports: "No exports yet."
+    new:
+      title: "Export your data"
+      subtitle: "Download all your financial data"
+      included_title: "What's included:"
+      included_accounts: "All accounts and balances"
+      included_transactions: "Transaction history"
+      included_trades: "Investment trades"
+      included_categories: "Categories, tags and rules"
+      note_title: "Note:"
+      note_body: "This export includes all of your data, but only some of the data can be imported back via the CSV import feature. We support account, transaction (with category and tags), and trade imports. Other account data cannot be imported and is for your records only."
+      cancel: "Cancel"
+      export_data: "Export data"

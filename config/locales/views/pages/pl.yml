@@ -1,50 +1,79 @@
----
 pl:
   pages:
     changelog:
       title: Co nowego
+
     dashboard:
       welcome: "Witaj ponownie, %{name}"
-      subtitle: "Oto, co dzieje się z Twoimi finansami"
+      subtitle: "Oto co dzieje się z Twoimi finansami"
       new: "Nowe"
       drag_to_reorder: "Przeciągnij, aby zmienić kolejność sekcji"
-      toggle_section: "Przełącz widoczność sekcji"
+      toggle_section: "Pokaż/ukryj sekcję"
+
       net_worth_chart:
         data_not_available: Dane niedostępne dla wybranego okresu
-        title: Majątek netto
+        title: Wartość netto
+
       no_account_empty_state:
         new_account: Nowe konto
-        no_account_subtitle: Ponieważ nie dodano jeszcze żadnych kont, nie ma danych do wyświetlenia. Dodaj pierwsze konta, aby rozpocząć korzystanie z panelu.
+        no_account_subtitle: Ponieważ nie dodano jeszcze żadnych kont, nie ma danych do wyświetlenia. Dodaj pierwsze konto, aby zobaczyć dane na pulpicie.
         no_account_title: Brak kont
+
       balance_sheet:
         title: "Bilans"
         no_items: "Brak %{name}"
-        add_accounts: "Dodaj konta typu %{name}, aby zobaczyć pełne zestawienie"
+        add_accounts: "Dodaj konta %{name}, aby zobaczyć pełne zestawienie"
+        name: Nazwa
+        weight: Udział
+        value: Wartość
+
       cashflow_sankey:
         title: "Przepływy pieniężne"
-        no_data_title: "Brak danych o przepływach pieniężnych w tym okresie"
-        no_data_description: "Dodaj transakcje, aby wyświetlić dane o przepływach pieniężnych lub rozszerz zakres czasu"
+        no_data_title: "Brak danych o przepływach w tym okresie"
+        no_data_description: "Dodaj transakcje, aby wyświetlić przepływy pieniężne lub rozszerz zakres dat"
         add_transaction: "Dodaj transakcję"
+
       no_accounts:
         title: "Brak kont"
-        description: "Dodaj konta, aby wyświetlić dane o majątku netto"
+        description: "Dodaj konta, aby wyświetlić dane wartości netto"
         add_account: "Dodaj konto"
+
       outflows_donut:
         title: "Wydatki"
         total_outflows: "Łączne wydatki"
         categories: "Kategorie"
         value: "Wartość"
         weight: "Udział"
+
       investment_summary:
         title: "Inwestycje"
         total_return: "Łączny zwrot"
-        holding: "Pozycja"
+        holding: "Aktywo"
         weight: "Udział"
         value: "Wartość"
         return: "Zwrot"
-        period_activity: "Aktywność w okresie %{period}"
+        period_activity: "Aktywność – %{period}"
         contributions: "Wpłaty"
         withdrawals: "Wypłaty"
         trades: "Transakcje"
         no_investments: "Brak kont inwestycyjnych"
-        add_investment: "Dodaj konto inwestycyjne, aby śledzić swój portfel"
+        add_investment: "Dodaj konto inwestycyjne, aby śledzić portfel"
+
+    redis_configuration_error:
+      page_title: "Wymagana konfiguracja Redis – Sure"
+      title: "Wymagana konfiguracja Redis"
+      subtitle: "Twoja samodzielnie hostowana instalacja Sure wymaga poprawnej konfiguracji Redis."
+      why_title: "Dlaczego Redis jest wymagany?"
+      why_body: "Sure wykorzystuje Redis do obsługi zadań w tle (Sidekiq), takich jak synchronizacja danych kont, przetwarzanie importów oraz inne operacje utrzymujące Twoje dane finansowe na bieżąco."
+      view_setup_guide: "Zobacz instrukcję konfiguracji"
+      guide_hint: "Skorzystaj z pełnego przewodnika konfiguracji Docker, aby skonfigurować Redis"
+      refresh_hint: "Po skonfigurowaniu Redis odśwież stronę, aby kontynuować."
+      refresh_page: "Odśwież stronę"
+
+    feedback:
+      page_title: "Opinie"
+      title: "Przekaż opinię"
+      subtitle: "Daj nam znać, co myślisz. Możesz dołączyć linki do filmów lub zrzutów ekranu."
+      feature_request: "Zaproponuj nową funkcję"
+      bug_report: "Zgłoś błąd"
+      discuss: "Porozmawiaj o %{product_name} z innymi"

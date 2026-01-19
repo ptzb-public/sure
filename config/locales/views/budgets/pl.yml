@@ -1,0 +1,40 @@
+---
+pl:
+  budgets:
+    actuals_summary:
+      income: "Dochody"
+      expenses: "Wydatki"
+    budget_donut:
+      spent: "Wydane"
+      of_amount: "z %{amount}"
+      new_budget: "Nowy budżet"
+      unused: "Niewykorzystane"
+    over_allocation_warning:
+      message: "Budżet został nadmiernie przydzielony. Popraw alokacje."
+      fix_allocations: "Popraw alokacje"
+    budgeted_summary:
+      expected_income: "Oczekiwane dochody"
+      earned: "uzyskano %{amount}"
+      over: "przekroczono o %{amount}"
+      left: "pozostało %{amount}"
+      budgeted: "Zabudżetowane"
+      spent: "wydano %{amount}"
+    budget_categories:
+      categories: "Kategorie"
+      amount: "Kwota"
+    budget_header:
+      today: "Dziś"
+    show:
+      categories_title: "Kategorie"
+      edit: "Edytuj"
+      tabs:
+        actual: "Rzeczywiste"
+        budgeted: "Planowane"
+    edit:
+      title: "Skonfiguruj budżet"
+      description: "Wprowadź swoje miesięczne dochody oraz planowane wydatki, aby skonfigurować budżet."
+      budgeted_spending_label: "Planowane wydatki"
+      expected_income_label: "Oczekiwane dochody"
+      autosuggest_title: "Automatyczne sugerowanie budżetu"
+      autosuggest_body: "Sugestie są oparte na historii transakcji. AI może popełniać błędy — zweryfikuj dane przed kontynuacją."
+      continue: "Dalej"

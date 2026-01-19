@@ -1,4 +1,4 @@
----
+﻿---
 en:
   settings:
     ai_prompts:
@@ -21,6 +21,17 @@ en:
         page_title: Billing
         subscription_subtitle: Update your subscription and billing details
         subscription_title: Manage subscription
+        subscribed_to_html: "You are currently subscribed to the %{plan}."
+        renews_on_html: "Your plan renews on %{date}."
+        trialing_html: "You are currently trialing %{product_name}"
+        days_remaining:
+          one: "%{count} day remaining"
+          other: "%{count} days remaining"
+        not_subscribed_html: "You are currently <span class="font-medium">not subscribed</span>"
+        billing_settings_hint: "Once you subscribe to %{product_name}, you'll see your billing settings here."
+        manage: "Manage"
+        choose_plan: "Choose plan"
+        billing_via_stripe: "Billing via Stripe"
     preferences:
       show:
         country: Country
@@ -32,6 +43,7 @@ en:
         default_account_order: Default Account Order
         language: Language
         page_title: Preferences
+        translations_note: Please note, we are still working on translations for various languages.
         theme_dark: Dark
         theme_light: Light
         theme_subtitle: Choose a preferred theme for the app
@@ -70,6 +82,9 @@ en:
         reset_account_with_sample_data: Reset and preload
         reset_account_with_sample_data_warning: Delete all your existing data and then load fresh sample data so you can explore with a pre-filled environment.
         email: Email
+        email_change_notice_html: "You have requested to change your email to %{email}. Please go to your email and confirm for the change to take effect. If you haven't received the email, please check your spam folder, or %{link}."
+        request_confirmation: "request a new confirmation email"
+        your_account: "your account"
         first_name: First Name
         household_form_input_placeholder: Enter household name
         household_form_label: Household name
@@ -106,7 +121,15 @@ en:
         sso_confirm_body: Are you sure you want to disconnect your %{provider} account? You can reconnect it later by signing in with that provider again.
         sso_confirm_button: Disconnect
         sso_warning_message: This is your only login method. You should set a password in your security settings before disconnecting, otherwise you may be locked out of your account.
+        mfa_enabled_html: "Two-factor authentication is <span class=\"font-medium text-green-600\">enabled</span>"
+        mfa_enabled_description: Your account is protected with an additional layer of security.
+        mfa_disabled_html: "Two-factor authentication is <span class=\"font-medium text-red-600\">disabled</span>"
+        mfa_disabled_description: Enable 2FA to add an extra layer of security to your account.
     settings_nav:
+      llm_usage_label: LLM Usage
+      providers_label: Providers
+      sso_providers_label: SSO Providers
+      users_label: Users
       accounts_label: Accounts
       advanced_section_title: Advanced
       ai_prompts_label: AI Prompts
@@ -139,3 +162,143 @@ en:
       choose: Upload photo
       choose_label: (optional)
       change: Change photo
+    providers:
+      enable_banking_panel:
+        setup_instructions: "Setup instructions:"
+        setup_step_1_html: Visit your %{link} developer account to get your credentials.
+        enable_banking_link_text: Enable Banking
+        setup_step_2: Select your country code from the dropdown below.
+        setup_step_3: Enter your Application ID and paste your Client Certificate (including the private key).
+        setup_step_4_html: Click %{save_action}, then use "%{action}" to link your bank.
+        field_descriptions: "Field descriptions:"
+        country_code_label: Country Code
+        country_code_description: ISO 3166-1 alpha-2 country code (e.g., GB, DE, FR) - determines available banks.
+        application_id_label: Application ID
+        application_id_description: The ID generated in your Enable Banking developer account.
+        client_certificate_label: Client Certificate
+        client_certificate_label_with_key: Client Certificate (with Private Key)
+        client_certificate_description: The certificate generated when you created your application (must include the private key).
+        connection_name: Enable Banking Connection
+        config_locked_title: Configuration locked
+        config_locked_body: Credentials cannot be changed while you have active bank connections. Remove all connections first to update credentials.
+        select_country: Select country...
+        country_label: Country
+        application_id_placeholder_new: Enter application ID
+        application_id_placeholder_update: Enter new ID to update
+        client_certificate_placeholder: "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n-----BEGIN CERTIFICATE-----\n...\n-----END CERTIFICATE-----"
+        save_configuration: Save Configuration
+        update_configuration: Update Configuration
+        connected_bank: Connected Bank
+        session_expires: "Session expires: %{date}"
+        unknown: Unknown
+        connection: Connection
+        session_expired: Session expired - reconnect
+        configured: Configured
+        ready_to_link: Ready to link accounts
+        sync: Sync
+        reconnect: Reconnect
+        connect_bank: Connect Bank
+        remove: Remove
+        remove_confirm: Are you sure you want to remove this connection?
+        add_connection: Add Connection
+        countries:
+          at: Austria
+          be: Belgium
+          bg: Bulgaria
+          hr: Croatia
+          cy: Cyprus
+          cz: Czech Republic
+          dk: Denmark
+          ee: Estonia
+          fi: Finland
+          fr: France
+          de: Germany
+          gr: Greece
+          hu: Hungary
+          is: Iceland
+          ie: Ireland
+          it: Italy
+          lv: Latvia
+          li: Liechtenstein
+          lt: Lithuania
+          lu: Luxembourg
+          mt: Malta
+          nl: Netherlands
+          no: Norway
+          pl: Poland
+          pt: Portugal
+          ro: Romania
+          sk: Slovakia
+          si: Slovenia
+          es: Spain
+          se: Sweden
+          gb: United Kingdom
+      lunchflow_panel:
+        setup_instructions: "Setup instructions:"
+        setup_step_1_html: Visit %{link} to get your API key.
+        lunchflow_link_text: Lunch Flow
+        setup_step_2: Paste your API key below and click the Save button.
+        setup_step_3_html: After a successful connection, go to the %{link} tab to set up new accounts and link them to your existing ones.
+        field_descriptions: "Field descriptions:"
+        api_key_label: API Key
+        api_key_description: Your Lunch Flow API key for authentication (required).
+        base_url_label: Base URL
+        base_url_label_optional: Base URL (Optional)
+        base_url_description: Base URL for Lunch Flow API (optional, defaults to https://lunchflow.app/api/v1).
+        connection_name: Lunch Flow Connection
+        api_key_placeholder_new: Paste API key here
+        api_key_placeholder_update: Enter new API key to update
+        base_url_placeholder: https://lunchflow.app/api/v1 (default)
+        save_configuration: Save Configuration
+        update_configuration: Update Configuration
+        configured_ready_html: Configured and ready to use. Visit the %{link} tab to manage and set up accounts.
+        not_configured: Not configured
+        accounts_link_text: Accounts
+      simplefin_panel:
+        setup_instructions: "Setup instructions:"
+        setup_step_1_html: Visit %{link} to get your one-time setup token.
+        simplefin_bridge_link_text: SimpleFIN Bridge
+        setup_step_2: Paste the token below and click the Save button to enable SimpleFIN bank data sync.
+        setup_step_3_html: After a successful connection, go to the %{link} tab to set up new accounts and link them to your existing ones.
+        field_descriptions: "Field descriptions:"
+        setup_token_label: Setup Token
+        setup_token_description: Your SimpleFIN one-time setup token from SimpleFIN Bridge (consumed on first use).
+        setup_token_placeholder: Paste SimpleFIN setup token
+        save_configuration: Save Configuration
+        configured_ready_html: Configured and ready to use. Visit the %{link} tab to manage and set up accounts.
+        not_configured: Not configured
+        accounts_link_text: Accounts
+      form:
+        env_configured_notice: Configuration can be set via environment variables or overridden below.
+        field_descriptions: Field descriptions
+        optional: Optional
+        save: Save Configuration
+        configured: Configured and ready to use
+        not_configured: Not configured
+        masked_secret: "********"
+    llm_usages:
+      show:
+        title: "LLM Usage & Costs"
+        subtitle: "Track your AI usage and estimated costs"
+        start_date: "Start Date"
+        end_date: "End Date"
+        filter: "Filter"
+        total_requests: "Total Requests"
+        total_tokens: "Total Tokens"
+        prompt_completion: "%{prompt} prompt / %{completion} completion"
+        total_cost: "Total Cost"
+        avg_cost_per_request: "Avg Cost/Request"
+        cost_based_on: "Based on %{counted} of %{total} requests with cost data"
+        cost_by_operation: "Cost by Operation"
+        cost_by_model: "Cost by Model"
+        recent_usage: "Recent Usage"
+        date: "Date"
+        operation: "Operation"
+        model: "Model"
+        tokens: "Tokens"
+        cost: "Cost"
+        failed: "Failed"
+        http_status: "HTTP Status: %{status}"
+        no_usage_data: "No usage data found for the selected period"
+        cost_estimates_title: "About Cost Estimates"
+        cost_estimates_body: "Costs are estimated based on OpenAI's pricing as of 2025. Actual costs may vary. Pricing is per 1 million tokens and varies by model. Custom or self-hosted models will show "N/A" and are not included in cost totals."

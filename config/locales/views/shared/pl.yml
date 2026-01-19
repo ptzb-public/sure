@@ -1,6 +1,8 @@
----
+﻿---
 pl:
   shared:
+    app_version:
+      version: Wersja
     confirm_modal:
       accept: Potwierdź
       body_html: "<p>Nie będzie można cofnąć tej decyzji</p>"
@@ -8,7 +10,9 @@ pl:
       title: Czy na pewno?
     money_field:
       label: Kwota
+      amount_placeholder: '100'
     syncing_notice:
       syncing: Synchronizacja danych kont...
     trend_change:
       no_change: "brak zmian"
+

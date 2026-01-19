@@ -1,5 +1,37 @@
 ---
 en:
   chats:
-    demo_banner_title: "Demo Mode Active"
-    demo_banner_message: "You are using an open-weights Qwen3 LLM with credits provided by Cloudflare Workers AI.  Result may vary since the codebase was mostly tested on `gpt-4.1` but your tokens don't go anywhere else to be trained with! 🤖"
+    demo_banner_title: "Demo mode enabled"
+    demo_banner_message: "You are using the open-weights LLM Qwen3 with credits provided by Cloudflare Workers AI. Results may vary because the codebase was mostly tested on `gpt-4.1`, however your tokens are never sent or used for training."
+    ai_greeting:
+      greeting: "Hey %{name}! I'm an AI/large-language-model that can help with your finances. I have access to the web and your account data."
+      there: "there"
+      command_hint_prefix: "You can use"
+      command_hint_suffix: "to access commands"
+      questions_title: "Here's a few questions you can ask:"
+      question_portfolio: "Evaluate investment portfolio"
+      question_spending: "Show spending insights"
+      question_patterns: "Find unusual patterns"
+    ai_consent:
+      title: "Enable AI Chats"
+      available_prompt: "AI chat can answer financial questions and provide insights based on your data. To use this feature you'll need to explicitly enable it."
+      setup_prompt_prefix: "To use the AI assistant, you need to set the"
+      setup_prompt_suffix: "environment variable or configure it in the Self-Hosting settings of your instance."
+      enable_button: "Enable AI Chats"
+      disable_notice: "Disable anytime. All data sent to our LLM providers is anonymized."
+    error:
+      failure: "Failed to generate response. Please try again."
+      retry: "Retry"
+    index:
+      title: "Chats"
+      new_chat: "New chat"
+    chat:
+      ago: "ago"
+      edit_title: "Edit chat title"
+      delete_chat: "Delete chat"
+    chat_nav:
+      all_chats: "All chats"
+      start_new_chat: "Start new chat"
+      edit_title: "Edit chat title"
+      delete_chat: "Delete chat"
+      chat_resource: "chat"

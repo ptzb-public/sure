@@ -6,8 +6,16 @@ en:
       link_provider: Link with provider
       unlink_provider: Unlink from provider
       troubleshoot: Troubleshoot
+      deletion_in_progress: deletion in progress...
+      complete_setup: Complete setup
     chart:
       data_not_available: Data not available for the selected period
+      total_value: Total value
+      holdings: Holdings
+      cash: Cash
+    activity_date:
+      end_of_day_tooltip: The end of day balance, after all transactions and adjustments
+      no_balance_data: No balance data available for this date
     create:
       success: "%{type} account created"
     destroy:
@@ -46,7 +54,15 @@ en:
         manual_entry: Enter account balance
         title: How would you like to add it?
       title: What would you like to add?
+      container:
+        previous: Previous
+        next: Next
+        select: Select
+        navigate: Navigate
+        close: Close
     show:
+      header:
+        complete_setup: Complete setup
       activity:
         amount: Amount
         balance: Balance
@@ -79,6 +95,9 @@ en:
         edit: Edit
         import: Import transactions
         manage: Manage accounts
+        import_transactions: Import transactions
+        delete_account: Delete account
+        account_resource: account
     update:
       success: "%{type} account updated"
     sidebar:

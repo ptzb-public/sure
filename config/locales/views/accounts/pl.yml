@@ -5,16 +5,24 @@ pl:
       link_lunchflow: Połącz z Lunch Flow
       link_provider: Połącz z dostawcą
       unlink_provider: Odłącz od dostawcy
-      troubleshoot: Rozwiąż problem
+      troubleshoot: Rozwiąż problemy
+      deletion_in_progress: usuwanie w toku...
+      complete_setup: Dokończ konfigurację
     chart:
-      data_not_available: Dane niedostępne dla wybranego okresu
+      data_not_available: Brak danych dla wybranego okresu
+      total_value: Wartość łączna
+      holdings: Aktywa
+      cash: Gotówka
+    activity_date:
+      end_of_day_tooltip: Saldo na koniec dnia, po wszystkich transakcjach i korektach
+      no_balance_data: Brak danych salda dla tej daty
     create:
       success: "Utworzono konto typu %{type}"
     destroy:
-      success: "Konto typu %{type} zaplanowane do usunięcia"
+      success: "Konto typu %{type} zostało zaplanowane do usunięcia"
       cannot_delete_linked: "Nie można usunąć połączonego konta. Najpierw je odłącz."
     empty:
-      empty_message: Dodaj konto poprzez połączenie, import lub ręczne wprowadzenie.
+      empty_message: Dodaj konto przez połączenie, import lub ręczne wprowadzenie.
       new_account: Nowe konto
       no_accounts: Brak kont
     form:
@@ -27,11 +35,11 @@ pl:
       institution_domain_label: Domena instytucji
       institution_domain_placeholder: np. chase.com
       notes_label: Notatki
-      notes_placeholder: Zapisz dodatkowe informacje, takie jak numery kont, kody sortujące, IBAN, numery rozliczeniowe itp.
+      notes_placeholder: Zapisz dodatkowe informacje, takie jak numery kont, kody sortowania, IBAN, numery rozliczeniowe itp.
     index:
       accounts: Konta
       manual_accounts:
-        other_accounts: Inne konta
+        other_accounts: Pozostałe konta
       new_account: Nowe konto
       sync: Synchronizuj wszystkie
     sync_all:
@@ -43,19 +51,27 @@ pl:
         connected_entry_eu: Połącz konto UE
         link_with_provider: "Połącz z %{provider}"
         lunchflow_entry: Połącz konto Lunch Flow
-        manual_entry: Wprowadź saldo ręcznie
+        manual_entry: Wprowadź saldo konta
         title: Jak chcesz je dodać?
       title: Co chcesz dodać?
+      container:
+        previous: Wstecz
+        next: Dalej
+        select: Wybierz
+        navigate: Nawiguj
+        close: Zamknij
     show:
+      header:
+        complete_setup: Dokończ konfigurację
       activity:
         amount: Kwota
         balance: Saldo
-        confirmed: Potwierdzone
+        confirmed: Zaksięgowane
         date: Data
         entries: wpisy
         entry: wpis
         filter: Filtruj
-        new: Nowy
+        new: Nowe
         new_activity: Nowa aktywność
         new_balance: Nowe saldo
         new_transaction: Nowa transakcja
@@ -69,17 +85,20 @@ pl:
         balance: Saldo
         owed: Kwota do spłaty
       menu:
-        confirm_accept: Usuń „%{name}”
-        confirm_body_html: "<p>Usunięcie tego konta spowoduje skasowanie historii jego wartości, co wpłynie na różne aspekty Twojego ogólnego stanu kont. Działanie to będzie miało bezpośredni wpływ na obliczenia Twojego majątku netto oraz wykresy kont.</p><br /><p>Po usunięciu nie będzie możliwości przywrócenia informacji o koncie — aby je odzyskać, konieczne będzie dodanie go jako nowego konta.</p>"
+        confirm_accept: 'Usuń "%{name}"'
+        confirm_body_html: "<p>Usunięcie tego konta spowoduje skasowanie historii jego wartości, co wpłynie na różne elementy Twojego zestawienia finansów. Ta operacja bezpośrednio wpłynie na obliczenia wartości netto oraz wykresy konta.</p><br /> <p>Po usunięciu nie będzie możliwości przywrócenia informacji o koncie — aby je odzyskać, trzeba będzie dodać konto ponownie.</p>"
         confirm_title: Usunąć konto?
         edit: Edytuj
         import: Importuj transakcje
         manage: Zarządzaj kontami
+        import_transactions: Importuj transakcje
+        delete_account: Usuń konto
+        account_resource: konto
     update:
       success: "Zaktualizowano konto typu %{type}"
     sidebar:
       missing_data: Brak danych historycznych
-      missing_data_description: "%{product} korzysta z zewnętrznych dostawców do pobierania historycznych kursów walut, cen papierów wartościowych i innych danych. Dane te są wymagane do obliczania dokładnych historycznych sald kont."
+      missing_data_description: "%{product} korzysta z zewnętrznych dostawców do pobierania historycznych kursów walut, cen instrumentów oraz innych danych. Są one potrzebne do poprawnego wyliczania historycznych sald kont."
       configure_providers: Skonfiguruj dostawców tutaj.
       tabs:
         all: Wszystkie
@@ -88,27 +107,27 @@ pl:
       new_asset: Nowe aktywo
       new_debt: Nowe zobowiązanie
       new_account: Nowe konto
-      new_account_group: "Nowa grupa: %{account_group}"
+      new_account_group: "Nowe %{account_group}"
     types:
       depository: Gotówka
-      investment: Inwestycja
-      crypto: Kryptowaluty
+      investment: Inwestycje
+      crypto: Krypto
       property: Nieruchomość
       vehicle: Pojazd
       other_asset: Inne aktywo
       credit_card: Karta kredytowa
-      loan: Pożyczka
+      loan: Kredyt
       other_liability: Inne zobowiązanie
     tax_treatments:
       taxable: Opodatkowane
-      tax_deferred: Odroczone podatkowo
+      tax_deferred: Odroczony podatek
       tax_exempt: Zwolnione z podatku
-      tax_advantaged: Uprzywilejowane podatkowo
+      tax_advantaged: Z ulgami podatkowymi
     tax_treatment_descriptions:
       taxable: Zyski opodatkowane w momencie realizacji
-      tax_deferred: Składki odliczane, opodatkowanie przy wypłacie
-      tax_exempt: Składki po opodatkowaniu, zyski nieopodatkowane
-      tax_advantaged: Specjalne korzyści podatkowe na określonych warunkach
+      tax_deferred: Składki odliczane, podatek przy wypłacie
+      tax_exempt: Składki po opodatkowaniu, zyski bez podatku
+      tax_advantaged: Specjalne ulgi podatkowe z określonymi warunkami
     subtype_regions:
       us: Stany Zjednoczone
       uk: Wielka Brytania
@@ -118,25 +137,25 @@ pl:
       generic: Ogólne
     confirm_unlink:
       title: Odłączyć konto od dostawcy?
-      description_html: "Za chwilę odłączysz <strong>%{account_name}</strong> od <strong>%{provider_name}</strong>. Konto zostanie przekształcone w konto ręczne."
+      description_html: 'Zamierzasz odłączyć <strong>%{account_name}</strong> od <strong>%{provider_name}</strong>. Konto zostanie przekształcone w konto ręczne.'
       warning_title: Co to oznacza
-      warning_no_sync: Konto nie będzie już automatycznie synchronizowane z dostawcą
-      warning_manual_updates: Konieczne będzie ręczne dodawanie transakcji i aktualizacja sald
+      warning_no_sync: Konto nie będzie już synchronizowane automatycznie z dostawcą
+      warning_manual_updates: Będziesz musiał(-a) ręcznie dodawać transakcje i aktualizować salda
       warning_transactions_kept: Wszystkie istniejące transakcje i salda zostaną zachowane
-      warning_can_delete: Po odłączeniu będzie można usunąć konto, jeśli zajdzie taka potrzeba
+      warning_can_delete: Po odłączeniu będziesz mógł(-a) usunąć konto, jeśli będzie to potrzebne
       confirm_button: Potwierdź i odłącz
     unlink:
-      success: "Konto zostało pomyślnie odłączone. Jest teraz kontem ręcznym."
-      not_linked: "Konto nie jest połączone z żadnym dostawcą"
+      success: "Konto zostało odłączone. Jest teraz kontem ręcznym."
+      not_linked: "Konto nie jest połączone z dostawcą"
       error: "Nie udało się odłączyć konta: %{error}"
       generic_error: "Wystąpił nieoczekiwany błąd. Spróbuj ponownie."
     select_provider:
       title: Wybierz dostawcę do połączenia
-      description: "Wybierz dostawcę, którego chcesz użyć do połączenia konta %{account_name}"
+      description: "Wybierz dostawcę, którego chcesz użyć do połączenia %{account_name}"
       already_linked: "Konto jest już połączone z dostawcą"
-      no_providers: "Brak skonfigurowanych dostawców"
+      no_providers: "Nie skonfigurowano żadnych dostawców"
 
   email_confirmations:
     new:
       invalid_token: Nieprawidłowy lub wygasły link potwierdzający.
-      success_login: Twój adres e-mail został potwierdzony. Zaloguj się, używając nowego adresu e-mail.
+      success_login: Twój adres e-mail został potwierdzony. Zaloguj się przy użyciu nowego adresu e-mail.

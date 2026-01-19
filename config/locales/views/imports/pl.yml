@@ -1,59 +1,144 @@
----
 pl:
   import:
     cleans:
       show:
         description: Edytuj swoje dane w tabeli poniżej. Czerwone komórki są nieprawidłowe.
-        errors_notice: W Twoich danych występują błędy. Najedź kursorem na błąd, aby zobaczyć szczegóły.
-        errors_notice_mobile: W Twoich danych występują błędy. Stuknij dymek błędu, aby zobaczyć szczegóły.
-        title: Oczyść swoje dane
+        errors_notice: W danych występują błędy. Najedź kursorem na błąd, aby zobaczyć szczegóły.
+        errors_notice_mobile: W danych występują błędy. Dotknij dymka błędu, aby zobaczyć szczegóły.
+        cleaned_notice: Twoje dane zostały oczyszczone
+        next_step: Następny krok
+        all_rows: Wszystkie wiersze
+        error_rows: Wiersze z błędami
+        title: Oczyść dane
     configurations:
       update:
         success: Import został pomyślnie skonfigurowany.
       category_import:
         button_label: Kontynuuj
-        description: Prześlij prosty plik CSV (np. taki, jaki generujemy przy eksporcie danych). Automatycznie zmapujemy kolumny.
-        instructions: Wybierz „Kontynuuj”, aby przetworzyć plik CSV i przejść do etapu czyszczenia.
+        description: Prześlij prosty plik CSV (np. taki, jaki generujemy przy eksporcie danych). Kolumny zostaną automatycznie dopasowane.
+        instructions: Wybierz „Kontynuuj”, aby przetworzyć CSV i przejść do kroku czyszczenia.
       mint_import:
         date_format_label: Format daty
+        preconfigured_notice: Import z Mint został wstępnie skonfigurowany. Przejdź do następnego kroku.
+        leave_empty: Pozostaw puste
+        date_label: Data
+        amount_label: Kwota
+        incomes_negative: Przychody są ujemne
+        incomes_positive: Przychody są dodatnie
+        currency_label: Waluta
+        format_label: Format
+        select_format: Wybierz format
+        account_optional_label: Konto (opcjonalnie)
+        name_optional_label: Nazwa (opcjonalnie)
+        category_optional_label: Kategoria (opcjonalnie)
+        tags_optional_label: Tagi (opcjonalnie)
+        apply_configuration: Zastosuj konfigurację
       rule_import:
-        description: Skonfiguruj import reguł. Reguły zostaną utworzone lub zaktualizowane na podstawie danych z CSV.
+        description: Skonfiguruj import reguł. Reguły zostaną utworzone lub zaktualizowane na podstawie danych CSV.
         process_button: Przetwórz reguły
-        process_help: Kliknij poniższy przycisk, aby przetworzyć plik CSV i wygenerować wiersze reguł.
+        process_help: Kliknij przycisk poniżej, aby przetworzyć CSV i wygenerować wiersze reguł.
       show:
-        description: Wybierz kolumny odpowiadające poszczególnym polom w Twoim pliku CSV.
+        description: Wybierz kolumny odpowiadające poszczególnym polom w pliku CSV.
         title: Skonfiguruj import
+        template_found_title: Znaleziono konfigurację szablonu
+        template_found_description: Znaleźliśmy konfigurację z poprzedniego importu dla tego konta. Czy chcesz ją zastosować?
+        manual_configure: Skonfiguruj ręcznie
+        apply_template: Zastosuj szablon
+        sample_data_caption: Przykładowe dane z przesłanego pliku CSV
       trade_import:
         date_format_label: Format daty
+        select_column: Wybierz kolumnę
+        quantity_label: Ilość
+        buys_positive_qty: Kupno ma dodatnią ilość
+        buys_negative_qty: Kupno ma ujemną ilość
+        default: Domyślny
+        currency_label: Waluta
+        format_label: Format
+        select_format: Wybierz format
+        ticker_label: Ticker
+        exchange_code_label: Kod giełdy
+        price_label: Cena
+        leave_empty: Pozostaw puste
+        account_label: Konto
+        name_label: Nazwa
+        note_label: Notatka
+        provider_not_configured: Dostawca cen papierów wartościowych nie jest skonfigurowany. Import transakcji zadziała, ale historia cen nie zostanie uzupełniona. Przejdź do ustawień, aby skonfigurować dostawcę.
+        apply_configuration: Zastosuj konfigurację
       transaction_import:
         date_format_label: Format daty
         rows_to_skip_label: Pomiń pierwsze n wierszy
+        date_label: Data
+        select_column: Wybierz kolumnę
+        select_format: Wybierz format
+        amount_label: Kwota
+        default: Domyślny
+        currency_label: Waluta
+        format_label: Format
+        amount_type_strategy_label: Strategia typu kwoty
+        select_strategy: Wybierz strategię
+        arrow: "->"
+        incomes_positive: Przychody są dodatnie
+        incomes_negative: Przychody są ujemne
+        amount_type_label: Typ kwoty
+        select_convention: Wybierz konwencję
+        set: Ustaw
+        as_amount_type_column: jako kolumnę typu kwoty
+        as_income_value: jako wartość „przychód” (wpływ)
+        leave_empty: Pozostaw puste
+        account_label: Konto
+        name_label: Nazwa
+        category_label: Kategoria
+        tags_label: Tagi
+        notes_label: Notatki
+        apply_configuration: Zastosuj konfigurację
+      account_import:
+        leave_empty: Pozostaw puste
+        default: Domyślny
+        entity_type_label: Typ encji
+        name_label: Nazwa
+        balance_label: Saldo
+        currency_label: Waluta
+        apply_configuration: Zastosuj konfigurację
     confirms:
       mappings:
         create_account: Utwórz konto
+        next: Dalej
         csv_mapping_label: "%{mapping} w CSV"
         sure_mapping_label: "%{mapping} w %{product_name}"
-        no_accounts: Nie masz jeszcze żadnych kont. Utwórz konto, którego możemy użyć dla (nieprzypisanych) wierszy w Twoim pliku CSV, albo wróć do etapu czyszczenia i podaj nazwę konta.
+        no_accounts: Nie masz jeszcze żadnych kont. Utwórz konto, które będzie używane dla nieprzypisanych wierszy w CSV lub wróć do kroku „Czyszczenie” i podaj nazwę konta.
         rows_label: Wiersze
-        unassigned_account: Czy utworzyć nowe konto dla nieprzypisanych wierszy?
+        unassigned_account: Utworzyć nowe konto dla nieprzypisanych wierszy?
       show:
-        account_mapping_description: Przypisz wszystkie konta z importowanego pliku do istniejących kont w Maybe. Możesz także dodać nowe konta lub pozostawić je bez przypisania.
+        account_mapping_description: Przypisz konta z importowanego pliku do istniejących kont w Maybe. Możesz też dodać nowe konta lub pozostawić je nieprzypisane.
         account_mapping_title: Przypisz konta
-        account_type_mapping_description: Przypisz wszystkie typy kont z importowanego pliku do typów w Maybe.
+        account_type_mapping_description: Przypisz typy kont z importowanego pliku do typów kont w Maybe.
         account_type_mapping_title: Przypisz typy kont
-        category_mapping_description: Przypisz wszystkie kategorie z importowanego pliku do istniejących kategorii w Maybe. Możesz także dodać nowe kategorie lub pozostawić je bez przypisania.
+        category_mapping_description: Przypisz kategorie z importowanego pliku do istniejących kategorii w Maybe. Możesz też dodać nowe lub pozostawić nieprzypisane.
         category_mapping_title: Przypisz kategorie
-        tag_mapping_description: Przypisz wszystkie tagi z importowanego pliku do istniejących tagów w Maybe. Możesz także dodać nowe tagi lub pozostawić je bez przypisania.
+        tag_mapping_description: Przypisz tagi z importowanego pliku do istniejących tagów w Maybe. Możesz też dodać nowe lub pozostawić nieprzypisane.
         tag_mapping_title: Przypisz tagi
+        step_label: "Krok %{step}"
     uploads:
       show:
-        description: Wklej lub prześlij poniżej plik CSV. Przed rozpoczęciem zapoznaj się z instrukcjami w tabeli poniżej.
-        instructions_1: Poniżej znajduje się przykładowy plik CSV z kolumnami dostępnymi do importu.
-        instructions_2: Twój plik CSV musi zawierać wiersz nagłówka.
-        instructions_3: Nazwy kolumn mogą być dowolne — przypiszesz je w kolejnym kroku.
+        description: Wklej lub prześlij plik CSV poniżej. Przed rozpoczęciem zapoznaj się z instrukcjami w tabeli.
+        instructions_1: Poniżej znajduje się przykładowy plik CSV z kolumnami możliwymi do importu.
+        instructions_2: Plik CSV musi zawierać wiersz nagłówka.
+        instructions_3: Nazwy kolumn mogą być dowolne — zostaną przypisane w kolejnym kroku.
         instructions_4: Kolumny oznaczone gwiazdką (*) są wymagane.
         instructions_5: W liczbach nie używaj przecinków, symboli walut ani nawiasów.
-        title: Importuj swoje dane
+        title: Importuj dane
+        drop_title: Upuść plik CSV, aby przesłać
+        drop_subtitle: Plik zostanie przesłany automatycznie
+        tab_upload: Prześlij CSV
+        tab_paste: Kopiuj i wklej
+        account_optional: Konto (opcjonalnie)
+        multi_account_import: Import wielu kont
+        browse_label: Przeglądaj
+        browse_suffix: aby dodać plik CSV
+        upload_csv: Prześlij CSV
+        paste_placeholder: Wklej zawartość pliku CSV tutaj
+        download_sample: Pobierz przykładowy CSV
+        sample_suffix: aby zobaczyć wymagany format
   imports:
     empty:
       message: Brak importów.
@@ -61,10 +146,10 @@ pl:
     import:
       complete: Zakończony
       delete: Usuń
-      failed: Niepowodzenie
+      failed: Nieudany
       in_progress: W toku
       label: "%{type}: %{datetime}"
-      revert_failed: Cofnięcie nie powiodło się
+      revert_failed: Cofanie nie powiodło się
       reverting: Cofanie
       uploading: Przetwarzanie wierszy
       view: Zobacz
@@ -76,7 +161,7 @@ pl:
       new_export: Nowy eksport
       no_exports: Brak eksportów.
     new:
-      description: Możesz ręcznie importować różne typy danych przez CSV lub skorzystać z naszych szablonów importu, takich jak Mint.
+      description: Możesz ręcznie importować różne typy danych przez CSV lub skorzystać z gotowych szablonów, np. Mint.
       import_accounts: Importuj konta
       import_categories: Importuj kategorie
       import_mint: Importuj z Mint
@@ -87,5 +172,29 @@ pl:
       sources: Źródła
       title: Nowy import CSV
     ready:
-      description: Oto podsumowanie nowych elementów, które zostaną dodane do Twojego konta po opublikowaniu tego importu.
+      description: Poniżej znajduje się podsumowanie elementów, które zostaną dodane po opublikowaniu importu.
       title: Potwierdź dane importu
+      item: element
+      count: liczba
+      publish: Opublikuj import
+    failure:
+      title: Import nie powiódł się
+      description: Sprawdź format pliku, błędy oraz czy wszystkie wymagane pola są wypełnione, a następnie spróbuj ponownie.
+      try_again: Spróbuj ponownie
+    revert_failure:
+      title: Cofanie importu nie powiodło się
+      description: Spróbuj ponownie
+      try_again: Spróbuj ponownie
+    importing:
+      title: Import w toku
+      description: "Import jest w toku. Sprawdź status w menu importów lub kliknij „Sprawdź status”, aby odświeżyć stronę. Możesz dalej korzystać z aplikacji."
+      check_status: Sprawdź status
+      back_to_dashboard: Wróć do pulpitu
+    nav:
+      mobile_step: "Krok %{current} z %{total}"
+      steps:
+        upload: Prześlij
+        configure: Konfiguruj
+        clean: Oczyść
+        map: Przypisz
+        confirm: Potwierdź

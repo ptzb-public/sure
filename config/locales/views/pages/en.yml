@@ -20,6 +20,9 @@ en:
         title: "Balance Sheet"
         no_items: "No %{name} yet"
         add_accounts: "Add your %{name} accounts to see a full breakdown"
+        name: Name
+        weight: Weight
+        value: Value
       cashflow_sankey:
         title: "Cashflow"
         no_data_title: "No cash flow data for this time period"
@@ -48,3 +51,20 @@ en:
         trades: "Trades"
         no_investments: "No investment accounts"
         add_investment: "Add an investment account to track your portfolio"
+    redis_configuration_error:
+      page_title: "Redis Configuration Required - Sure"
+      title: "Redis Configuration Required"
+      subtitle: "Your self-hosted Sure installation needs Redis to be properly configured."
+      why_title: "Why is Redis required?"
+      why_body: "Sure uses Redis to power Sidekiq background jobs for tasks like syncing account data, processing imports, and other background operations that keep your financial data up to date."
+      view_setup_guide: "View Setup Guide"
+      guide_hint: "Follow our complete Docker setup guide to configure Redis"
+      refresh_hint: "Once you've configured Redis, refresh this page to continue."
+      refresh_page: "Refresh Page"
+    feedback:
+      page_title: "Feedback"
+      title: "Leave feedback"
+      subtitle: "Let us know if you have any specific feedback. Feel free to include links to videos or screenshots."
+      feature_request: "Write a feature request"
+      bug_report: "File a bug report"
+      discuss: "Discuss %{product_name} with others"

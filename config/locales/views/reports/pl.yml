@@ -1,13 +1,12 @@
----
 pl:
   reports:
     index:
       title: Raporty
-      subtitle: Kompleksowy wgląd w Twoją sytuację finansową
+      subtitle: Kompleksowy wgląd w stan Twoich finansów
       export: Eksportuj CSV
       print_report: Drukuj raport
       drag_to_reorder: "Przeciągnij, aby zmienić kolejność sekcji"
-      toggle_section: "Przełącz widoczność sekcji"
+      toggle_section: "Pokaż / ukryj sekcję"
       periods:
         monthly: Miesięcznie
         quarterly: Kwartalnie
@@ -17,29 +16,33 @@ pl:
       date_range:
         from: Od
         to: Do
-      showing_period: "Wyświetlane dane od %{start} do %{end}"
+      showing_period: "Dane od %{start} do %{end}"
+
     invalid_date_range: "Data końcowa nie może być wcześniejsza niż początkowa. Daty zostały zamienione."
+
     summary:
-      total_income: Łączne przychody
-      total_expenses: Łączne wydatki
+      total_income: Całkowite przychody
+      total_expenses: Całkowite wydatki
       net_savings: Oszczędności netto
       budget_performance: Realizacja budżetu
-      vs_previous: vs poprzedni okres
+      vs_previous: w porównaniu do poprzedniego okresu
       income_minus_expenses: Przychody minus wydatki
-      of_budget_used: wykorzystania budżetu
+      of_budget_used: wykorzystanego budżetu
       no_budget_data: Brak danych budżetowych dla tego okresu
+
     budget_performance:
       title: Realizacja budżetu
       spent: Wydano
       budgeted: Zaplanowano
       remaining: Pozostało
       over_by: Przekroczono o
-      suggested_daily: "%{amount} sugerowane dziennie przez %{days} pozostałych dni"
+      suggested_daily: "%{amount} sugerowane dziennie na pozostałe %{days} dni"
       no_budgets: Brak skonfigurowanych kategorii budżetowych na ten miesiąc
       status:
-        good: Zgodnie z planem
+        good: W normie
         warning: Blisko limitu
-        over: Przekroczony budżet
+        over: Przekroczony
+
     trends:
       title: Trendy i analizy
       monthly_breakdown: Zestawienie miesięczne
@@ -47,7 +50,7 @@ pl:
       income: Przychody
       expenses: Wydatki
       net: Netto
-      savings_rate: Stopa oszczędzania
+      savings_rate: Stopa oszczędności
       current: bieżący
       avg_monthly_income: Średnie miesięczne przychody
       avg_monthly_expenses: Średnie miesięczne wydatki
@@ -56,21 +59,23 @@ pl:
       spending_patterns: Wzorce wydatków
       weekday_spending: Wydatki w dni robocze
       weekend_spending: Wydatki w weekendy
-      total: Łącznie
+      total: Razem
       avg_per_transaction: Średnio na transakcję
       transactions: Transakcje
       insight_title: Wniosek
-      insight_higher_weekend: "Wydajesz o %{percent}% więcej na transakcję w weekendy niż w dni robocze"
-      insight_higher_weekday: "Wydajesz o %{percent}% więcej na transakcję w dni robocze niż w weekendy"
-      insight_similar: "Średnie wydatki na transakcję są podobne w dni robocze i weekendy"
+      insight_higher_weekend: "Wydajesz średnio o %{percent}% więcej na transakcję w weekendy niż w dni robocze"
+      insight_higher_weekday: "Wydajesz średnio o %{percent}% więcej na transakcję w dni robocze niż w weekendy"
+      insight_similar: "Twoje wydatki na transakcję są podobne w dni robocze i w weekendy"
       no_spending_data: Brak danych o wydatkach dla tego okresu
+
     empty_state:
       title: Brak danych
-      description: Zacznij śledzić swoje finanse, dodając transakcje lub łącząc konta, aby zobaczyć szczegółowe raporty
+      description: Zacznij śledzić swoje finanse, dodając transakcje lub podłączając konta, aby zobaczyć raporty
       add_transaction: Dodaj transakcję
       add_account: Dodaj konto
+
     transactions_breakdown:
-      title: Zestawienie aktywności
+      title: Podział aktywności
       no_transactions: Brak aktywności dla wybranego okresu i filtrów
       filters:
         title: Filtry
@@ -87,9 +92,9 @@ pl:
         clear: Wyczyść filtry
       sort:
         label: Sortuj według
-        date_desc: Data (od najnowszych)
-        amount_desc: Kwota (od najwyższych)
-        amount_asc: Kwota (od najniższych)
+        date_desc: Data (najnowsze)
+        amount_desc: Kwota (malejąco)
+        amount_asc: Kwota (rosnąco)
       export:
         label: Eksport
         csv: CSV
@@ -105,27 +110,29 @@ pl:
         uncategorized: Bez kategorii
         entries:
           one: wpis
-          other: wpisów
+          other: wpisy
         percentage: "% całości"
       pagination:
         showing:
-          one: Wyświetlany %{count} wpis
-          other: Wyświetlane %{count} wpisów
+          one: "Wyświetlany %{count} wpis"
+          other: "Wyświetlane %{count} wpisy"
         previous: Poprzednia
         next: Następna
+
     net_worth:
-      title: Majątek netto
-      current_net_worth: Aktualny majątek netto
+      title: Wartość netto
+      current_net_worth: Aktualna wartość netto
       period_change: Zmiana w okresie
       assets_vs_liabilities: Aktywa vs zobowiązania
       total_assets: Aktywa
       total_liabilities: Zobowiązania
       no_assets: Brak aktywów
       no_liabilities: Brak zobowiązań
+
     investment_performance:
       title: Wyniki inwestycji
       portfolio_value: Wartość portfela
-      total_return: Łączny zwrot
+      total_return: Całkowity zwrot
       contributions: Wpłaty w okresie
       withdrawals: Wypłaty w okresie
       top_holdings: Największe pozycje
@@ -134,21 +141,31 @@ pl:
       value: Wartość
       return: Zwrot
       accounts: Konta inwestycyjne
+
     investment_flows:
       title: Przepływy inwestycyjne
-      description: Śledź przepływ środków do i z kont inwestycyjnych
+      description: Śledź przepływ środków na kontach inwestycyjnych
+      intro: Śledź przepływ środków na kontach inwestycyjnych poprzez wpłaty i wypłaty.
       contributions: Wpłaty
+      contributions_description: Środki dodane do inwestycji
       withdrawals: Wypłaty
+      withdrawals_description: Środki wypłacone z inwestycji
       net_flow: Przepływ netto
+      net_flow_description: Łączna zmiana netto
+
     google_sheets_instructions:
       title_with_key: "✅ Skopiuj URL do Google Sheets"
       title_no_key: "⚠️ Wymagany klucz API"
-      ready: Twój adres URL CSV (z kluczem API) jest gotowy.
-      steps: "Aby zaimportować do Google Sheets:\n1. Utwórz nowy arkusz Google\n2. W komórce A1 wprowadź poniższą formułę\n3. Naciśnij Enter"
-      security_warning: "Ten adres URL zawiera Twój klucz API. Przechowuj go bezpiecznie!"
+      ready: Twój adres CSV (z kluczem API) jest gotowy.
+      steps: |
+        Aby zaimportować do Google Sheets:
+        1. Utwórz nowy arkusz Google
+        2. W komórce A1 wklej formułę poniżej
+        3. Naciśnij Enter
+      security_warning: "Ten adres URL zawiera Twój klucz API. Zachowaj go w tajemnicy!"
       need_key: Aby zaimportować dane do Google Sheets, potrzebujesz klucza API.
       step1: "Przejdź do Ustawienia → Klucze API"
-      step2: "Utwórz nowy klucz API z uprawnieniem „odczyt”"
+      step2: "Utwórz nowy klucz API z uprawnieniem „read”"
       step3: Skopiuj klucz API
       step4: "Dodaj go do tego URL jako: ?api_key=TWOJ_KLUCZ"
       example: Przykład
@@ -156,10 +173,12 @@ pl:
       open_sheets: Otwórz Google Sheets
       go_to_api_keys: Przejdź do kluczy API
       close: Rozumiem
+
     print:
       document_title: Raport finansowy
       title: Raport finansowy
       generated_on: "Wygenerowano %{date}"
+
       summary:
         title: Podsumowanie
         income: Przychody
@@ -167,36 +186,40 @@ pl:
         net_savings: Oszczędności netto
         budget: Budżet
         vs_prior: "%{percent}% vs poprzedni"
-        of_income: "%{percent}% przychodu"
-        used: wykorzystano
+        of_income: "%{percent}% przychodów"
+        used: wykorzystane
+
       net_worth:
-        title: Majątek netto
+        title: Wartość netto
         current_balance: Aktualne saldo
-        this_period: ten okres
+        this_period: w tym okresie
         assets: Aktywa
         liabilities: Zobowiązania
         no_liabilities: Brak zobowiązań
+
       trends:
         title: Trendy miesięczne
         month: Miesiąc
         income: Przychody
         expenses: Wydatki
         net: Netto
-        savings_rate: Stopa oszczędzania
+        savings_rate: Stopa oszczędności
         average: Średnia
         current_month_note: "* Bieżący miesiąc (dane częściowe)"
+
       investments:
         title: Inwestycje
         portfolio_value: Wartość portfela
-        total_return: Łączny zwrot
+        total_return: Całkowity zwrot
         contributions: Wpłaty
         withdrawals: Wypłaty
-        this_period: ten okres
+        this_period: w tym okresie
         top_holdings: Największe pozycje
         holding: Pozycja
         weight: Udział
         value: Wartość
         return: Zwrot
+
       spending:
         title: Wydatki według kategorii
         income: Przychody
@@ -204,4 +227,4 @@ pl:
         category: Kategoria
         amount: Kwota
         percent: "%"
-        more_categories: "+ %{count} więcej kategorii"
+        more_categories: "+ %{count} dodatkowych kategorii"

@@ -1,14 +1,25 @@
----
-pl:
+﻿pl:
   properties:
     edit:
       edit: Edytuj %{account}
+      manual_title: Wprowadź nieruchomość ręcznie
+      save: Zapisz
+      next: Dalej
+
     form:
-      address_line1: Ulica i numer
-      address_line1_placeholder: ul. Marszałkowska 10
+      address_line1: Adres ulicy
+      address_line1_placeholder: ul. Główna 123
       area: Powierzchnia użytkowa
-      area_placeholder: '80'
+      area_placeholder: '2000'
       area_unit: Jednostka miary
+      area_unit_label: Jednostka powierzchni
+      area_unit_sqft: Stopy kwadratowe
+      area_unit_sqm: Metry kwadratowe
+      area_optional: Powierzchnia (opcjonalnie)
+      name_label: Nazwa
+      name_placeholder: Dom wakacyjny
+      subtype_label: Typ nieruchomości
+      year_built_optional: Rok budowy (opcjonalnie)
       country: Kraj
       country_placeholder: PL
       locality: Miasto
@@ -20,9 +31,25 @@ pl:
       region_placeholder: Mazowieckie
       subtype_prompt: Wybierz typ nieruchomości
       year_built: Rok budowy
-      year_built_placeholder: '2005'
+      year_built_placeholder: '2000'
+
     new:
+      manual_title: Wprowadź nieruchomość ręcznie
+      next: Dalej
       title: Wprowadź dane nieruchomości
+
+    address:
+      title: Wprowadź nieruchomość ręcznie
+      save: Zapisz
+
+    balances:
+      title: Wprowadź wartość nieruchomości
+      market_value_label: Szacowana wartość rynkowa
+      market_value_tooltip: Szacowana wartość rynkowa nieruchomości. Tę wartość można często znaleźć na portalach ogłoszeniowych, jednak nie jest ona nigdy wartością dokładną.
+      market_value_placeholder: '0'
+      save: Zapisz
+      next: Dalej
+
     overview:
       living_area: Powierzchnia użytkowa
       market_value: Wartość rynkowa
@@ -30,3 +57,9 @@ pl:
       trend: Trend
       unknown: Nieznane
       year_built: Rok budowy
+      edit_account_details: Edytuj dane konta
+
+    form_tabs:
+      overview: Przegląd
+      value: Wartość
+      address: Adres

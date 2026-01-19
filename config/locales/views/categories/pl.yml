@@ -2,33 +2,51 @@
 pl:
   categories:
     bootstrap:
-      success: Domyślne kategorie zostały pomyślnie utworzone
+      success: "Domyślne kategorie zostały utworzone pomyślnie"
     category:
-      delete: Usuń kategorię
-      edit: Edytuj kategorię
+      delete: "Usuń kategorię"
+      edit: "Edytuj kategorię"
     create:
-      success: Kategoria została pomyślnie utworzona
+      success: "Kategoria została utworzona"
     destroy:
-      success: Kategoria została pomyślnie usunięta
+      success: "Kategoria została usunięta"
     edit:
-      edit: Edytuj kategorię
+      edit: "Edytuj kategorię"
     form:
-      placeholder: Nazwa kategorii
+      placeholder: "Nazwa kategorii"
+      color: "Kolor"
+      contrast_warning: "Słaby kontrast, wybierz ciemniejszy kolor lub"
+      auto_adjust: "dopasuj automatycznie."
+      icon: "Ikona"
+      income: "Dochód"
+      expense: "Wydatek"
+      classification_label: "Klasyfikacja"
+      name_label: "Nazwa"
+      unassigned: "(nieprzypisana)"
+      parent_category_optional: "Kategoria nadrzędna (opcjonalnie)"
     index:
-      bootstrap: Użyj domyślnych (zalecane)
-      categories: Kategorie
-      categories_expenses: Kategorie wydatków
-      categories_incomes: Kategorie przychodów
-      empty: Nie znaleziono kategorii
-      new: Nowa kategoria
+      bootstrap: "Użyj domyślnych (zalecane)"
+      categories: "Kategorie"
+      categories_expenses: "Kategorie wydatków"
+      categories_incomes: "Kategorie dochodów"
+      empty: "Nie znaleziono kategorii"
+      new: "Nowa kategoria"
+      delete_all: "Usuń wszystkie"
+      all_categories_resource: "wszystkie kategorie"
     menu:
-      loading: Ładowanie...
+      loading: "Ładowanie..."
     new:
-      new_category: Nowa kategoria
+      new_category: "Nowa kategoria"
     update:
-      success: Kategoria została pomyślnie zaktualizowana
+      success: "Kategoria została zaktualizowana"
+
   category:
     dropdowns:
       show:
-        bootstrap: Generuj domyślne kategorie
-        empty: Nie znaleziono kategorii
+        clear: "Wyczyść"
+        match_transfer_payment: "Dopasuj przelew/płatność"
+        one_time: "Jednorazowe %{type}"
+        income: "dochód"
+        expense: "wydatek"
+        bootstrap: "Generuj domyślne kategorie"
+        empty: "Nie znaleziono kategorii"
