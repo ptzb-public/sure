@@ -120,7 +120,7 @@ pl:
         short: Inne
         long: Inna inwestycja
     value_tooltip:
-      cash: Gotówka
+      cash: Konto bankowe
       holdings: Pozycje
       total: Saldo portfela
       total_value_tooltip: Łączne saldo portfela to suma gotówki brokerskiej (dostępnej do handlu) oraz bieżącej wartości rynkowej posiadanych pozycji.

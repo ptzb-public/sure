@@ -3,3 +3,25 @@ pl:
   chats:
     demo_banner_title: "Tryb demonstracyjny aktywny"
     demo_banner_message: "Korzystasz z otwartowagowego modelu LLM Qwen3 z kredytami zapewnionymi przez Cloudflare Workers AI. Wyniki mogą się różnić, ponieważ baza kodu była w większości testowana na `gpt-4.1`, jednak Twoje tokeny nie są nigdzie przekazywane ani wykorzystywane do trenowania."
+    index:
+      title: Czaty
+      new_chat: Nowy czat
+    ai_greeting:
+      fallback_name: tam
+      intro: "Cześć %{name}! Jestem modelem AI, który może pomóc w Twoich finansach. Mam dostęp do sieci i danych z Twojego konta."
+      commands_html: "Możesz użyć <span class=\"bg-container border border-secondary px-1.5 py-0.5 rounded font-mono text-xs\">/</span> do dostępu do komend"
+      sample_questions_title: "Oto kilka pytań, które możesz zadać:"
+      sample_questions:
+        evaluate_portfolio: Oceń portfel inwestycyjny
+        spending_insights: Pokaż wnioski o wydatkach
+        unusual_patterns: Znajdź nietypowe wzorce
+    ai_consent:
+      title: Włącz czaty AI
+      description_available: Czat AI odpowie na pytania finansowe i pokaże wnioski na podstawie Twoich danych. Aby skorzystać z tej funkcji, musisz ją włączyć.
+      description_unavailable_html: "Aby korzystać z asystenta AI, ustaw zmienną środowiskową <code class=\"bg-surface-inset px-1 py-0.5 rounded font-mono text-xs\">OPENAI_ACCESS_TOKEN</code> lub skonfiguruj ją w ustawieniach Self-Hosting swojej instancji."
+      enable_button: Włącz czaty AI
+      footer_note: Możesz wyłączyć w dowolnym momencie. Wszystkie dane wysyłane do dostawców LLM są anonimizowane.
+    form:
+      ask_anything: Zapytaj o cokolwiek ...
+      coming_soon: Wkrótce
+      disclaimer: Odpowiedzi AI mają wyłącznie charakter informacyjny i nie stanowią porady finansowej.

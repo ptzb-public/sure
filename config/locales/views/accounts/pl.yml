@@ -22,7 +22,7 @@ pl:
       view_options:
         total_value: Wartość całkowita
         holdings: Aktywa
-        cash: Gotówka
+        cash: Konto bankowe
     create:
       success: "Utworzono konto typu %{type}"
     destroy:

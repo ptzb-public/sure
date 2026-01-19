@@ -6,5 +6,21 @@ pl:
     form:
       none: Brak
       subtype_prompt: Wybierz typ konta
+    subtypes:
+      checking:
+        short: Bieżące
+        long: Konto bieżące
+      savings:
+        short: Oszczędnościowe
+        long: Konto oszczędnościowe
+      hsa:
+        short: HSA
+        long: Konto oszczędnościowe zdrowotne (HSA)
+      cd:
+        short: Lokata
+        long: Certyfikat depozytowy (CD)
+      money_market:
+        short: Rynek pieniężny
+        long: Konto rynku pieniężnego
     new:
       title: Wprowadź saldo konta
