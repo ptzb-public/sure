@@ -13,7 +13,7 @@ pl:
       account: Konto
       account/credit: Karta kredytowa
       account/credit_card: Karta kredytowa
-      account/depository: Gotówka
+      account/depository: Konto bankowe
       account/investment: Inwestycja
       account/loan: Pożyczka
       account/other_asset: Inne aktywo

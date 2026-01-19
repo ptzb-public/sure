@@ -111,7 +111,7 @@ pl:
       new_account: Nowe konto
       new_account_group: "Nowa grupa: %{account_group}"
     types:
-      depository: Gotówka
+      depository: Konto bankowe
       investment: Inwestycja
       crypto: Kryptowaluty
       property: Nieruchomość

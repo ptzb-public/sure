@@ -22,9 +22,9 @@ pl:
     summary:
       total_income: Łączne przychody
       total_expenses: Łączne wydatki
-      net_savings: Oszczędności netto
+      net_savings: Oszczędności
       budget_performance: Realizacja budżetu
-      vs_previous: vs poprzedni okres
+      vs_previous: poprzedni okres
       income_minus_expenses: Przychody minus wydatki
       of_budget_used: wykorzystania budżetu
       no_budget_data: Brak danych budżetowych dla tego okresu
@@ -164,7 +164,7 @@ pl:
         title: Podsumowanie
         income: Przychody
         expenses: Wydatki
-        net_savings: Oszczędności netto
+        net_savings: Oszczędności
         budget: Budżet
         vs_prior: "%{percent}% vs poprzedni"
         of_income: "%{percent}% przychodu"
