@@ -212,7 +212,7 @@ export default class extends Controller {
             this._normalDataPoints[this._normalDataPoints.length - 1].date,
           ])
           .tickSize(0)
-          .tickFormat(d3.timeFormat("%b %d, %Y")),
+          .tickFormat((date) => this._formatXAxisDate(date)),
       )
       .select(".domain")
       .remove();
@@ -443,6 +443,20 @@ export default class extends Controller {
       return numeric.formatted;
     }
     return numeric;
+  };
+
+  _formatXAxisDate = (date) => {
+    const locale = document.documentElement.lang || "en";
+
+    try {
+      return new Intl.DateTimeFormat(locale, {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+      }).format(date);
+    } catch (_error) {
+      return d3.timeFormat("%b %d, %Y")(date);
+    }
   };
 
   _createMainSvg() {
