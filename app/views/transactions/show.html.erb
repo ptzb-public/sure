@@ -65,7 +65,7 @@
           <% unless @entry.transaction.transfer? %>
             <div class="flex items-center gap-2">
               <%= f.select :nature,
-                    [["Expense", "outflow"], ["Income", "inflow"]],
+                    [[t("transactions.form.expense"), "outflow"], [t("transactions.form.income"), "inflow"]],
                     { container_class: "w-1/3", label: t(".nature"), selected: @entry.amount.negative? ? "inflow" : "outflow" },
                     { data: { "auto-submit-form-target": "auto" }, disabled: @entry.linked? } %>
 

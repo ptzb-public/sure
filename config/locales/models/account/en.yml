@@ -12,10 +12,12 @@ en:
     models:
       account: Account
       account/credit: Credit Card
-      account/depository: Bank Account
+      account/credit_card: Credit Card
+      account/depository: Cash
       account/investment: Investment
       account/loan: Loan
       account/other_asset: Other Asset
       account/other_liability: Other Liability
-      account/property: Real Estate
+      account/property: Property
       account/vehicle: Vehicle
+      account/crypto: Crypto

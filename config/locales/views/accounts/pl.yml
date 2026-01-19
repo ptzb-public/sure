@@ -8,6 +8,21 @@ pl:
       troubleshoot: Rozwiąż problem
     chart:
       data_not_available: Dane niedostępne dla wybranego okresu
+      no_data_available: Brak danych
+      titles:
+        total_account_value: Łączna wartość konta
+        holdings_value: Wartość aktywów
+        cash_value: Wartość gotówki
+        debt_balance: Saldo zadłużenia
+        remaining_principal_balance: Pozostałe saldo kapitału
+        balance: Saldo
+        estimated_value:
+          property: Szacowana wartość nieruchomości
+          vehicle: Szacowana wartość pojazdu
+      view_options:
+        total_value: Wartość całkowita
+        holdings: Aktywa
+        cash: Gotówka
     create:
       success: "Utworzono konto typu %{type}"
     destroy:
@@ -38,6 +53,12 @@ pl:
       syncing: "Synchronizowanie kont..."
     new:
       import_accounts: Importuj konta
+      container:
+        navigation:
+          select: Wybierz
+          navigate: Nawiguj
+          close: Zamknij
+          esc: ESC
       method_selector:
         connected_entry: Połącz konto
         connected_entry_eu: Połącz konto UE

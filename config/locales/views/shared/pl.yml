@@ -12,3 +12,7 @@ pl:
       syncing: Synchronizacja danych kont...
     trend_change:
       no_change: "brak zmian"
+    transaction_tabs:
+      expense: Wydatek
+      income: Przychód
+      transfer: Przelew

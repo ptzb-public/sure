@@ -1,0 +1,6 @@
+pl:
+  periods:
+    last_30_days:
+      label_short: 30D
+      label: Ostatnie 30 dni
+      comparison_label: w porównaniu z ostatnimi 30 dniami

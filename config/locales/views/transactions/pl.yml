@@ -11,12 +11,13 @@ pl:
       date: Data
       description: Opis
       description_placeholder: Opisz transakcję
+      details: Szczegóły
       expense: Wydatek
       income: Przychód
       none: (brak)
       note_label: Notatki
       note_placeholder: Wpisz notatkę
-      submit: Dodaj transakcję
+      submit: Dodaj przelew
       tags_label: Etykiety
       transfer: Przelew
     new:

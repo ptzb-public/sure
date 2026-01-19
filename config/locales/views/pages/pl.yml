@@ -23,8 +23,8 @@ pl:
       cashflow_sankey:
         title: "Przepływy pieniężne"
         no_data_title: "Brak danych o przepływach pieniężnych w tym okresie"
-        no_data_description: "Dodaj transakcje, aby wyświetlić dane o przepływach pieniężnych lub rozszerz zakres czasu"
-        add_transaction: "Dodaj transakcję"
+        no_data_description: "Dodaj przelew, aby wyświetlić dane o przepływach pieniężnych lub rozszerz zakres czasu"
+        add_transaction: "Dodaj przelew"
       no_accounts:
         title: "Brak kont"
         description: "Dodaj konta, aby wyświetlić dane o majątku netto"

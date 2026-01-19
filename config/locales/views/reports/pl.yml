@@ -67,7 +67,7 @@ pl:
     empty_state:
       title: Brak danych
       description: Zacznij śledzić swoje finanse, dodając transakcje lub łącząc konta, aby zobaczyć szczegółowe raporty
-      add_transaction: Dodaj transakcję
+      add_transaction: Dodaj przelew
       add_account: Dodaj konto
     transactions_breakdown:
       title: Zestawienie aktywności

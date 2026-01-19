@@ -7,5 +7,5 @@
     hex_color: accountable.color,
   ) %>
 
-  <%= accountable.display_name.singularize %>
+  <%= t("accounts.types.#{accountable.model_name.singular}", default: accountable.display_name.singularize) %>
 <% end %>

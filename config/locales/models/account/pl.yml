@@ -12,10 +12,12 @@ pl:
     models:
       account: Konto
       account/credit: Karta kredytowa
-      account/depository: Konto bankowe
+      account/credit_card: Karta kredytowa
+      account/depository: Gotówka
       account/investment: Inwestycja
       account/loan: Pożyczka
-      account/other_asset: Inny składnik majątku
+      account/other_asset: Inne aktywo
       account/other_liability: Inne zobowiązanie
       account/property: Nieruchomość
       account/vehicle: Pojazd
+      account/crypto: Kryptowaluta
