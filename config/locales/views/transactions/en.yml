@@ -87,9 +87,11 @@ en:
       success: Kept as separate transactions
       failure: Could not dismiss duplicate suggestion
     header:
+      new_rule: New rule
       edit_categories: Edit categories
       edit_imports: Edit imports
       edit_merchants: Edit merchants
+      edit_rules: Edit rules
       edit_tags: Edit tags
       import: Import
     index:

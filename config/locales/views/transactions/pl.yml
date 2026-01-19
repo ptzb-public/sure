@@ -86,9 +86,11 @@ pl:
       success: Zachowano jako oddzielne transakcje
       failure: Nie udało się odrzucić sugestii duplikatu
     header:
+      new_rule: Nowa reguła
       edit_categories: Edytuj kategorie
       edit_imports: Edytuj importy
       edit_merchants: Edytuj sprzedawców
+      edit_rules: Edytuj reguły
       edit_tags: Edytuj etykiety
       import: Importuj
     index:
