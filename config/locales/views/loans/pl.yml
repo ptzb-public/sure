@@ -8,6 +8,10 @@ pl:
       interest_rate_placeholder: '5.25'
       initial_balance: Początkowa kwota kredytu
       rate_type: Rodzaj oprocentowania
+      rate_type_options:
+        fixed: Stałe
+        variable: Zmienne
+        adjustable: Regulowane
       term_months: Okres (miesiące)
       term_months_placeholder: '360'
     new:

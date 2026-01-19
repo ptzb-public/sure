@@ -12,7 +12,7 @@ pl:
       from: Z
       income: Przychód
       select_account: Wybierz konto
-      submit: Utwórz transfer
+      submit: Utwórz przelew
       to: Do
       transfer: Transfer
     new:
