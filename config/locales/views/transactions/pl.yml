@@ -40,6 +40,10 @@ pl:
       convert_to_trade_title: Przekształć w transakcję giełdową
       convert_to_trade_description: Przekształć tę transakcję w kupno lub sprzedaż papieru wartościowego do śledzenia portfela.
       convert_to_trade_button: Przekształć w transakcję
+      potential_duplicate_title: Wykryto możliwy duplikat
+      potential_duplicate_description: Ta oczekująca transakcja może być taka sama jak zaksięgowana transakcja poniżej. Jeśli tak, scal je, aby uniknąć podwójnego liczenia.
+      merge_duplicate: Tak, scal je
+      keep_both: Nie, zachowaj obie
     activity_labels:
       buy: Kupno
       sell: Sprzedaż
@@ -67,10 +71,6 @@ pl:
     settings: Ustawienia
     tags_label: Etykiety
     uncategorized: "(bez kategorii)"
-    potential_duplicate_title: Wykryto możliwy duplikat
-    potential_duplicate_description: Ta oczekująca transakcja może być taka sama jak zaksięgowana transakcja poniżej. Jeśli tak, scal je, aby uniknąć podwójnego liczenia.
-    merge_duplicate: Tak, scal je
-    keep_both: Nie, zachowaj obie
     transaction:
       pending: Oczekująca
       pending_tooltip: Transakcja oczekująca — może ulec zmianie po zaksięgowaniu
@@ -92,11 +92,18 @@ pl:
       edit_tags: Edytuj etykiety
       import: Importuj
     index:
+      title: Transakcje
       transaction: transakcja
       transactions: transakcje
+      category: kategoria
+      amount: kwota
       import: Importuj
+      drop_csv_title: Upuść CSV, aby zaimportować
+      drop_csv_subtitle: Prześlij transakcje bezpośrednio
     toggle_recurring_section: Pokaż/ukryj nadchodzące transakcje cykliczne
     search:
+      search_placeholder: Szukaj transakcji ...
+      filter: Filtruj
       filters:
         account: Konto
         date: Data
@@ -106,6 +113,11 @@ pl:
         category: Kategoria
         tag: Etykieta
         merchant: Sprzedawca
+      filter_placeholders:
+        accounts: Filtruj konta
+        category: Filtruj kategorie
+        merchants: Filtruj sprzedawców
+        tags: Filtruj etykiety
     convert_to_trade:
       title: Przekształć w transakcję giełdową
       description: Przekształć tę transakcję w transakcję z papierem wartościowym
@@ -187,3 +199,7 @@ pl:
         less_than: mniejsza niż
       form:
         toggle_selection_checkboxes: Zaznacz/odznacz wszystkie
+    summary:
+      total_transactions: Łączna liczba transakcji
+      income: Przychody
+      expenses: Wydatki

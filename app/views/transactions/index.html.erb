@@ -1,6 +1,6 @@
 <div class="space-y-4 pb-6 lg:pb-12 flex flex-col">
   <header class="flex justify-between items-center text-primary font-medium">
-    <h1 class="text-xl">Transactions</h1>
+    <h1 class="text-xl"><%= t(".title") %></h1>
     <div class="flex items-center gap-5">
       <div class="flex items-center gap-2">
         <%= render DS::Menu.new do |menu| %>
@@ -43,7 +43,7 @@
     </div>
   </header>
 
-  <%= render "summary", totals: @search.totals %>
+    <%= render "summary", totals: @search.totals %>
 
   <div id="transactions"
        data-controller="bulk-select checkbox-toggle drag-and-drop-import"
@@ -56,7 +56,9 @@
       <%= f.file_field "import[csv_file]", class: "hidden", data: { drag_and_drop_import_target: "input" }, accept: ".csv" %>
     <% end %>
 
-    <%= render "imports/drag_drop_overlay", title: "Drop CSV to import", subtitle: "Upload transactions directly" %>
+    <%= render "imports/drag_drop_overlay",
+      title: t(".drop_csv_title"),
+      subtitle: t(".drop_csv_subtitle") %>
 
     <%= render "transactions/searches/search" %>
 
@@ -75,11 +77,11 @@
                                   action: "bulk-select#togglePageSelection",
                                   checkbox_toggle_target: "selectionEntry"
                                 } %>
-              <p>transaction</p>
+              <p><%= t(".transaction") %></p>
             </div>
 
-            <p class="col-span-2 md:block hidden">category</p>
-            <p class="col-span-2 col-start-11 md:col-start-auto justify-self-end md:block">amount</p>
+            <p class="col-span-2 md:block hidden"><%= t(".category") %></p>
+            <p class="col-span-2 col-start-11 md:col-start-auto justify-self-end md:block"><%= t(".amount") %></p>
           </div>
         <% end %>
 

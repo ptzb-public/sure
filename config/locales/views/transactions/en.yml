@@ -41,6 +41,10 @@ en:
       convert_to_trade_title: Convert to Security Trade
       convert_to_trade_description: Convert this transaction into a Buy or Sell trade with security details for portfolio tracking.
       convert_to_trade_button: Convert to Trade
+      potential_duplicate_title: Possible duplicate detected
+      potential_duplicate_description: This pending transaction may be the same as the posted transaction below. If so, merge them to avoid double-counting.
+      merge_duplicate: Yes, merge them
+      keep_both: No, keep both
     activity_labels:
       buy: Buy
       sell: Sell
@@ -68,10 +72,6 @@ en:
     settings: Settings
     tags_label: Tags
     uncategorized: "(uncategorized)"
-    potential_duplicate_title: Possible duplicate detected
-    potential_duplicate_description: This pending transaction may be the same as the posted transaction below. If so, merge them to avoid double-counting.
-    merge_duplicate: Yes, merge them
-    keep_both: No, keep both
     transaction:
       pending: Pending
       pending_tooltip: Pending transaction — may change when posted
@@ -93,11 +93,18 @@ en:
       edit_tags: Edit tags
       import: Import
     index:
+      title: Transactions
       transaction: transaction
       transactions: transactions
+      category: category
+      amount: amount
       import: Import
+      drop_csv_title: Drop CSV to import
+      drop_csv_subtitle: Upload transactions directly
     toggle_recurring_section: Toggle upcoming recurring transactions
     search:
+      search_placeholder: Search transactions ...
+      filter: Filter
       filters:
         account: Account
         date: Date
@@ -107,6 +114,11 @@ en:
         category: Category
         tag: Tag
         merchant: Merchant
+      filter_placeholders:
+        accounts: Filter accounts
+        category: Filter category
+        merchants: Filter merchants
+        tags: Filter tags
     convert_to_trade:
       title: Convert to Security Trade
       description: Convert this transaction into a trade with security details
@@ -188,3 +200,7 @@ en:
         less_than: less than
       form:
         toggle_selection_checkboxes: Toggle all checkboxes
+    summary:
+      total_transactions: Total transactions
+      income: Income
+      expenses: Expenses
