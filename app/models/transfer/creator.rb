@@ -26,7 +26,11 @@ class Transfer::Creator
     attr_reader :family, :source_account, :destination_account, :date, :amount
 
     def outflow_transaction
-      name = "#{name_prefix} to #{destination_account.name}"
+      name = if destination_account.liability?
+        I18n.t("transfer.payment_name", to_account: destination_account.name)
+      else
+        I18n.t("transfer.name", to_account: destination_account.name)
+      end
 
       Transaction.new(
         kind: outflow_transaction_kind,
@@ -40,7 +44,11 @@ class Transfer::Creator
     end
 
     def inflow_transaction
-      name = "#{name_prefix} from #{source_account.name}"
+      name = if destination_account.liability?
+        I18n.t("transfer.payment_from_name", from_account: source_account.name)
+      else
+        I18n.t("transfer.from_name", from_account: source_account.name)
+      end
 
       Transaction.new(
         kind: "funds_movement",

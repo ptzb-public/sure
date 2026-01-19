@@ -27,6 +27,7 @@ pl:
       amount: Kwota
       category_label: Kategoria
       date_label: Data
+      transfer: Przelew
       delete: Usuń
       delete_subtitle: Spowoduje to trwałe usunięcie transakcji, wpłynie na historyczne salda i nie może zostać cofnięte.
       delete_title: Usuń transakcję

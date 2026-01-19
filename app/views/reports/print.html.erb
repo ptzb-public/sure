@@ -148,7 +148,7 @@
         <tbody>
           <% @trends_data.each do |trend| %>
             <tr class="<%= trend[:is_current_month] ? "tufte-highlight" : "" %>">
-              <td><%= trend[:month] %><%= trend[:is_current_month] ? " *" : "" %></td>
+              <td><%= month_year_label(trend[:month_start]) %><%= trend[:is_current_month] ? " *" : "" %></td>
               <td class="tufte-right tufte-income"><%= Money.new(trend[:income], Current.family.currency).format %></td>
               <td class="tufte-right tufte-expense"><%= Money.new(trend[:expenses], Current.family.currency).format %></td>
               <td class="tufte-right <%= trend[:net] >= 0 ? "tufte-income" : "tufte-expense" %>"><%= Money.new(trend[:net], Current.family.currency).format %></td>

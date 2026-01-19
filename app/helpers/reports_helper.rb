@@ -31,4 +31,11 @@ module ReportsHelper
   def has_sparkline_data?(trends_data)
     trends_data&.length.to_i >= 2
   end
+
+  def month_year_label(date)
+    return "" if date.blank?
+
+    month_names = I18n.t("date.standalone_month_names", default: I18n.t("date.month_names"))
+    "#{month_names[date.month].to_s.capitalize} #{date.year}"
+  end
 end

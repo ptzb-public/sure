@@ -27,6 +27,7 @@ en:
       amount: Amount
       category_label: Category
       date_label: Date
+      transfer: Transfer
       delete: Delete
       delete_subtitle: This permanently deletes the transaction, affects your historical
         balances, and cannot be undone.

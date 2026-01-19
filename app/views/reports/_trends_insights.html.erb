@@ -21,7 +21,7 @@
               <% trends_data.each do |trend| %>
                 <tr class="border-b border-tertiary/50 <%= trend[:is_current_month] ? "font-medium" : "" %>">
                   <td class="py-3 pr-4 text-primary">
-                    <%= trend[:month] %>
+                    <%= month_year_label(trend[:month_start]) %>
                     <% if trend[:is_current_month] %>
                       <span class="ml-2 text-xs text-tertiary">(<%= t("reports.trends.current") %>)</span>
                     <% end %>

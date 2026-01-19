@@ -72,9 +72,9 @@ class Transfer < ApplicationRecord
   def name
     acc = to_account
     if payment?
-      acc ? "Payment to #{acc.name}" : "Payment"
+      acc ? I18n.t("transfer.payment_name", to_account: acc.name) : I18n.t("transfer.payment_base_name")
     else
-      acc ? "Transfer to #{acc.name}" : "Transfer"
+      acc ? I18n.t("transfer.name", to_account: acc.name) : I18n.t("transfer.base_name")
     end
   end
 

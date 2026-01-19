@@ -18,5 +18,9 @@ en:
               outflow_cannot_be_in_multiple_transfers: Outflow transaction cannot
                 be part of multiple transfers
   transfer:
+    base_name: "Transfer"
+    from_name: "Transfer from %{from_account}"
     name: Transfer to %{to_account}
+    payment_base_name: "Payment"
+    payment_from_name: "Payment from %{from_account}"
     payment_name: Payment to %{to_account}

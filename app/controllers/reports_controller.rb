@@ -329,7 +329,7 @@ class ReportsController < ApplicationController
         expenses = Current.family.income_statement.expense_totals(period: period).total
 
         trends << {
-          month: month_start.strftime("%b %Y"),
+          month_start: month_start,
           is_current_month: (month_start.month == Date.current.month && month_start.year == Date.current.year),
           income: income,
           expenses: expenses,
