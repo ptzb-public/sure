@@ -114,10 +114,10 @@ pl:
         previous: Poprzednia
         next: Następna
     net_worth:
-      title: Majątek netto
-      current_net_worth: Aktualny majątek netto
+      title: Majątek
+      current_net_worth: Aktualny majątek
       period_change: Zmiana w okresie
-      assets_vs_liabilities: Aktywa vs zobowiązania
+      assets_vs_liabilities: Aktywa vs Zobowiązania
       total_assets: Aktywa
       total_liabilities: Zobowiązania
       no_assets: Brak aktywów
@@ -170,7 +170,7 @@ pl:
         of_income: "%{percent}% przychodu"
         used: wykorzystano
       net_worth:
-        title: Majątek netto
+        title: Majątek
         current_balance: Aktualne saldo
         this_period: ten okres
         assets: Aktywa

@@ -91,7 +91,7 @@ pl:
         owed: Kwota do spłaty
       menu:
         confirm_accept: Usuń „%{name}”
-        confirm_body_html: "<p>Usunięcie tego konta spowoduje skasowanie historii jego wartości, co wpłynie na różne aspekty Twojego ogólnego stanu kont. Działanie to będzie miało bezpośredni wpływ na obliczenia Twojego majątku netto oraz wykresy kont.</p><br /><p>Po usunięciu nie będzie możliwości przywrócenia informacji o koncie — aby je odzyskać, konieczne będzie dodanie go jako nowego konta.</p>"
+        confirm_body_html: "<p>Usunięcie tego konta spowoduje skasowanie historii jego wartości, co wpłynie na różne aspekty Twojego ogólnego stanu kont. Działanie to będzie miało bezpośredni wpływ na obliczenia Twojego majątku oraz wykresy kont.</p><br /><p>Po usunięciu nie będzie możliwości przywrócenia informacji o koncie — aby je odzyskać, konieczne będzie dodanie go jako nowego konta.</p>"
         confirm_title: Usunąć konto?
         edit: Edytuj
         import: Importuj transakcje

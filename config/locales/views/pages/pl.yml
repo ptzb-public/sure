@@ -11,7 +11,7 @@ pl:
       toggle_section: "Przełącz widoczność sekcji"
       net_worth_chart:
         data_not_available: Dane niedostępne dla wybranego okresu
-        title: Majątek netto
+        title: Majątek
       no_account_empty_state:
         new_account: Nowe konto
         no_account_subtitle: Ponieważ nie dodano jeszcze żadnych kont, nie ma danych do wyświetlenia. Dodaj pierwsze konta, aby rozpocząć korzystanie z panelu.
@@ -31,7 +31,7 @@ pl:
         add_transaction: "Dodaj przelew"
       no_accounts:
         title: "Brak kont"
-        description: "Dodaj konta, aby wyświetlić dane o majątku netto"
+        description: "Dodaj konta, aby wyświetlić dane o majątku"
         add_account: "Dodaj konto"
       outflows_donut:
         title: "Wydatki"
